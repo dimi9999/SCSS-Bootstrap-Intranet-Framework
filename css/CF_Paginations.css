@@ -1,0 +1,41 @@
+﻿/* Policies and procedures pagination */
+.bootstrap-wrapper .pagination>.active>a,
+.bootstrap-wrapper .pagination>.active>a:focus,
+.bootstrap-wrapper .pagination>.active>span,
+.bootstrap-wrapper .pagination>.active>span:hover,
+.bootstrap-wrapper .pagination>.active>span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: #0093d8;
+  border-color: #0093d8;
+  cursor: default;
+  padding: 6px 12px;
+}
+
+.bootstrap-wrapper #content-pagination {
+  text-align: center;
+  width: 100%;
+}
+
+.boostrap-wrapper #content-pagination ul {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 260px;
+  text-align: center;
+}
+
+.boostrap-wrapper #content-pagination ul>li {
+  display: inline-block;
+}
+
+.wizdom-bootstrap-wrapper #content-pagination .pagination>li:not(.active)>a,
+.wizdom-bootstrap-wrapper #content-pagination .pagination>li:not(.active)>a:hover,
+.wizdom-bootstrap-wrapper #content-pagination .pagination>li:not(.active)>span:hover {
+  background-color: transparent;
+}
+
+.wizdom-bootstrap-wrapper .pagination>li[title="Previous Page"] a,
+.wizdom-bootstrap-wrapper .pagination>li[title="Next Page"] a {
+  font-size: 20px;
+  line-height: 19px;
+}

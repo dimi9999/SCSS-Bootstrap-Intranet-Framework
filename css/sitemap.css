@@ -1,0 +1,86 @@
+﻿/*
+-------
+Sitemap
+CF_Siteap.css
+Target Class: .wizdom-bootstrap-wrapper .wizdomSitemap
+Used in: https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Sitemap.aspx
+
+-------
+*/
+.wizdom-bootstrap-wrapper .wizdomSitemap {
+    list-style: none;
+    margin:0;
+    padding:0!important;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul {
+    list-style: none;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul li {
+      line-height: 2.5rem;
+      vertical-align: top;
+      position: relative;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap > li > ul {
+      margin-top: 1.5rem;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul li {
+      line-height: 2.8rem;
+      vertical-align: top;
+      position: relative;
+      font-weight: bold;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap > li {
+      list-style-type:none;
+      margin:0;
+      padding:0;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap > li > a {
+       width:100%;
+       display:block;
+       border-bottom:1px solid #ccc;
+       padding-bottom:20px;
+       margin-bottom:20px;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap > li > a {
+      color:black;
+      font-weight:bold;
+      font-size:20px;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul li a {
+      text-decoration: none;
+      display: inline-block;
+      font-weight:bold;
+      margin: 0 0 10px 0;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul ul li {
+      position: relative;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul ul li a {
+      font-weight:500;
+      font-size:16px;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul ul li::before {
+      content: "";
+      display: inline-block;
+      width: 3rem;
+      height: 100%;
+      border-left: 1px #ccc solid;
+      position: absolute;
+      top: -0.75rem;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul ul li::before {
+      content: "";
+      display: inline-block;
+      width: 3rem;
+      height: 1.5rem;
+      border-bottom: 1px #ccc solid;
+      position: absolute;
+      top: 0.25rem;
+}
+.wizdom-bootstrap-wrapper .wizdomSitemap ul ul li a {
+    margin-left: 3.75rem;
+}

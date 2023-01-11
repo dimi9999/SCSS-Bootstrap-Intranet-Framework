@@ -1,0 +1,22 @@
+﻿/* PEOPLE CAROUSEL */
+#people-carousel {background:#0093d8; margin:0 0 30px 0;}
+#people-carousel .inner {padding:30px;}
+#people-carousel .carousel-inner {height:auto!important; border:0!important;}
+#people-carousel .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next,
+#people-carousel .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    padding:10px;
+    border-radius:0;
+}
+#people-carousel .carousel-inner h2,
+#people-carousel .carousel-inner p,
+#people-carousel .carousel-inner * {
+    color:#fff;
+}
+#people-carousel .carousel-inner h2:after {
+    background:#fff;
+}
+#people-carousel .wizdom-avatar {
+    width:100px;
+    height:100px;
+    max-width:100px!important;
+}

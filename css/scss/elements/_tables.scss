@@ -1,0 +1,35 @@
+// TABLES
+.wizdomTables {
+    margin-bottom:0;
+}
+.wizdomTables>caption + thead>tr:first-child>th, .wizdomTables>colgroup + thead>tr:first-child>th, 
+.wizdomTables>thead:first-child>tr:first-child>th, .wizdomTables>caption + thead>tr:first-child>td, 
+.wizdomTables>colgroup + thead>tr:first-child>td, .wizdomTables>thead:first-child>tr:first-child>td {
+    border-top: 0;
+    background: $color13;
+    font-weight:bold;
+    border-bottom:0;
+    font-size:16px;
+    border-top:0;
+    width:20%;
+}
+.wizdomTables>thead>tr>th, .wizdomTables>tbody>tr>th, .wizdomTables>tfoot>tr>th, .wizdomTables>thead>tr>td, .wizdomTables>tbody>tr>td, .wizdomTables>tfoot>tr>td {
+	font-size:16px;
+	padding:20px;
+}
+.wizdomTables p {
+	font-size:16px;
+	&:first-child {
+		margin-top:0;
+	}
+}
+.wizdomTables tr {
+	background:$color0;
+	&:nth-child(2n+2) {
+		background:$color15;
+        border-bottom:1px solid $color1e;
+	}
+	& td {
+		vertical-align:top;
+	}
+ }

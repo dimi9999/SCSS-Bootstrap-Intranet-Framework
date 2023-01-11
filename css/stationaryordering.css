@@ -1,0 +1,139 @@
+/*
+-------------------
+Stationary Ordering
+-------------------
+Client: Acme
+Used in: Globally
+Template: n/a
+Target stylesheets: CF_StationeryOrdering.css
+ 
+*/
+
+/*
+filter by
+*/
+#stationaryOrdering,
+#stationaryOrdering p {
+    font-size:16px;
+}
+#stationaryOrdering h3 {
+    margin-top:0;
+}
+#stationaryOrdering .stationaryOrderingFilters {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: flex-end;
+}
+#stationaryOrdering .stationaryOrderingFilters > div {
+    vertical-align:middle;
+}
+#stationaryOrdering .stationaryOrderingFiltersContainer {
+    margin: 25px 0 30px;
+    padding-top: 35px;
+    border-top:1px solid #ccc;
+    width:100%;
+}
+#stationaryOrdering .stationaryOrderingFiltersContainer > div {
+    float:left;
+    font-size:16px;
+}
+#stationaryOrdering .stationaryOrderingFiltersContainer > div.results {
+    margin-top:5px;
+}
+#stationaryOrdering .stationaryOrderingFiltersContainer > div.clear {
+    float:none;
+}
+#stationaryOrdering .stationaryOrderingFiltersContainer .stationaryOrderingFilters {
+    float:right;
+    width: 40%;
+}
+#stationaryOrdering .stationaryOrderingFiltersContainer .stationaryOrderingFilters  > div select {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:800px) {
+    #stationaryOrdering .stationaryOrderingFiltersContainer > div,
+    #stationaryOrdering .stationaryOrderingFiltersContainer .stationaryOrderingFilters  {
+        float:none;
+        width:100%;
+        justify-content: flex-start;
+        margin: 0 0 20px 0;
+    }
+}
+/*
+  responsive tables
+*/ 
+#stationaryOrdering table {
+     text-align: center;
+     width: 100%;
+}
+#stationaryOrdering tr {
+     background: #fff;
+}
+#stationaryOrdering tr:nth-child(2n) {
+     background: #f2f7f9;
+}
+#stationaryOrdering tr:hover .msg {
+     opacity: 1;
+     top: 0;
+}
+#stationaryOrdering th, 
+#stationaryOrdering td {
+     padding: 15px;
+     vertical-align: middle;
+     text-align: left;
+     color: #005b8e;
+}
+#stationaryOrdering th:nth-child(2),
+#stationaryOrdering td:nth-child(2) {
+     text-align: left;
+}
+#stationaryOrdering td.status {
+    color:inherit;
+}
+#stationaryOrdering td.status.approved {
+    color:green;
+}
+#stationaryOrdering th {
+     background: #ccdee8;
+     color:  black;
+     font-weight: bold;
+     padding: 15px;
+}
+#stationaryOrdering th:first-child {
+      background:#bed5e0;
+      width: 40%;
+} 
+#stationaryOrdering tr td:first-child {
+    background: #f2f7f9;
+}
+#stationaryOrdering tr:nth-child(2n) td:first-child {
+    background: #e9f0f3;
+}
+
+@media only screen and (max-width: 767px) {
+     #stationaryOrdering .price {
+         padding: 0;
+         border: none;
+         background: none;
+    }
+  
+    #stationaryOrdering .responsiveTbl {
+         overflow: auto;
+    }
+    #stationaryOrdering .responsiveTbl table {
+         width: 767px;
+    }
+}
+ @media only screen and (max-width: 640px) {
+    #stationaryOrdering .responsiveTbl table {
+         width: 640px;
+    }
+}

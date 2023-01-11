@@ -1,0 +1,300 @@
+/************* RESPONSIVE & ACCORDION TABS (1) *******/
+.resp-tabs-list li {
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 0 12px -1px 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    border: 1px solid #bbb;
+    border-bottom: 0px #fff solid !important;
+    border-top: 3px solid #999;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    background-color:  TRANSPARENT;
+    clear: left;
+}
+
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+    padding: 32px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.resp-tab-content:after,
+.resp-tab-content-active:after {
+    clear:both;
+    display:block;
+    content:'clear';
+    height:1px;
+    font-size:0;
+}
+.resp-tab-active {
+	border: 1px solid #0093d8 !important;
+	border-bottom: none;
+	margin-bottom: -1px !important;
+	padding: 7px;
+	border-top: 3px solid #0093d8!important;
+	color: #0093d8;
+	border-bottom: 0px #fff solid !important;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.resp-content-active, .resp-accordion-active {
+    display: block;
+}
+
+.resp-tab-content {
+    border-top: 1px solid #c1c1c1;
+}
+
+h2.resp-accordion {
+    font-size: 13px;
+    border: 1px solid #c1c1c1;
+    border-top: 0px solid #c1c1c1;
+    margin: 0px;
+    padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+    border-bottom: 0px solid #c1c1c1 !important;
+    margin-bottom: 0px !important;
+    padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+    border-bottom: 12px solid #c1c1c1 !important;
+    background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+    float: left;
+    width: 30%;
+}
+ul.resp-tabs-list.hor_1 {
+    margin: 0;
+    padding: 0;
+}
+.resp-vtabs .resp-tabs-list li {
+    display: block;
+    padding: 15px 15px !important;
+    margin: 0 0 4px;
+    cursor: pointer;
+    float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+    padding: 0px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    float: left;
+    width: 68%;
+    min-height: 250px;
+    border-radius: 4px;
+    clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+    border: none;
+    word-wrap: break-word;
+}
+
+.resp-vtabs li.resp-tab-active { 
+    position: relative;
+    z-index: 1;
+    margin-right: -1px !important;
+    padding: 14px 15px 15px 14px !important;
+    border-top: 1px solid;
+    border: 1px solid #0093d8 !important;
+    border-left: 4px solid #0093d8 !important;
+    margin-bottom: 4px !important;
+    border-right: 1px #FFF solid !important;
+}
+
+.resp-arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-top: 3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+    border: none;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+    background: #DBDBDB;/* !important;*/
+}
+
+.resp-easy-accordion h2.resp-accordion {
+    display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+    border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1;/* !important;*/
+}
+.resp-jfit {
+    width: 100%;
+    margin: 0px;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+h2.resp-accordion:first-child {
+    border-top: 1px solid #c1c1c1;/* !important;*/
+}
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media all  and (max-width: 991px) {
+    .wizdom-courses.wizdomSection {
+        margin:0;
+        padding:0;
+        margin-top: 40px;
+    }
+    ul.resp-tabs-list {
+        display: none;
+    }
+    .coursesCont #horizontalTab {
+        margin:0!important;
+        padding:0!important;
+    }
+    h2.resp-accordion {
+        display: block;
+        background: transparent;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display: none !important;
+    }
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+     .coursesCont #horizontalTab {
+         margin-left:0!important;
+     }
+     .resp-tab-content {
+         margin:0;
+         padding: 15px 0;
+     }
+}
+
+/************* MAIN TABS (1) *******/
+#mainTabsList {
+    padding-left:40px;
+}
+#mainTabsList ul.tabs {
+    margin: 20px 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    border-bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+#mainTabsList ul.tabs li {font-weight: 600;font-size: 16px;display: inline-block;padding: 7px 15px;margin: 0 12px -1px 0;list-style: none;cursor: pointer;float: left;border: 1px solid #bbb;border-bottom: 0px #fff solid !important;border-top: 3px solid #999;}
+#mainTabsList .tab_last { border-right: 1px solid #333; }
+#mainTabsList ul.tabs li:hover {
+    background-color: #ccc;
+    color: #333;
+}
+#mainTabsList ul.tabs li.active {
+    display: block;
+    border: 1px solid #0093d8 !important;
+    border-bottom: none;
+    margin-bottom: -1px !important;
+    border-top: 3px solid #0093d8!important;
+    color: #0093d8;
+    border-bottom: 0px #fff solid !important;
+}
+
+#mainTabsList .tab_container {
+    border: 0;
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    overflow: auto;
+}
+
+#mainTabsList .tab_content {
+    padding: 0;
+    display: none;
+}
+#mainTabsList .tab_drawer_heading { 
+    display: none; 
+}
+
+@media screen and (max-width: 767px) {
+    #mainTabsList {
+        padding-left:0;
+    }
+    #mainTabsList .tabs {
+        display: none;
+    }
+    #mainTabsList .tab_drawer_heading {
+        background-color: transparent;
+        color: #000;
+        border-top: 1px solid #333;
+        margin: 0;
+        padding: 15px;
+        font-weight: 500;
+        display: block;
+        cursor: pointer;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin: 0 15px;
+    }
+    #mainTabsList .d_active {
+        background-color: #1fa7d8;
+        color: #fff;
+    }
+}
+
+/* OVERWRITE */
+.tab {
+    padding: 25px;
+    background: #fff;
+}
+ 

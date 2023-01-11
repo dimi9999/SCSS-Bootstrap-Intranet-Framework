@@ -1,0 +1,17 @@
+﻿/* NEWS LIST FOR MOBILE DEVICES */
+@media all and (max-width:767px) {
+    .wizdom-NewsContentLeft, .wizdom-NewsContentRight {
+        display:table-cell;
+        vertical-align:top;
+        padding:0;
+    }
+    .wizdom-NewsContentLeft {
+        width:150px;
+        padding-right:30px;
+    }
+} 
+
+
+
+
+

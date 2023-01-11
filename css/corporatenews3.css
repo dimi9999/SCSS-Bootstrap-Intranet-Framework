@@ -1,0 +1,272 @@
+﻿/* --------------------------- 4----------------------------------- */
+
+/*** CORPORATE NEWS BLOCKS 3 COL TYPE ****/
+/********** CAN USE ANY IMAGE SIZES. IDEALLY A RESOLUTION OF 457X361 (MINIMUM) ALL PHOTOS SHOULD BE OF THE SAME SIZE  ****************************************/
+.row-eq-height-mobileonly {
+    display: flex;
+}
+.wizdom-sliderCont {
+    background:#00354e;
+}
+#NewsBlocksType3 {} /* ADD YOUR EMBEDDED STYLES HERE */
+#NewsBlocksType3 .CorporateNewsBlocks4ColType {
+    margin:0 auto;
+    width:100%;
+    padding: 0 30px;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType > div {}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Img {
+    position:relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol1 {
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 {
+    padding-right:0;
+    position: relative;
+}
+ 
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Content .CorporateNewsBlocks4ColType-date {
+    font-size:15px;
+    margin-bottom:15px;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Img  img {
+    max-width: 100%;
+    width: 100%;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Content {
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Content h2 {
+    font-weight:bold;
+    color:#005b8e;
+    font-size:18px;
+    margin:0 0 15px 0;
+    height: 40px;
+}
+ 
+ 
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div  {
+    margin-right:15px;
+    margin-bottom:30px;
+    height: 228px;
+    padding: 0;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div > div.contentBlockRight {
+    margin-left:15px;
+    margin-bottom:30px;
+    margin-right: 0;
+    height: 228px;
+    padding: 0;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div  {
+    margin-right:15px;
+    margin-top: 30px;
+    height: 230px;
+    padding: 0;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div > div.contentBlockRight {
+    margin-left:15px;
+    margin-top: 30px;
+    padding: 0;
+}
+ 
+ 
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans:hover,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans:focus,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans:active,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans.active,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans:hover,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans:focus,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans:active,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans.active {
+    background:#fff;
+    color:#005b8e;
+}
+ 
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans:hover > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans:active > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans:focus > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans.active > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans:hover > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans:active > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans:focus > i,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans.active > i {
+    color:#005b8e;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock1 {
+    background: #fff;
+    padding: 0;
+    /* overflow: hidden; */
+    /* margin-right: 0; */
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock2 {}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock3 {}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock4 {
+    background: #fff;
+    height: 230px;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 {background: #fff;margin: 0;padding: 0;border: 0;height: 228px;}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 + div,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 + div + div {padding: 0 0 0 0}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock6 {}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock7 > div {
+    display:table;
+    width:100%;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock7 > div > div {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    height: 224px;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock7 > div > div .btn-primary,
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock7 > div > div .btn-primary:hover {
+    border:none;
+    background:transparent;
+    color:#fff;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock7 > div > div .btn-primary:after  {
+    background:url(https://cfcloud.sharepoint.com/:i:/r/sites/WizdomDemo/Style%20Library/images/icons/nav-btn-arrow-white.png) no-repeat!important;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock8 {
+    margin-top:30px;
+}
+#NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media all and (max-width:1199px) {
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType {
+        padding: 0 15px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Content h2 {
+        height:60px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColTypeCol1, #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColTypeCol2 {
+        margin:0;
+        /* background: #fff; */
+        padding: 7.5px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1199px) {
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 + div,
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 + div + div {padding: 0 0 0 15px}
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 + div {
+        padding: 0 0 0 15px;
+    }
+     
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColTypeCol2 > div:first-child {
+        background:#00354e;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColTypeCol2 {
+        padding-left: 0;
+        border-left: 15px solid #00354e;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div > div.contentBlockRight   {
+        margin-top:0;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div ,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div > div.contentBlockRight {
+        margin-bottom:15PX;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 {
+        margin-top: 15px;
+    }
+}
+@media all and (max-width:991px) {
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Content h2 {
+        font-size:14px;height:40px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColType-Content .CorporateNewsBlocks4ColType-date {
+        font-size:12px;
+    }
+   
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div > div.contentBlockRight {
+        height: 228px;
+    }
+}
+@media all and (max-width:1400px) {
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans,
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans {
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType  .btn-trans > i,
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType div.contentBlockRight .btn-trans > i {
+        font-size: 11px!important;
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+    }  
+}
+@media all and (min-width:991px) and (max-width:1199px) {
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div > div.contentBlockRight   {
+        height:228px;
+    }
+}
+@media all and (max-width:767px) {
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock1,
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock4,
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock5 {
+        background:transparent;
+        min-height: auto;
+        height: auto;
+        margin: 0 0 15px 0;
+    }  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .NewsBlock7 > div > div {
+        height:170px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType {
+        float: left;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div > div.contentBlockRight  
+    {
+        margin: 0 0 15px 0;
+        padding-left:0;
+        padding-right:0;
+        height: 170px;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType > div > div {
+        /* margin: 0; */
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType > div {
+        float: left;
+        margin: 0 0 15px 0;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol2 > div,  
+    #NewsBlocksType3 .CorporateNewsBlocks4ColTypeCol3 > div {
+         border-right: 15px solid #01354d;
+    }
+    #NewsBlocksType3 .CorporateNewsBlocks4ColType .CorporateNewsBlocks4ColTypeCol2 {
+        margin: 0;
+     }
+
+}
+@media all and (min-width:1200px) {
+    .wizdom-sliderCont {
+        /* ADD BACKGROUND FOR LARGER SIZES HERE */
+        /*   background:url(../images/sea.png); */
+    }
+}

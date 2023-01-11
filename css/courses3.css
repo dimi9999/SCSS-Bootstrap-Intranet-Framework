@@ -1,0 +1,244 @@
+/* COURSES */
+/* (1) ACCORDIONS */
+form.search > button, div.search > button {
+    font-size:17px;
+}
+.resetlink {
+    color:#005b8e!important;
+}
+ .coursesCont #horizontalTab {
+    margin-top: 30px!important;
+    margin-left: 65px!important;
+    padding-right: 60px;
+}
+ .coursesCont .search {
+     max-width:880px;
+ }
+ .coursesCont .leftnavlinks {
+      padding-left:0;
+      padding-right: 0;
+ }
+ .coursesCont .leftnavlinks.courses > div > div,
+ .coursesCont .leftnavlinks.courses > div > div {
+      margin-bottom:10px;
+  }
+ .coursesCont .leftnavlinks .courses input[type="text"].input-small {
+      font-size:14px;
+      padding:7px;
+      box-sizing:border-box;
+ }
+ /*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media all  and (max-width: 991px) {
+    #mainTabsList {
+    padding-left:0;
+}
+    .wizdom-courses.wizdomSection {
+        margin:0;
+        padding:0;
+        margin-top: 40px;
+    }
+    ul.resp-tabs-list {
+        display: none;
+    }
+    .coursesCont #horizontalTab {
+        margin:0!important;
+        padding:0!important;
+    }
+    h2.resp-accordion {
+        display: block;
+        background: transparent;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display: none !important;
+    }
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+     .coursesCont #horizontalTab {
+         margin-left:0!important;
+     }
+     .resp-tab-content {
+         margin:0;
+         padding: 15px 0;
+     }
+}
+ /* (2) COURSES CONTENT */
+.sites-wizdomdemo-courses .w365cm-card {
+    margin: 0;
+    /* padding: 0; */
+}
+
+.sites-wizdomdemo-courses .w365cm-card-block {
+    background:#fff;
+}
+.sites-wizdomdemo-courses .thumbnail {
+    border:0;
+    padding:0;
+    margin:0;
+}
+.sites-wizdomdemo-courses .course-card-image {
+    height: 170px;
+    background-size:100%;
+}
+.sites-wizdomdemo-courses .caption {
+    padding: 30px 30px 15px;
+}
+.sites-wizdomdemo-courses .viewDetails {
+    padding:15px 30px 30px;
+}
+.sites-wizdomdemo-courses .viewDetails a {
+    display:block;
+}
+.sites-wizdomdemo-courses .course-type {
+    display: inline-block;
+    padding: 2px 7px;
+    color:#fff;
+    font-weight:bold;
+    background:#666!important;
+    font-size: 14px;
+}
+.sites-wizdomdemo-courses .course-title a {
+    font-weight:700;
+    color:#333!important;
+    margin: 15px 0;
+    display: block;
+}
+.sites-wizdomdemo-courses .course-level-text {
+    font-weight:bold;
+    font-size:14px;
+}
+.sites-wizdomdemo-courses .course-level-value {
+    padding: 2px 7px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 0 7px;
+    display:inline-block;
+}
+.sites-wizdomdemo-courses .course-level-value.basic  {  
+    background:#0897dd;
+}
+.sites-wizdomdemo-courses .course-level-value.intermediate {
+    background:#d4b10e;
+}
+.sites-wizdomdemo-courses .course-level-value.advanced  {
+    background:#c34517;
+}
+/* COURSES ICONS */
+.sites-wizdomdemo-courses .caption .topRightIcons .ms-Icon.ms-Icon--FavoriteStar:before {
+    font-family:FontAwesome;
+    content:'\f005';
+    color:#f0b323;
+    font-size:24px;
+    margin: 0 10PX 0 0;
+}
+.sites-wizdomdemo-courses .caption .topRightIcons .ms-Icon.ms-Icon--Share:before {
+    font-family:FontAwesome;
+    content:'\f064';
+    color:#ccc;
+    font-size:24px;
+}
+.sites-wizdomdemo-courses .course-info .ms-Icon.ms-Icon--CheckMark:before {
+    font-family: 'Glyphicons Halflings';
+    content:"\e013";
+    color: #333;
+    font-size: 42px;
+}
+.sites-wizdomdemo-courses .course-info .ms-Icon.ms-Icon--POI:before {
+    font-family: 'Glyphicons Halflings';
+    content:"\e062";
+    color: #333;
+    font-size: 42px;
+}
+
+.w365cm-card .w365cm-card-block .caption .course-info .col-3 {
+    display: inline-block;
+    width: 30%;
+    vertical-align: bottom;
+    text-align: center;
+    vertical-align: bottom;
+}
+.location.hover-pointer {
+    text-align:center;
+}
+.w365cm .canvas-holder {
+    position: relative;
+    top: 8px;
+}
+.chart-title {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(30%);
+    width: 72px;
+    text-align: center;
+    vertical-align: bottom;
+}
+.chart-title .percentage {
+    font-size: 19px!important;
+    font-weight: bold;
+    line-height: 20px;
+    color: #333;
+    padding-top: 7px;
+}
+.course-info {
+    font-size:13px;
+}
+.sites-wizdomdemo-courses .w365cm-card-block {
+    margin:0 0 30px 0;
+    position: relative;
+}
+.countdown.hover-pointer.ng-hide {
+    position: absolute;
+    top: 0;
+    background: rgba(255,255,255, 0.8);
+    width: 100%;
+    left: 0;
+    padding: 0 15px;
+    height: 170px;
+    vertical-align: middle;
+    display: table;
+    font-size: 26px;
+}
+.countdown.hover-pointer.ng-hide > * {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.countdown.hover-pointer span.wt-capFirstLetter {
+    text-align:right;
+}
+.countdown.hover-pointer.ng-hide .info-lg + span {
+    text-align:left;
+}
+@media all and (max-width:991px) {
+    #mainTabsList .tab_content {
+        padding: 0;
+        margin: 15px 0;
+        float: left;
+    }
+}
+@media all and (max-width:767px) {
+    .sites-wizdomdemo-courses .w365cm-card {
+    }
+}
+.coursesCont.wizdomMainContainer > div {
+    position: relative;
+}
+.coursesCont.wizdomMainContainer .coursebtn {
+    position:absolute;
+    top:0;
+    right:0;
+}

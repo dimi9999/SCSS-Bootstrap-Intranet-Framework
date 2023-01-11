@@ -1,0 +1,95 @@
+.wizdomPopupCont {
+    position:absolute;
+    right: 0;
+    top: -50px;
+    width: 100%;
+    right: 16%;
+    max-width: 520px;
+    display:none;
+}
+.wizdomPopup {
+    position:relative;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.45);
+    background-color:$color0;
+     & .wizdomPopupCloseBtn {
+         position:absolute;
+         top:5px;
+         right:15px;
+         font-size: 30px;
+         color: $color1e;
+         cursor:pointer;
+     }
+     & ul li {
+         padding-left:0;
+         font-size:14px;
+         & a img {
+             margin-right:5px;
+         }
+     }
+     & h4 {
+        margin-bottom:5px;
+     }
+     & .inner {
+        padding:20px;
+     }
+     & .header {
+        margin-bottom:10px;
+     }
+     & img.img-responsive {
+         max-width:100%;
+         border:1px solid $color1e;
+         width:100%;
+     }
+     & p {
+        font-size:14px;
+     }
+     & .base {
+         background:$color1f;
+         & a {
+             color:$color1;
+             text-transform:uppercase;
+             margin:0 10px 0 0;
+         }
+     }
+     &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent $color0 transparent transparent;
+        border-width: 20px 22px 20px 0;
+        position: absolute;
+        left: -20px;
+        top: 117px;
+        z-index: 2;
+    }
+    &:after {
+        content: '';
+        width: 23px;
+        height: 21px;
+        background: $color0;
+        position: absolute;
+        top: 127px;
+        left: -15px;
+        z-index: -1;
+        transform: rotate(45deg);
+        box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.45);
+      }
+        
+}
+ .modal.in .modal-dialog {
+     z-index:10;
+ }
+ .modal-title {
+     display:inline!important;
+ }
+ @media all and (max-width:767px) {
+     .wizdomPopupCont {
+         left:0;
+         right:0;
+         width:100%;
+         max-width:100%;
+     }
+ }

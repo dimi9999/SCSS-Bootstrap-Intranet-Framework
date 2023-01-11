@@ -1,0 +1,27 @@
+/* MY TEAMS */
+#wizdom-teams {
+	width:100%;
+}
+#wizdom-teams .file.info {
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	width:32px;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	font-size:12px;
+	padding: 0 5px;
+	text-align: center;
+}
+/* LETTERS */
+.a {background:#757575}
+.b {}
+.c {background-color:#e00088}
+.d{} 
+.e{}.f{}.g{}.h{}.i{}.j{}.k{}.l{background:#2d874e}
+.m{background:#7a60f9}
+.n{}.o{}.p{}.q{}.r{}
+.s{background-color:#1f8585;}.t{}
+.u{}
+.v{background:#d111c3;}.w{}.x{}.y{}.z{}

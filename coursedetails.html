@@ -1,0 +1,1010 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sharepoint Demo Version 1.1</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/material-icons.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/megamenu2.css" rel="stylesheet">
+    <link href="css/courses2.css" rel="stylesheet">
+    <!-- FONT AWESOME AND MATERIAL ICONS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Font awesome -->
+    <!--[if lt IE 9]>
+    <script language="javascript" type="text/javascript">
+       document.createElement('header');
+       document.createElement('nav');
+       document.createElement('figure');
+       document.createElement('section');
+       document.createElement('article');
+       document.createElement('aside');
+       document.createElement('content');
+       document.createElement('footer');
+    </script>
+    <link href="css/bootstrap-ie8.css" rel="stylesheet">
+    <link href="css/ie78.css" rel="stylesheet">
+    <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!-- CUSTOM JAVASCRIPT-->
+    <script src="js/matchMedia.js"></script>
+    <!--[if (lte IE 8) &amp;amp; (!IEMobile)]><script src="/js/eliteNonresponsive.js"></script><![endif]-->
+    <script src="js/eliteResponsive.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+    <!-- (0) START WRAPPER -->
+    <header id="DeltaSPRibbon">
+        <div id="DeltaSPNavigation"></div>
+    </header>
+    <div>
+        <button type="button" class="toggle-button" id="togglemenu"><em class="fa fa-bars"></em></button>
+    </div>
+    <nav id="nav" class="valign-middle-children header">
+        <div id="topnav">
+            <div class="navarea">
+                <a href="javascript:void(0)" class="closebtn">×</a>      <ul class="topItems">
+                    <!---->
+                    <li class="topElement has_children" id="tab0" ng-repeat="item in vm.topItems | orderBy:'sortOrder'" style="">          <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">I need to ...<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0">            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">              <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">Your email &amp; computer<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/it-support-request.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/it-support-request.aspx">Log an IT issue</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Your intranet &amp; online profile</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Internet access</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/FindAMeetingRoom.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/FindAMeetingRoom.aspx">Find a meeting room</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Wizdom-Analytics.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Wizdom-Analytics.aspx">View Wizdom Analytics</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/editors_dashboard/Pages/default.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/editors_dashboard/Pages/default.aspx">My editor's dashboard</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item BtmLink" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="btn btmItem noborder align-left EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx">View all</a></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Travel &amp; external meetings</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Booking flights</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Booking hotels</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">External meeting venues</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item BtmLink" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="btn btmItem noborder align-left EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx">View all</a></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Computer-aided tools</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Design software</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Building information modelling tools</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Graphic editing software</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Drafting tools</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Plans &amp; modelling tools</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item BtmLink" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="btn btmItem noborder align-left EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx">View all</a></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Temp / Perm recruitment</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Senior architects</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Junior architects</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Interior designers</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Landscape architects</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Planners</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Vacancies</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item BtmLink" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="btn btmItem noborder align-left EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx">View all</a></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Training &amp; conferences</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Training catalogue</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Conference schedules</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Book a training course</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Sign up to a conference</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item BtmLink" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="btn btmItem noborder align-left EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/I-need-to.aspx">View all</a></li><!---->                </ul>              </div><!---->            </div>          </div>        </li><!---->
+                    <li class="topElement has_children" id="tab1" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company">Our company<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="boxes">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="align-center">
+                                                                <a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company"><img class="block marginauto" src="images/icons/strategy-small.png" alt="image"></a>
+                                                                <h5 class="f-bold nomargintop"><a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-and-Vision.aspx">Strategy &amp; vision&#8203;</a></h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="align-center">
+                                                                <a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company"><img class="block marginauto" src="images/icons/results-small.png" alt="image"></a>
+                                                                <h5 class="f-bold nomargintop"><a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company">Financial results</a></h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 noborderright">
+                                                            <div class="align-center">
+                                                                <a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company"><img class="block marginauto" src="images/icons/right-small.png" alt="image"></a>
+                                                                <h5 class="f-bold nomargintop"><a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-%26-Vision0328-7802.aspx">Doing right thing</a></h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 noborderbottom">
+                                                            <div class="align-center">
+                                                                <a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-%26-Vision0328-7802.aspx"><img class="block marginauto" src="images/icons/magnifier-small.png" alt="image"></a>
+                                                                <h5 class="f-bold nomargintop"><a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-%26-Vision0328-7802.aspx">Research &amp; Development</a></h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 noborderbottom">
+                                                            <div class="align-center">
+                                                                <a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Our_Company"><img class="block marginauto" src="images/icons/group-small.png" alt="image"></a>
+                                                                <h5 class="f-bold nomargintop"><a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-%26-Vision0328-7802.aspx">Leadership</a></h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 noborderbottom noborderright">
+                                                            <div class="align-center">
+                                                                <a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-%26-Vision0328-7802.aspx"><img class="block marginauto" src="images/icons/health-small.png" alt="image"></a>
+                                                                <h5 class="f-bold nomargintop"><a href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Strategy-%26-Vision0328-7802.aspx">Health&nbsp;&amp; safety&#8203;</a></h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="fullwidth fullheight bg-color0 hidden-mobile" style="border-right: 1px solid #e5eef3;">
+                                                    <div class="plr ptb mlr mtb">
+                                                        <p class="f-small">Our vision</p>
+                                                        <p class="f-color2">"Lorem ipsum dorot si amet, Lorem ipsum dorot si ametLorem ipsum dorot si amet si ametLorem ipsum dorot si amet"</p>
+                                                        <a class="btn btmItem btn-trans noborder align-left nopadding" style="background-color: transparent!important;" href="#">Read more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="topElement has_children" id="tab2" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/">Departments<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Business development</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Communications</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Design</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Engineering</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Facilities</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/">Our Departments</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/Finance/" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/Finance/">Finance</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Health &amp; safety</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/HR/" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Departments/HR/">HR</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">IT</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Manufacturing</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Marketing</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Procurement</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Project management</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Public relations</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Surveying</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="#" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="#">Link</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="#" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="#">Link</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="bg-color3 hidden-mobile myWizdomButtons align-center valign-middle-children fullwidth fullheight">
+                                                    <div class="ptb2">
+                                                        <img src="images/icons/headphones.png" alt="headphones">
+                                                        <p class="f-color0 nopaddingtop nomarginbottom nopaddingbottom">IT Service desk</p>
+                                                        <h3 class="f-color0  nomargintop pb">Call 0208 232 1124</h3>
+                                                        <div class="pb2"><a class="f-color0 bg-none no-decor" href="mailto:kelly@contentformula.com"> Email for help</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><div class="fullwidth fullheight bg-color0 hidden-mobile"></div></li><!---->                </ul>              </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="topElement has_children" id="tab3" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">News &amp; events<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0" style="display: none;">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/News/" ng-class="{EnableHover:vm.enableHoverOnHeadings}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/News/">News</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/News/" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/News/">Corporate news</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">America news</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="/Pages/Events" href="/Pages/Events">Events<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Industry news</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">UK news</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="fullwidth fullheight bg-color0 hidden-mobile" style="border-right: 1px solid #e5eef3;">
+                                                    <div class="plr ptb mlr mtb">
+                                                        <p class="f-small">Latest Story</p>
+                                                        <p class="f-color2 maxwidth300">"Share your story here please"</p>
+                                                        <a class="noborder align-left nopadding" style="background-color: transparent!important;" href="#">Read more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="fullwidth fullheight bg-color3 hidden-mobile myWizdomButtons align-center valign-middle-children">
+                                                    <div style="display: table; height: 100%; width: 100%; margin: 0 auto; text-align: center;">
+                                                        <div class=" " style="display: table-cell; vertical-align: middle; height: 100%; width: 100%; text-align: center;">
+                                                            <div class=" "><img style="margin-top: 0!important; padding: 0!important;" src="images/icons/story.png" alt="story"></div>
+                                                            <div><a class="f-color0 bg-none no-decor" href="#"> Submit your story</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><div class="fullwidth fullheight bg-color0 hidden-mobile"></div></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><div class="fullwidth fullheight bg-color0 hidden-mobile"></div></li><!---->                </ul>              </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="topElement has_children" id="tab4" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">Locations<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0" style="display: none;">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="location first-col">
+                                                    <li><img class="nomargin fullwidth" src="images/ny.jpg" alt="new york"></li>
+                                                    <li>
+                                                        <p>919 Third avenue <br> 37th Floor <br> New York<br> NY 10022-3915</p>
+                                                    </li>
+                                                    <li><a class="google-link" href="#" target="_self">View on Google map</a></li>
+                                                    <li>
+                                                        <p>+129863939</p>
+                                                    </li>
+                                                    <li><a class="btn btmItem noborder align-left nopaddingleft" href="#">See all</a></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="location second-col">
+                                                    <li><img class="nomargin fullwidth" src="images/london.jpg" alt="london"></li>
+                                                    <li>
+                                                        <p>919 Third avenue <br> 37th Floor <br> New York<br> NY 10022-3915</p>
+                                                    </li>
+                                                    <li><a class="google-link" href="#" target="_self">View on Google map</a></li>
+                                                    <li>
+                                                        <p>+129863939</p>
+                                                    </li>
+                                                    <li><a class="btn btmItem noborder align-left nopaddingleft" href="#">See all</a></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="location second-col">
+                                                    <li><img class="nomargin fullwidth" src="images/london.jpg" alt="london"></li>
+                                                    <li>
+                                                        <p>919 Third avenue <br> 37th Floor <br> New York<br> NY 10022-3915</p>
+                                                    </li>
+                                                    <li><a class="google-link" href="#" target="_self">View on Google map</a></li>
+                                                    <li>
+                                                        <p>+129863939</p>
+                                                    </li>
+                                                    <li><a class="btn btmItem noborder align-left nopaddingleft" href="#">See all</a></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="location fourth-col">
+                                                    <li><img class="nomargin fullwidth" src="images/hk.jpg" alt="london"></li>
+                                                    <li>
+                                                        <p>919 Third avenue <br> 37th Floor <br> New York<br> NY 10022-3915</p>
+                                                    </li>
+                                                    <li><a class="google-link" href="#" target="_self">View on Google map</a></li>
+                                                    <li>
+                                                        <p>+129863939</p>
+                                                    </li>
+                                                    <li><a class="btn btmItem noborder align-left nopaddingleft" href="#">See all</a></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="location last-col">
+                                                    <li><img class="nomargin fullwidth" src="images/sydney.jpg" alt="london"></li>
+                                                    <li>
+                                                        <p>919 Third avenue <br> 37th Floor <br> New York<br> NY 10022-3915</p>
+                                                    </li>
+                                                    <li><a class="google-link" href="#" target="_self">View on Google map</a></li>
+                                                    <li>
+                                                        <p>+129863939</p>
+                                                    </li>
+                                                    <li><a class="btn btmItem noborder align-left nopaddingleft" href="#">See all</a></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="topElement" id="tab5" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">          <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Policies/" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Policies/">Policies<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer ng-hide fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0" style="display: none;">            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">              <!---->            </div>          </div>        </li><!---->
+                    <li class="topElement has_children" id="tab6" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">          <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">Communities<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0" style="display: none;">            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">              <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="/sites/WizdomDemo/Communities" ng-class="{EnableHover:vm.enableHoverOnHeadings}" href="/sites/WizdomDemo/Communities">Communities of practice</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Steels engineering</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">CAD</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Quantity surveying</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Projects &amp; initiatives</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Communities/Project_Alpha" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Communities/Project_Alpha">Project Alpha</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Global templates</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Outside In</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Project Beta</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">BYOD</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Social</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Fundraising</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Classified</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Sports clubs</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Societies</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Team building events</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Training Catalogues</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Cantilevers</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">Logistics</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><div class="fullwidth fullheight hidden-mobile"></div></li><!---->                </ul>              </div><!---->            </div>          </div>        </li><!---->
+                    <li class="topElement has_children" id="tab7" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Courses/Pages/default.aspx" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Courses/Pages/default.aspx">Courses<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="boxes">
+                                                    <div class="row">
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon1.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">People Management</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon2.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Power BI</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon3.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">IT Triage</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon4.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Pinboard basics</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon7.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Yammer basics</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon5.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">SharePoint basics</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon6.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Yammer for publishers</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon7.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Digital Rights Management</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon8.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Leadership</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon9.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Project Management</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon10.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Dropbox basics</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon15.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Task management</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon12.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">eUniversity basics</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon13.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Infomation Security</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon14.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Dropbox advanced</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon15.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Ideation and creative</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="topElement has_children" id="tab8" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">Apps<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0" style="display: none;">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="list-content-block first-child">
+                                                    <li class="list-img"><img src="images/icons/menu-icon1.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Delve</span></li>
+                                                            <li><a href="#">View your profile and personal dashboard</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon2.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">KPI Dash</span></li>
+                                                            <li><a href="#">Management and performance dashboard</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon3.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Service IT</span></li>
+                                                            <li><a href="#">IT helpdesk software for issue reporting</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon4.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Pinboard</span></li>
+                                                            <li><a href="#">Collaborative ideation platform</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="list-content-block first-child">
+                                                    <li class="list-img"><img src="images/icons/menu-icon5.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Synthesis</span></li>
+                                                            <li><a href="#">Knowledge management suite</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon6.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Yammer</span></li>
+                                                            <li><a href="#">Enterprise social network</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon7.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Boxy</span></li>
+                                                            <li><a href="#">External file sharing tool</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon8.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Iris</span></li>
+                                                            <li><a href="#">Customer Relationship Management (CRM)</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="list-content-block first-child">
+                                                    <li class="list-img"><img src="images/icons/menu-icon9.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Learning Tree</span></li>
+                                                            <li><a href="#">Our personal learning tool</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon10.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Planner</span></li>
+                                                            <li><a href="#">Microsoft Planner project management</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon14.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">iSpace</span></li>
+                                                            <li><a href="#">Virtual meeting rooms</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon12.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Tasks</span></li>
+                                                            <li><a href="#">Your personal tasks tracker</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="list-content-block first-child">
+                                                    <li class="list-img"><img src="images/icons/menu-icon13.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">eUniversity</span></li>
+                                                            <li><a href="#">Our education service</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon14.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Info Sec</span></li>
+                                                            <li><a href="#">Information Security auditing</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon15.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Dropbox</span></li>
+                                                            <li><a href="#">Personal file sharing app</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon16.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Sage People</span></li>
+                                                            <li><a href="#">Our HR system</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <ul class="list-content-block first-child">
+                                                    <li class="list-img"><img src="images/icons/menu-icon17.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">QMS</span></li>
+                                                            <li><a href="#">Our Quality Management System</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon1.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Delve</span></li>
+                                                            <li><a href="#">Your personal profile</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon2.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Tacometer</span></li>
+                                                            <li><a href="#">Performance appraisals app</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                                <ul class="list-content-block">
+                                                    <li class="list-img"><img src="images/icons/menu-icon3.png" alt="admin"></li>
+                                                    <li class="list-content">
+                                                        <ul>
+                                                            <li><span class="header">Sevice Now</span></li>
+                                                            <li><a href="#">IT support and helpdesk</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="clearfix"></li>
+                                                </ul>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="topElement has_children" id="tab9" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">          <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">News Blocks<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0" style="display: none;">            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">              <!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Corporate News with One webpart</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page.aspx">News with 3 columns v2</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v2.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v2.aspx">News with 3 Columns v2</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-carousel.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-carousel.aspx">News with carousel</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-2-cols.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-2-cols.aspx">News with two columns</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-4-cols.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-4-cols.aspx">News with 4 blocks</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-4-cols-v2.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-with-4-cols-v2.aspx">News with 4 transparent blocks</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">                <ul>                  <!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><!--<a class="Item Heading" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnHeadings}">{{vm.getTranslatedText(item, "title")}}</a>--> <span class="header" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="" ng-class="{EnableHover:vm.enableHoverOnHeadings}">Corporate News with Two web parts</span> </li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v3.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v3.aspx">News with 3 columns</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v4-aspx.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v4-aspx.aspx">News with 3 columns version 2 (wider columns)</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v5.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v5.aspx">News with 2 columns</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!----><!----><li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)"><a class="Item Link EnableHover" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v6.aspx" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}" href="https://cfcloud.sharepoint.com/sites/WizdomDemo/Pages/Corporate-News-Home-Page-v6.aspx">News with 3 columns and carousel</a><!--<a class="Item Link" ng-attr-target="{{vm.getTranslatedText(item, 'openInNewWindow') ? '_blank' : undefined}}" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-class="{EnableHover:vm.enableHoverOnLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--></li><!---->                </ul>              </div><!---->            </div>          </div>        </li><!---->
+                    <li class="topElement has_children" id="tab10" ng-repeat="item in vm.topItems | orderBy:'sortOrder'">
+                        <!----><div wizdom-include="vm.getTemplatePath(item)" class="myMenu"><!--<a class="TopItem" ng-href="{{vm.getTranslatedText(item, 'href')}}" ng-click="vm.clickTopItem(vm.getTranslatedText(item, 'href'), item, $event);" ng-class="{ EnableHover: vm.enableHoverOnTopLinks, active:item == vm.currentTopItem}">{{vm.getTranslatedText(item, "title")}}</a>--><a class="TopItem" ng-href="">Tips<!--<i class="glyphicon glyphicon-triangle-bottom hidden-sm hidden-xs"></i>--></a> </div>          <div class="navdropcontainer fullWidth" ng-class="{fullWidth:vm.fullWidth}" ng-show="item.children.length > 0">
+                            <!--ng-class="{fullWidth:vm.fullWidth}" id="tab{{$index}}Section" ng-repeat="item in vm.topItems" ng-show="item == vm.currentTopItem && item.children.length > 0"> -->            <div class="inner row row-eq-height-no-sm">
+                                <!---->
+                        <div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="boxes">
+                                                    <div class="row">
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon1.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 1</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon2.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 2</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon3.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 3</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon4.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 4</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon4.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 5</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon5.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 6</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon6.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 7</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon7.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 8</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon8.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 17</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon9.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 18</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon10.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 19</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon11.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 20</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon12.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 21</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon13.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 22</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon14.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 23</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 box-small noborderbottom">
+                                                            <div class="align-center">
+                                                                <img class="block marginauto" src="images/icons/menu-icon15.png" alt="image">
+                                                                <h5 class="f-bold nomargintop">Course 24</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!----><div ng-repeat="section in item.children | orderBy:'sortOrder'" class="megamenu-column">
+                                    <ul>
+                                        <!----><!---->
+                                        <li ng-repeat="item in section.children | orderBy:'sortOrder'" wizdom-include="vm.getTemplatePath(item)">
+                                            <div class="Item Html" ng-class="::{EnableHover:vm.enableHoverOnHtml}" ng-bind-html="::(item.value.html | wizdom365TrustHtml)">
+                                                <div class="bg-color3 hidden-mobile myWizdomButtons align-center valign-middle-children fullwidth fullheight">
+                                                    <div class="ptb2">
+                                                        <img src="images/icons/headphones.png" alt="headphones">
+                                                        <p class="f-color0 nopaddingtop nomarginbottom nopaddingbottom">IT Service desk</p>
+                                                        <h3 class="f-color0  nomargintop pb">Call 0208 232 1124</h3>
+                                                        <div class="pb2"><a class="f-color0 bg-none no-decor" href="mailto:kelly@contentformula.com"> Email for help</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!---->
+                                    </ul>
+                                </div><!---->
+                            </div>
+                        </div>
+                    </li><!---->
+                    <li class="toggleMenuButton"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- BREADCRUMBS -->
+    <div id="breadcrumbs">
+        <div class="inner">
+            <a href="#">Home</a>><a href="#">Courses</a>><a href="#">News Article</a>
+        </div>
+    </div>
+
+    <!-- (4) CONTENT -->
+    <div id="contentRow">
+
+        <div class="miniContainer CoursesContainer">
+            <!-- COURSE ACTIONS -->
+            <div class="courseActions myWizdomButtons">
+                <div class="float-left">
+                    <a class="f-bold btn btmItem bg-none noborder align-left nopaddingleft nomarginleft" href="#">Overview</a>
+                </div>
+                <div class="float-right">
+                    <a class="btn btn-small" href="#"><i class="fa fa-ban"></i>Cancel</a>
+                    <a class="btn btn-small" href="#"><i class="fa fa-copy"></i>Copy</a>
+                    <a class="btn btn-small glyphicon glyphicon-plus" href="#">Create</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- MAIN BANNER -->
+            <div id="banner">
+                <div class="courseBanner" style="background:url(images/course-banner.jpg);"></div>
+
+                <div class="courseDate">
+                    <div class="wizdom-EventsContentLeft">
+                        <div class="date">
+                            <div class="month calendar">AUG</div>
+                            <div class="day">6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="myWizdomButtons">
+                    <a class="btn btn-secondary btn-inlineblock glyphicon glyphicon-play">Signup others</a>
+                    <a class="btn btn-secondary btn-inlineblock glyphicon glyphicon-play">Signup</a>
+                </div>
+            </div>
+
+            <div class="row section main row-eq-height">
+                <div class="col-sm-12 col-md-10 col-lg-8 wizdomMainContainer">
+                    <h1>Course Title</h1>
+                    <div>
+                        <p class="f-bold extraspace">
+                            Nam tincidunt, augue vitae sagittis egestas, ipsum ex maximus neque, volutpat fringilla ipsum leo sed lacus. Nulla mattis risus ligula, et hendrerit tellus mattis euismod.
+                        </p>
+                        <p class="extraspace">
+                            Aenean ultrices, erat ac congue porta, tortor libero interdum urna, tincidunt dapibus lacus neque vel elit. Nullam sollicitudin enim lacinia porta feugiat. Donec et quam augue. Maecenas eget porta velit. Duis pretium malesuada mi, ac porta quam malesuada ac. Suspendisse porttitor ut dui et sodales. In vitae ligula ipsum. Suspendisse rutrum orci in justo pulvinar iaculis. Sed id elit tincidunt, feugiat odio id, vehicula massa. Morbi a porta elit. Duis et porttitor sapien.
+                        </p>
+                        <p class="extraspace">
+                            Quisque consectetur imperdiet lorem sit amet ornare. Cras fringilla leo leo, id pulvinar tortor mollis vel. Ut in libero vel leo dapibus finibus vitae vitae neque. Suspendisse fermentum est sed posuere tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sodales rhoncus imperdiet. Pellentesque a interdum eros. Morbi fringilla ultricies lacus sed mattis.
+                        </p>
+                        <p class="extraspace">
+                            Quisque consectetur imperdiet lorem sit amet ornare. Cras fringilla leo leo, id pulvinar tortor mollis vel. Ut in libero vel leo dapibus finibus vitae vitae neque. Suspendisse fermentum est sed posuere tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sodales rhoncus imperdiet. Pellentesque a interdum eros. Morbi fringilla ultricies lacus sed mattis.
+                        </p>
+                        <p class="extraspace">
+                            Quisque consectetur imperdiet lorem sit amet ornare. Cras fringilla leo leo, id pulvinar tortor mollis vel. Ut in libero vel leo dapibus finibus vitae vitae neque. Suspendisse fermentum est sed posuere tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sodales rhoncus imperdiet. Pellentesque a interdum eros. Morbi fringilla ultricies lacus sed mattis.
+                        </p>
+
+
+                        <ul>
+                            <li><a href="#">Wizdom module</a></li>
+                            <li><a href="#">Org Charts</a></li>
+                            <li><a href="#">Architecture News</a></li>
+                            <li><a href="#">Latest Events</a></li>
+                            <li><a href="#">User account</a></li>
+                            <li><a href="#">Tasks to do</a></li>
+                            <li><a href="#">Cloud Document</a></li>
+                        </ul>
+                        <hr />
+                        <h2>Attachments</h2>
+                        <div class="bg-color0">
+                            <div class="wizdom-files nopaddingtop nopaddingbottom wizdomSection nomarginbottom">
+                                <div class="wizdom-files-container nomarginbottom">
+                                    <div class="wizdom-files-container-block">
+                                        <div class="file">
+                                            <img src="images/icons/word-icon.png" alt="icon">
+                                        </div>
+                                        <div class="description"><a href="#">About this course</a></div>
+                                        <div class="status align-right"><a class="btn btn-secondary btn-small btn-download">Download</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-color0">
+                            <div class="wizdom-files nopaddingtop nopaddingbottom wizdomSection nomarginbottom">
+                                <div class="wizdom-files-container nomarginbottom">
+                                    <div class="wizdom-files-container-block noborderbottom">
+                                        <div class="file">
+                                            <img src="images/icons/word-icon.png" alt="icon">
+                                        </div>
+                                        <div class="description"><a href="#">Itinerary</a></div>
+                                        <div class="status align-right"><a class="btn btn-secondary btn-small btn-download">Download</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 rightSidebar myWizdomButtons">
+                    <div>
+                        <div class="wizdom-members wizdomSection">
+                            <div class="wizdom-noticeBoardHeader">
+                                <h2 class="float-left wizdom-contentHeader nomargin">Practical Information</h2><a class="float-right btn btn-small glyphicon glyphicon-pencil" href="#">edit </a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="practical-information">
+                                 <h4>Location</h4>
+                                 <p>Copenhagen</p>
+                                 <h4>Start &amp; End Time</h4>
+                                 <p>6 Aug 2018, 9:00 am - 6 Aug 2018, 6:00 pm</p>
+                                 <h4>Registration Deadline</h4>
+                                 <p> 6 Jul 2018, 11:00 pm</p>
+                                 <h4>Teacher</h4>
+                                 <p>Jonathan Hudson</p>
+                                 <h4>Agenda</h4>
+                                 <p>09:00 - Coffee <br />,
+                                    09:30 - Keynote <br />
+                                    10:30 - Coffee <br /></p>
+                            </div>
+                        </div>
+                        <div class="wizdom-members wizdomSection">
+                            <div class="wizdom-noticeBoardHeader">
+                                <h2 class="float-left wizdom-contentHeader">Participants</h2><a class="float-right btn btn-small glyphicon glyphicon-pencil" href="#">edit </a>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="wizdom-membersContent-Container">
+                                <div class="wizdom-membersContent">
+                                    <div class="wizdom-membersContentLeft">
+                                        <a href="#"><img class="wizdom-avatar" src="images/contacts/scott.jpg" alt="contact"></a>
+                                    </div>
+                                    <div class="wizdom-membersContentRight">
+                                        <p class="nomargin"><span class="wizdom-user f-bold">Scott Warren</span></p>
+                                        <p class="wizdom-buttons">
+                                            <a href="#" class="btn btn-trans btn-small btn-social nomargin"><i class="fa fa-envelope-o"></i>errica@contentformula.com</a>
+                                        </p>
+                                        <p class="tel">Phone:079 8693 8517</p>
+                                    </div>
+                                </div>
+                                <div class="wizdom-membersContent">
+                                    <div class="wizdom-membersContentLeft">
+                                        <a href="#"><img class="wizdom-avatar" src="images/contacts/wanda.jpg" alt="contact"></a>
+                                    </div>
+                                    <div class="wizdom-membersContentRight">
+                                        <p class="nomargin"><span class="wizdom-user f-bold">Errica Farugia</span></p>
+                                        <p class="wizdom-buttons">
+                                            <a href="#" class="btn btn-trans btn-small btn-social nomargin"><i class="fa fa-envelope-o"></i>errica@contentformula.com</a>
+                                        </p>
+                                        <p class="tel">Phone:079 8693 8517</p>
+                                    </div>
+                                </div>
+                                <div class="myWizdomButtons">
+                                    <a class="btn btn-block" href="#">
+                                        Show all
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- (4) END CONTENT -->
+    <!-- (5) FOOTER -->
+    <footer id="footer" class="footer">
+        <div class="miniContainer">
+            <div class="row section">
+                <div class="nav col-md-2">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#">I need to...</a></li>
+                        <li><a href="#">Our company</a></li>
+                        <li><a href="#">News and Events</a></li>
+                        <li><a href="#">Departments</a></li>
+                    </ul>
+                </div>
+                <div class="nav col-md-2">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Communities</a></li>
+                        <li><a href="#">Courses</a></li>
+                    </ul>
+                </div>
+                <div class="nav col-md-4">
+                    <h4>About Us</h4>
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adi pisicing elit. Dolorem soluta quibusdam dolor repellendus consequatur velit fugiat illo minima totam nisi laboriosam, alias amet vel corrupti, optio tempora, eaque! Ad, porro.
+                    </div>
+                </div>
+                <div class="nav col-md-4">
+                    <h4>What's on</h4>
+                    <ul>
+                        <li><a href="#">London Workshop</a></li>
+                        <li><a href="#">The open group webinars</a></li>
+                        <li><a href="#">Interconnection Oriented Company</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- COPYRIGHT -->
+            <div class="copyright col-md-12 ">
+                <span>ACME company © 2017</span>
+            </div>
+        </div>
+    </footer>
+    <!-- (6) END OF FOOTER -->
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="js/bootstrap-ie.js"></script>
+    <![endif]-->
+    <!-- (0) END OF WRAPPER -->
+    <!-- (0) END OF WRAPPER -->
+</body>
+</html>

@@ -1,0 +1,146 @@
+﻿/* EMAIL CLIENTS LIST */
+ .wizdom-email-list-container {
+     margin-bottom: 20px;
+}
+ .wizdom-email-list-container ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .wizdom-email-list-container ul li {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+}
+ .wizdom-email-list-container ul li a {
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 40px;
+     float: left;
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+     transition: none;
+     color: #005b8e;
+     width: 48%;
+     margin-left: 2%;
+}
+ .wizdom-email-list-container ul li a:hover {
+     text-decoration: underline;
+     font-weight: 500;
+}
+ .wizdom-email-list-container ul li a i {
+     margin-right: 25px;
+     font-size: 14px;
+}
+ .wizdom-email-list-container > div {
+     padding: 15px;
+     background: #fff;
+     width: 100%;
+     display: table;
+}
+ .wizdom-email-list-container > div:nth-child(2n+2) {
+     background:#f2f7f9;
+ }
+ .wizdom-email-list-container-block {
+     border-bottom: 1px solid #cccccc;
+     padding: 20px 0;
+     font-size: 16px;
+     font-weight: 500;
+}
+ .wizdom-email-list-container-block > div {
+     display: inline-block;
+     vertical-align: middle;
+     margin: 0;
+     padding: 0;
+}
+ .wizdom-email-list-container-block > div.file {
+     width: 5%;
+     margin-right: 10px;
+}
+ .wizdom-email-list-container-block > div.description {
+     color: #005b8e;
+}
+ .wizdom-email-list-container-block > div.description .email-sender {
+     margin: 0 0 6px 0;
+ }
+ .wizdom-email-list-container-block > div.date {
+     /* text-align: right; */
+     position: relative;
+     display: table-cell;
+     vertical-align: middle;
+     width: 20%;
+}
+ .wizdom-email-list-container-block > div.status {
+     text-align: right;
+}
+ @media all and (max-width: 767px) {
+     .wizdom-email-list-container-block > div.date {
+    }
+     .wizdom-email-list-container > div {
+         font-size: 14px;
+    }
+}
+ .wizdom-email-list-container-block > div.description {
+     display: table-cell;
+     vertical-align: middle;
+     width: 65%;
+     padding-right: 15px;
+}
+ .wizdom-email-list-container-block-header {
+     color: black;
+     font-weight: bold;
+     padding: 20px 0;
+     border-bottom: 0;
+     background: #ccdee8!important;
+}
+ .wizdom-email-list-container-block-header > div {
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+}
+ .wizdom-email-list-container-block {
+     border-bottom: 0;
+}
+ .wizdom-email-list-container-block .download-link {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    vertical-align: middle;
+    float: left;
+}
+.wizdom-email-list-container-block  i {
+    color: #ffbc00;
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0;
+}
+ @media all and (max-width: 991px) {
+     .wizdom-email-list-container > div {
+    }
+     .wizdom-email-list {
+         padding: 15px;
+    }
+}
+@media all and (max-width: 390px) {
+     .wizdom-email-list-container-block > div.description,
+     .wizdom-email-list-container-block > div.date {
+         /* display:block!important; */
+         /* width:100%; */
+         /* text-align:left; */
+     }
+}
+@media all and (min-width:1199px) {
+    .wizdom-email-list-container-block-header > div.date {
+        width: 15%;
+    }
+}
+@media all and (min-width:1700px) {
+    .wizdom-email-list-container-block > div.description {
+        width: 85%;
+    }
+}

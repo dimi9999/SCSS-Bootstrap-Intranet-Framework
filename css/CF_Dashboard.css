@@ -1,0 +1,731 @@
+﻿/*
+---------------------------
+Editors (Content) Dashboard
+---------------------------
+Client: Acme
+Used in: Editors Dashboard. My Tasks Planner
+Template: n/a
+Target stylesheets: CF_Dashboard.css
+Target Id: #MyDashboard
+Target Html class:.editorsdashboard
+*/
+
+
+/*
+--------------------------------
+(1) Dashboard MyText and headers
+--------------------------------
+*/
+
+#MyDashboard p {
+	font-size: 16px;
+}
+
+#MyDashboard h2 {
+	margin-top: 0;
+}
+
+#MyDashboard h3 {
+	margin-top: 0;
+}
+
+
+/*
+-----------------------
+(2) Dashboard filter by
+-----------------------
+*/
+
+#MyDashboard .MyDashboardFilters {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	float: right;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#MyDashboard .MyDashboardFilters>div {
+	vertical-align: middle;
+}
+
+#MyDashboard .MyDashboardFiltersContainer {
+	margin: 30px 0;
+	width: 100%;
+}
+
+#MyDashboard .MyDashboardFiltersContainer>div {
+	float: left;
+	font-size: 16px;
+}
+
+#MyDashboard .MyDashboardFiltersContainer>div.results {
+	margin-top: 5px;
+}
+
+#MyDashboard .MyDashboardFiltersContainer>div.clear {
+	float: none;
+}
+
+#MyDashboard .MyDashboardFiltersContainer .MyDashboardFilters {
+	float: right;
+	width: 40%;
+}
+
+#MyDashboard .MyDashboardFiltersContainer .MyDashboardFilters>div select {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 4px;
+	font-size: 16px;
+}
+
+@media only screen and (min-width:992px) {
+	#MyDashboard .MyDashboardFilters .btn-export {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (max-width:800px) {
+	#MyDashboard .MyDashboardFiltersContainer>div,
+	#MyDashboard .MyDashboardFiltersContainer .MyDashboardFilters {
+		float: none;
+		width: 100%;
+		justify-content: flex-start;
+		margin: 0 0 20px 0;
+	}
+}
+
+
+/*
+------------------------------------
+(3) Dashboard Custom Dropdown Select
+------------------------------------
+*/
+
+#MyDashboard select {
+	display: none;
+}
+
+#MyDashboard .dropdown {
+	width: 100%;
+	outline: none;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 6px 4px 6px 15px;
+	font-size: 14px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+#MyDashboard .dropdown.open:after {
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+#MyDashboard .dropdown.open .list {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#MyDashboard .dropdown.open .option {
+	cursor: pointer;
+}
+
+#MyDashboard .dropdown.wide {
+	width: 100%;
+}
+
+#MyDashboard .dropdown.wide .list {
+	left: 0 !important;
+	right: 0 !important;
+}
+
+
+/*
+--------------------------------------------
+(4) Dashboard Custom Dropdown Select options
+--------------------------------------------
+*/
+
+#MyDashboard .dropdown .list {
+	box-sizing: border-box;
+	transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
+	-webkit-transform: scale(0.75);
+	transform: scale(0.75);
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	box-shadow: 0 0 0 1px rgb(0, 147, 216);
+	background-color: #fff;
+	margin-top: 4px;
+	padding: 3px 0;
+	opacity: 0;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 93%;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+
+/* select arrow */
+
+#MyDashboard .dropdown:after {
+	height: 0;
+	width: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #000;
+	/*
+	-webkit-transform: origin(50% 20%);
+	transform: origin(50% 20%);
+	*/
+	transition: all 0.125s ease-in-out;
+	content: '';
+	display: block;
+	margin-top: -2px;
+	pointer-events: none;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+}
+
+#MyDashboard .dropdown .list ul,
+#MyDashboard .dropdown .list li,
+#MyDashboard .dropdown .list ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#MyDashboard .dropdown .list ul li {
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#MyDashboard .dropdown .list:hover .option:not(:hover) {
+	background-color: transparent !important;
+	color: black!important;
+}
+
+#MyDashboard .dropdown .option {
+	cursor: default;
+	font-weight: 400;
+	line-height: 30px;
+	outline: none;
+	padding-left: 18px;
+	padding-right: 29px;
+	text-align: left;
+	transition: all 0.6s;
+}
+
+#MyDashboard .dropdown .option:hover,
+#MyDashboard .dropdown .option.selected {
+	color: #fff;
+	background-color: #0093d8 !important;
+	font-size: 14px;
+}
+
+#MyDashboard .dropdown .option:hover,
+.dropdown .option:focus {
+	background-color: #0093d8 !important;
+}
+
+#MyDashboard .dropdown .option.selected {
+	font-weight: 600;
+}
+
+#MyDashboard .dropdown .option.selected:focus {
+	background: #0093d8;
+}
+
+
+/*
+-----------------------------
+(5) Dashboard overview blocks
+-----------------------------
+*/
+
+#MyDashboardOverview {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+#MyDashboardOverview .overview {
+	position: relative;
+	padding: 20px;
+	margin: 0 0 30px 0;
+	background: white;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 240px;
+}
+
+
+/*
+------
+header
+*/
+
+#MyDashboardOverview .overview h4 {
+	margin-top: 0;
+}
+
+
+/*
+------------
+what is this
+*/
+
+#MyDashboardOverview .overview .ms-Icon--StatusCircleQuestionMark {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: #fff;
+	background: #999;
+	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+
+/*
+-----------
+what's this
+*/
+
+#MyDashboardOverview .overview h4 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	margin-right: 25px;
+}
+
+#MyDashboardOverview .overview h4 span {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+
+/*
+-----------------
+what's this popup
+-----------------
+*/
+
+#MyDashboardOverview .wizdomPopupCont {
+	position: absolute;
+	right: 0;
+	top: -21px;
+	width: 100%;
+	right: -77%;
+	z-index: 99;
+	max-width: 220px;
+	display: none;
+}
+
+#MyDashboardOverview .wizdomPopup {
+	position: relative;
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.45);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.45);
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.45);
+	background-color: white;
+}
+
+#MyDashboardOverview .wizdomPopup .wizdomPopupCloseBtn {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	font-size: 30px;
+	color: #cccccc;
+	cursor: pointer;
+}
+
+#MyDashboardOverview .wizdomPopup ul li {
+	padding-left: 0;
+	font-size: 14px;
+}
+
+#MyDashboardOverview .wizdomPopup ul li a img {
+	margin-right: 5px;
+}
+
+#MyDashboardOverview .wizdomPopup h4 {
+	margin-bottom: 5px;
+}
+
+#MyDashboardOverview .wizdomPopup .inner {
+	padding: 20px;
+	font-size: 14px;
+}
+
+#MyDashboardOverview .wizdomPopup .header {
+	margin-bottom: 10px;
+}
+
+#MyDashboardOverview .wizdomPopup img.img-responsive {
+	max-width: 100%;
+	border: 1px solid #cccccc;
+	width: 100%;
+}
+
+#MyDashboardOverview .wizdomPopup p {
+	font-size: 14px;
+}
+
+#MyDashboardOverview .wizdomPopup .base {
+	background: #eeeeee;
+}
+
+#MyDashboardOverview .wizdomPopup .base a {
+	color: black;
+	text-transform: uppercase;
+	margin: 0 10px 0 0;
+}
+
+#MyDashboardOverview .wizdomPopup:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent white transparent transparent;
+	border-width: 10px 12px 10px 0;
+	position: absolute;
+	left: -12px;
+	top: 39%;
+	z-index: 2;
+}
+
+#MyDashboardOverview .wizdomPopup:after {
+	content: '';
+	width: 13px;
+	height: 14px;
+	background: white;
+	position: absolute;
+	top: 127px;
+	top: 42%;
+	left: -8px;
+	z-index: -1;
+	transform: rotate(45deg);
+	box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.45);
+}
+
+
+/*
+---------------
+number & arrows
+---------------
+*/
+
+#MyDashboardOverview .overview .number {
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 48px;
+	margin: 10px 0;
+}
+
+#MyDashboardOverview .overview .number .glyphicon-arrow-up {
+	color: #089b80;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 7px;
+}
+
+#MyDashboardOverview .overview .number .glyphicon-arrow-down {
+	color: #d72129;
+	font-size: 40px;
+}
+
+#MyDashboardOverview .overview .number span {
+	display: inline-block;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+--------------------
+percentages & totals
+--------------------
+*/
+
+#MyDashboardOverview .overview .total {
+	font-size: 14px;
+}
+
+#MyDashboardOverview .overview .percentage {
+	font-size: 14px;
+}
+
+
+/* positive */
+
+#MyDashboardOverview .overview .percentage .glyphicon-triangle-top {
+	color: #089b80;
+}
+
+#MyDashboardOverview .overview .percentage .glyphicon-triangle-top+span {
+	font-weight: bold;
+	color: #089b80;
+}
+
+
+/* negative */
+
+#MyDashboardOverview .overview .percentage .glyphicon-triangle-bottom {
+	color: #d72129;
+}
+
+#MyDashboardOverview .overview .percentage .glyphicon-triangle-bottom+span {
+	font-weight: bold;
+	color: #d72129;
+}
+
+
+/*
+-------------------
+more details button
+-------------------
+*/
+
+#MyDashboardOverview .overview .btn {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	width: calc(100% - 40px);
+}
+
+
+/*
+--------------------------------------
+(6) Dashboard popular and less popular
+    Targetting ids:
+    #DashboardmostPopular
+    #DashboardLeastPopular
+
+--------------------------------------
+*/
+
+#DashboardPopulars {}
+
+.bootstrap-wrapper #DashboardmostPopular table thead tr th,
+.bootstrap-wrapper #DashboardLeastPopular table thead tr th {
+	border-bottom: 1px solid #333333;
+	color: #333333;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 25px 10px 15px;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table thead tr th:nth-of-type(2),
+.bootstrap-wrapper #DashboardLeastPopular table thead tr th:nth-of-type(2) {
+	padding-left: 5px;
+	text-align: left;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr {
+	transition: all 0.25s linear;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr:hover,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr:hover {
+	/* background-color: #ffffff; */
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr td,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr td {
+	border: none;
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr:first-child td,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr:first-child td {
+	padding-top: 10px;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr td a,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr td a {
+	line-height: 1.6em;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr td a:hover,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr td a:hover {
+	text-decoration: none;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr td:first-child a,
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr td:first-child a {
+	color: #005b8e;
+	display: block;
+}
+
+.bootstrap-wrapper #DashboardmostPopular table tbody tr td:nth-of-type(2),
+.bootstrap-wrapper #DashboardLeastPopular table tbody tr td:nth-of-type(2) {
+	color: #333333;
+	padding-left: 5px;
+	text-align: left;
+}
+
+@media only screen and (max-width:991px) {
+	#DashboardPopulars>div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+/*
+-----------------------------------------
+(7)  Dashboard A-Z Tables (Right Handside)
+    (Can be used Globally)
+-----------------------------------------
+*/
+
+.table.azResultTable>thead>tr>th,
+.table.azResultTable>tbody>tr>th,
+.table.azResultTable>tfoot>tr>th,
+.table.azResultTable>thead>tr>td,
+.table.azResultTable>tbody>tr>td,
+.table.azResultTable>tfoot>tr>td {
+	border-top: 0;
+	font-size: 16px;
+	padding: 13px 15px;
+}
+
+.table.azResultTable>thead>tr>th,
+.table.azResultTable>tbody>tr>th,
+.table.azResultTable>tfoot>tr>th {
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	padding: 20px 15px 15px;
+}
+
+.table.azResultTable>thead>tr>td a,
+.table.azResultTable>tbody>tr>td a,
+.table.azResultTable>tfoot>tr>td a {
+	color: #005b8e;
+	display: block;
+}
+
+@media only screen and (max-width:991px) {
+	.table.azResultTable>thead>tr>th,
+	.table.azResultTable>tbody>tr>th,
+	.table.azResultTable>tfoot>tr>th,
+	.table.azResultTable>thead>tr>td,
+	.table.azResultTable>tbody>tr>td,
+	.table.azResultTable>tfoot>tr>td,
+	.table.azResultTable>thead>tr>th,
+	.table.azResultTable>tbody>tr>th,
+	.table.azResultTable>tfoot>tr>th {
+		padding: 0;
+	}
+}
+
+
+/*
+-------------------------------
+(8) Dashboard responsive tables
+-------------------------------
+*/
+
+#MyDashboard .responsiveTbl table {
+	text-align: center;
+	width: 100%;
+}
+
+#MyDashboard .responsiveTbl tr {
+	background: #fff;
+}
+
+#MyDashboard .responsiveTbl tr:nth-child(2n) {
+	background: #f2f7f9;
+}
+
+#MyDashboard .responsiveTbl tr:hover .msg {
+	opacity: 1;
+	top: 0;
+}
+
+#MyDashboard .responsiveTbl th,
+#MyDashboard .responsiveTbl td {
+	padding: 15px;
+	vertical-align: middle;
+	text-align: left;
+	color: black;
+	font-size: 16px;
+}
+
+#MyDashboard .responsiveTbl th:nth-child(2),
+#MyDashboard .responsiveTbl td:nth-child(2) {
+	text-align: left;
+}
+
+#MyDashboard .responsiveTbl td.status {
+	color: inherit;
+}
+
+#MyDashboard .responsiveTbl td.status.approved {
+	color: green;
+}
+
+#MyDashboard .responsiveTbl th {
+	background: #ccdee8;
+	color: black;
+	font-weight: bold;
+	padding: 15px;
+}
+
+#MyDashboard .responsiveTbl th:first-child {
+	width: 30%;
+}
+
+#MyDashboard .responsiveTbl th:nth-child(3n) {
+	background: #bed5e0;
+}
+
+#MyDashboard .responsiveTbl tr td:nth-child(3n) {
+	background: #f2f7f9;
+	width: 17%;
+}
+
+#MyDashboard .responsiveTbl tr:nth-child(2n) td:nth-child(3n) {
+	background: #e9f0f3;
+}
+
+@media only screen and (max-width: 767px) {
+	#MyDashboard .responsiveTbl .price {
+		padding: 0;
+		border: none;
+		background: none;
+	}
+	#MyDashboard .responsiveTbl {
+		overflow: auto;
+	}
+	#MyDashboard .responsiveTbl table {
+		width: 767px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	#MyDashboard .responsiveTbl table {
+		width: 640px;
+	}
+}

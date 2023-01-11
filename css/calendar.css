@@ -1,0 +1,216 @@
+﻿/**** CALENDAR EVENTS ADVANCED *****/
+.externalEvent .month {
+    background-color:#d87600;
+}
+.internalEvent .month {
+    background-color:#0093d8;
+}
+.eventDetails {
+    padding:0;
+}
+.eventDetails h2 {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+.eventDetails > div > div > div {
+    padding:15px 0;
+}
+.eventDetails p {
+    margin: 3px 0;
+    font-size: 16px;
+}
+/**** CALENDAR VIEW (INLINE STYLES) */
+.datatable {
+    border:1px solid #d6dde6;
+    border-collapse:collapse;
+    width:100%;
+}
+.datatable td,
+.datatable th {
+    border:1px solid #d6dde6;
+    padding:0.2em;
+    text-align:right;
+}
+.datatable th {
+    border:1px solid #828282;
+    background-color:#bcbcbc;
+    font-weight:bold;
+    text-align:left;
+    padding:0.2em;
+}
+.datatable caption {
+    font-family:bold 120% "Times New Roman", 'Times New Roman', serif;
+    background-color:#b0c4de;
+    color: #33517a;
+    padding:0.4em 0 0.3em 0;
+    border:1px solid #789ac6;
+    text-align:center;
+}
+
+
+.datatable2 {
+    border:1px solid #d6dde6;
+    border-collapse:collapse;
+    width:100%;
+}
+.datatable2 td,
+.datatable2 th {
+    border:1px solid #d6dde6;
+    padding:0.2em;
+    text-align:right;
+}
+.datatable2 tr:nth-child(2n+2) {
+    background:#d7e7f2;
+    color:#000;
+}
+.datatable2 tr:hover {
+    background-color:#DFE7F2;
+    color:#000;
+}
+.datatable2 th {
+    border:1px solid #828282;
+    background-color:#bcbcbc;
+    font-weight:bold;
+    text-align:left;
+    padding:0.2em;
+}
+.datatable2 caption {
+    font-family:bold 120% "Times New Roman", 'Times New Roman', serif;
+    background-color:#b0c4de;
+    color: #33517a;
+    padding:0.4em 0 0.3em 0;
+    border:1px solid #789ac6;
+    text-align:center;
+}
+
+
+/* COLGROUPS */
+.datatable3 {
+    border:1px solid #d6dde6;
+    border-collapse:collapse;
+    width:100%;
+}
+.datatable3 colgroup.odd {
+    background-color:#80c9ff;
+    color:#000;
+}
+.datatable3 colgroup.even {
+    background-color:#bfe4ff;
+    color:#000;
+}
+.datatable3 td,
+.datatable3 th {
+    border:1px solid #d6dde6;
+    padding:0.2em;
+    text-align:right;
+}
+ 
+.datatable3 tr:hover {
+    background-color:#DFE7F2;
+    color:#000;
+}
+.datatable3 th { 
+    border:1px solid #828282;
+    background-color:darkblue;
+    font-weight:bold;
+    text-align:left;
+    padding:0.2em;
+    color:#fff;
+}
+.datatable3 caption {
+    font-family:bold 120%;
+    background-color:#b0c4de;
+    color: #33517a;
+    padding:0.4em 0 0.3em 0;
+    border:1px solid #789ac6;
+    text-align:center;
+}
+
+/* CALEDNAR */
+.clmonth {
+    border-collapse:collapse;
+    width:100%;
+ 
+}
+.clmonth caption {
+    text-align:left;
+    font: bold 110%, sans-serif;
+    padding-bottom:0.4em;
+}
+.clmonth th {
+    border: 0;
+    border-bottom:none;
+    padding: 10px 0;
+    background-color: transparent;
+    color:#3f3f3f;
+    text-transform: uppercase;
+}
+.clmonth td {
+    border: 1px solid #ccc;
+    font:100%, sans-serif;
+    padding:0.2em 0.6em;
+    vertical-align:top;
+}
+.clmonth td.previous,
+.clmonth td.next {
+    background-color: #d87600;
+    color: #fff;
+}
+.clmonth td.active {
+    background-color: #0093d8;
+    color: #fff;
+}
+.clmonth ul {
+    list-style-type:none;
+    margin:0;
+    padding-left:1em;
+    padding-right:0.6em;
+}
+.clmonth li {
+    margin-bottom:1em;
+}
+
+.calendar-tag {
+    display: inline-block;
+    padding: 0 8px;
+    color: #fff;
+    font-weight: bold;
+    background: #666!important;
+    font-size: 14px;
+    margin-right:10px;
+    margin-top: 15px;
+}
+/* OVERWRITES FOR MAIN PARTS  */
+.wizdom-EventsContent .wizdom-EventsContentLeft {
+    width:100px;
+}
+.wizdom-EventsContentRight p {
+    margin:0 0 2px 0;
+}
+.wizdomMainContainer ul,
+.wizdomMainContainer ol {
+    margin:25px 0;
+}
+.wizdomMainContainer li {
+    line-height:2em;
+}
+@media all and (min-width:992px) {
+    .wizdomMainContainer ul,
+    .wizdomMainContainer ol {
+        margin: 25px 0 25px 25px;
+    }
+}
+@media all and (max-width:991px) {
+    form.search > button, div.search > button {
+        color: #006899;
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 39px;
+        width: 50px;
+        background: transparent;
+        border: 0;
+        font-weight: bold;
+    }
+}

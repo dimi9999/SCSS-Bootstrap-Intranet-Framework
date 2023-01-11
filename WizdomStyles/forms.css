@@ -1,0 +1,1251 @@
+﻿::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+     color: black;
+}
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+     color: black;
+}
+ :-ms-input-placeholder {
+    /* IE 10+ */
+     color: black;
+}
+ :-moz-placeholder {
+    /* Firefox 18- */
+     color: black;
+}
+ input::-moz-focus-inner {
+     border: 0;
+}
+ object, embed {
+     outline: 0;
+}
+ form {
+     margin: 0;
+     padding: 0;
+}
+ fieldset {
+     border: 0;
+     padding: 0;
+     margin: 0;
+}
+ .myWizdomButtons input, .myWizdomButtons select, .myWizdomButtons textarea, .myWizdomButtons .form-control {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     font-size: 18px;
+     border: solid 1px #cccccc;
+     background-color: #fff;
+     overflow: hidden;
+     padding: 15px 20px;
+}
+ .myWizdomButtons input.fixedwidth, .myWizdomButtons select.fixedwidth, .myWizdomButtons textarea.fixedwidth {
+     max-width: 500px;
+}
+ .myWizdomButtons input:focus, .myWizdomButtons input:active, .myWizdomButtons select:focus, .myWizdomButtons select:active, .myWizdomButtons textarea:focus, .myWizdomButtons textarea:active {
+     outline: none!important;
+}
+ .closebtn {
+     display:block;
+}
+ .myWizdomButtons input[type=button], .myWizdomButtons input[type=submit], .myWizdomButtons input[type=image],
+ .myWizdomButtons button[type=submit] {
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+     -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     border-radius: 4px;
+     -o-border-radius: 4px;
+     background: #0093d8;
+     color: #fff;
+     border-style: solid;
+     border-width: 1px;
+     border-color: #0093d8;
+     font-size: 14px;
+}
+ .myWizdomButtons input[type=button]:hover, .myWizdomButtons input[type=button]:focus, .myWizdomButtons input[type=button]:active, .myWizdomButtons input[type=submit]:hover, .myWizdomButtons input[type=submit]:focus, .myWizdomButtons input[type=submit]:active, .myWizdomButtons input[type=image]:hover, .myWizdomButtons input[type=image]:focus, .myWizdomButtons input[type=image]:active {
+     border-color: #006899;
+     background: #006899;
+     color: #fff;
+     outline-style: none;
+     box-shadow: none;
+}
+ .myWizdomButtons input[type=button].btn-sub,.myWizdomButtons input[type=submit].btn-sub,.myWizdomButtons input[type=image].btn-sub {
+     background: #e5eef3;
+    /* MAIN COLOR CAN BE TRANSPARENT */
+     text-align: center;
+     color: #005b8e;
+     border-color: #b2cddd;
+}
+ .myWizdomButtons input[type=button].btn-sub:hover, .myWizdomButtons input[type=button].btn-sub:focus, .myWizdomButtons input[type=button].btn-sub:active, .myWizdomButtons input[type=submit].btn-sub:hover, .myWizdomButtons input[type=submit].btn-sub:focus, .myWizdomButtons input[type=submit].btn-sub:active, .myWizdomButtons input[type=image].btn-sub:hover, .myWizdomButtons input[type=image].btn-sub:focus, .myWizdomButtons input[type=image].btn-sub:active {
+     background: #b2cddd;
+     color: #005b8e;
+}
+ .myWizdomButtons input.fullwidth {
+     width: 100%;
+     display: block;
+}
+ .myWizdomButtons input[type=image] {
+     background-color: transparent;
+}
+ .myWizdomButtons input[type=text], .myWizdomButtons input[type=password], .myWizdomButtons input[type=number], .myWizdomButtons input[type=email], .myWizdomButtons input[type=tel] {
+     width: 100%;
+     padding: 15px;
+     font-size: 16px;
+     color: black;
+     border: solid 1px #cccccc;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family:"Montserrat", sans-serif;
+}
+ .myWizdomButtons input[type=text].input-small, .myWizdomButtons input[type=password].input-small, .myWizdomButtons input[type=number].input-small, .myWizdomButtons input[type=email].input-small, .myWizdomButtons input[type=tel].input-small {
+     padding: 8px;
+     font-size: 14px;
+}
+ .myWizdomButtons input[type=radio], .myWizdomButtons input[type=checkbox], .myWizdomButtons input[type=image] {
+     border-width: 0;
+     outline: none;
+     height: auto;
+     margin: 0;
+}
+ .myWizdomButtons textarea,
+ .bootstrap-wrapper textarea.form-control {
+     min-height: 120px!important;
+     width: 100%;
+     padding: 15px;
+     margin: 0;
+}
+ .myWizdomButtons textarea:hover, .myWizdomButtons textarea:focus {
+     -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     border-color: #d87600;
+     outline: none;
+}
+ .myWizdomButtons select {
+     width: 100%;
+     padding: 15px;
+     background:transparent;
+}
+ .myWizdomButtons select.select-small {
+     padding: 6px 8px;
+     font-size: 14px;
+}
+ .bootstrap-select .btn:focus {
+     outline: none !important;
+}
+ .select-wrap {
+     border: 1px solid #cccccc;
+     background-color: #fff;
+}
+ .select-wrap:hover, .select-wrap:focus, .select-wrap:active {
+     -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     border-color: #d87600;
+     outline: none;
+     -webkit-box-shadow: inset 0px 0px 0px 3px #d87600;
+     -moz-box-shadow: inset 0px 0px 0px 3px #d87600;
+     box-shadow: inset 0px 0px 0px 3px #d87600;
+}
+.select-wrap select,
+.form-group select {
+    border: 0 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-group select {
+    background: #fff url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/select-arrow.png) no-repeat 98% center!important;
+    border: 1px solid #ccc!important;
+}
+.select-wrap select {
+     width: 100%!important;
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/select-arrow.png) no-repeat 98% center!important;
+}
+ .select-wrap select.custom-select {
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/select-double-arrow.png) no-repeat 98% center!important;
+}
+ .select-wrap select.select-small {
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/select-arrow.png) no-repeat 80% center!important;
+}
+ .select-wrap select:hover, .select-wrap select:focus, .select-wrap select:active {
+     box-shadow: none!important;
+     transition: none!important;
+}
+ /* BOOTSTRAP FORM CONTROL AND SELECT FOCUS */
+.bootstrap-wrapper .form-control:focus, .bootstrap-wrapper .form-control:active,
+.form-group select:hover, .form-group select:focus, .form-group select:active,
+.filterPoliciesWebpart input[type="text"]:hover,
+.filterPoliciesWebpart input[type="text"]:focus,
+.filterPoliciesWebpart input[type="text"]:active  {
+    -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     border-color: #d87600!important;
+     outline: none;
+     -webkit-box-shadow: inset 0px 0px 0px 3px #d87600;
+     -moz-box-shadow: inset 0px 0px 0px 3px #d87600;
+     box-shadow: inset 0px 0px 0px 3px #d87600;
+}
+/* CAUTION: IE hackery ahead */
+ .myWizdomButtons select::-ms-expand {
+     display: none;
+    /* remove default arrow on ie10 and ie11 */
+}
+ .myWizdomButtons textarea:hover, .myWizdomButtons textarea:focus, .myWizdomButtons textarea:active, .myWizdomButtons select:hover, .myWizdomButtons select:focus, .myWizdomButtons select:active, .myWizdomButtons input[type=text]:hover, .myWizdomButtons input[type=text]:focus, .myWizdomButtons input[type=text]:active, .myWizdomButtons input[type=password]:hover, .myWizdomButtons input[type=password]:focus, .myWizdomButtons input[type=password]:active, .myWizdomButtons input[type=number]:hover, .myWizdomButtons input[type=number]:focus, .myWizdomButtons input[type=number]:active, .myWizdomButtons input[type=email]:hover, .myWizdomButtons input[type=email]:focus, .myWizdomButtons input[type=email]:active, .myWizdomButtons input[type=tel]:hover, .myWizdomButtons input[type=tel]:focus, .myWizdomButtons input[type=tel]:active, .myWizdomButtons input[type=number]:hover, .myWizdomButtons input[type=number]:focus, .myWizdomButtons input[type=number]:active {
+     -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     border-color: #d87600;
+     outline: none;
+     -webkit-box-shadow: inset 0px 0px 0px 3px #d87600;
+     -moz-box-shadow: inset 0px 0px 0px 3px #d87600;
+     box-shadow: inset 0px 0px 0px 3px #d87600;
+}
+ .myWizdomButtons form > div {
+     margin: 0 0 20px 0;
+}
+ /*.myWizdomButtons form label { */
+.myWizdomButtons label {
+     font-weight: bold;
+     /* font-size: 16px; */
+     margin: 0 0 20px 0;
+     /* padding-left:0!important; */
+}
+.myWizdomButtons .control-label {
+    margin-bottom:30px!important;
+}
+ .myWizdomButtons label span {
+     font-weight: 500;
+     margin: 5px 0;
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+}
+ .myWizdomButtons > div:first-child label {
+     margin-top: 0;
+}
+ .bootstrap-wrapper .rightSidebar .form-group {
+     margin: 0;
+}
+ .bootstrap-wrapper .form-group
+ .myWizdomButtons form label span.required {
+     font-weight: 500;
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+     color: #ff1c0d;
+}
+ 
+
+ form.search, div.search {
+     position: relative;
+}
+ form.search > button, div.search > button {
+    color: #006899;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 54px;
+    width: 60px;
+    background: transparent;
+    border: 0;
+    font-weight: bold;
+    max-width: 60px;
+    min-width: auto;
+}
+form.search:hover > button, div.search:hover > button,
+form.search:focus > button, div.search:focus > button, 
+form.search:active > button, div.search:active > button,
+form.search input:focus + button, div.search input:focus + button {
+    color:#0093d8!important;
+} 
+ .myWizdomButtons input[type="checkbox"] + .label-text:before, .myWizdomButtons input[type="radio"] + .label-text:before {
+     content: "\f096";
+     font-family: "FontAwesome";
+     speak: none;
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1;
+     -webkit-font-smoothing: antialiased;
+     width: 1em;
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+     -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+     -ms-border-radius: 0;
+     border-radius: 0;
+     -o-border-radius: 0;
+     vertical-align: bottom;
+     margin-right: 5px;
+     font-size: 26px;
+}
+ .myWizdomButtons input[type="checkbox"]:checked + .label-text:before, .myWizdomButtons input[type="radio"]:checked + .label-text:before {
+     content: "\f046";
+     color: #0093d8;
+     animation: effect 250ms ease-in;
+}
+ .myWizdomButtons input[type="checkbox"]:disabled + .label-text, .myWizdomButtons input[type="radio"]:disabled + .label-text {
+     color: #cccccc;
+}
+ .myWizdomButtons input[type="checkbox"]:disabled + .label-text:before, .myWizdomButtons input[type="radio"]:disabled + .label-text:before {
+     content: "\f0c8";
+     color: #cccccc;
+}
+ .myWizdomButtons input[type="radio"] + .label-text:before {
+     content: "\f10c"!important;
+     color: black;
+}
+ .myWizdomButtons input[type="radio"]:checked + .label-text:before {
+     content: "\f192"!important;
+     color: #666666;
+     animation: effect 250ms ease-in;
+}
+ .myWizdomButtons input[type="radio"]:disabled + .label-text {
+     color: #666666;
+}
+ .myWizdomButtons input[type="radio"]:disabled + .label-text:before {
+     content: "\f111";
+     color: #cccccc;
+}
+ @keyframes effect {
+     0% {
+         transform: scale(0);
+    }
+     25% {
+         transform: scale(1.3);
+    }
+     75% {
+         transform: scale(1.4);
+    }
+     100% {
+         transform: scale(1);
+    }
+}
+/* (1) MAIN BUTTON STYLE */
+ .myWizdomButtons .btn, 
+ .myWizdomButtons .wizdom-link,
+/* BACKEND CHECK IN BUTTONS, COMMENT SOCIAL BUTTONS */
+ #statechangedialog_okbutton, 
+ #statechangedialog_cancelbutton,
+ input#embeddingInsertBtn,
+ .ms-core-form-bottomButtonBox input[type="button"],
+ .ms-core-form-bottomButtonBox input[type="submit"],
+ /* EDIT LINKS BUTTONS */
+ .link-collection-content > a,
+ /* COMMENTS BUTTONS */
+ .commentItem-action-mobile a,
+ /* VIEW MORE COMMENTS */
+ .comments-more,
+ /* LIST BUTTONS FOR SEARCH RESULTS */
+ .ms-srchnav-list a {
+     border-style: solid;
+     border-width: 1px;
+     border-color: #b2cddd;
+     background: #e5eef3;
+     /* MAIN COLOR CAN BE TRANSPARENT */
+     text-align: center;
+     color: #005b8e;
+     font-size: 14px;
+     padding: 10px 20px;
+     text-transform: none!important;
+     font-weight: 500;
+     -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+     -ms-border-radius: 4px;
+     border-radius: 4px;
+     -o-border-radius: 4px;
+     font-family: 'Montserrat', sans-serif;
+}
+ #statechangedialog_okbutton,
+ #sourcedialog_okbutton {
+     border-color: #b2cddd!important;
+     background: #e5eef3!important;
+ }
+ .myWizdomButtons .btn.btn-thin {
+     border-width: 1px;
+}
+ .comments-more {
+     margin:15px 0;
+ }
+ .btn:hover a
+ .myWizdomButtons .btn:hover a,
+ .comments-more:hover a,
+ .btn:hover a:hover
+ .myWizdomButtons .btn:hover a:hover,
+ .comments-more:hover a:hover {
+     text-decoration:none!important;
+ }
+
+ .myWizdomButtons .btn:hover, .myWizdomButtons .btn:active, .myWizdomButtons .btn:focus, 
+/* BACKEND CHECK IN BUTTONS */
+ .link-collection-content > a:hover,  .link-collection-content > a:active,  .link-collection-content > a:focus,
+ /* EDIT LINKS BUTTONS */
+ #statechangedialog_okbutton:hover,
+ /* COMMENTS BUTTONS */
+ .commentItem-action-mobile a:hover, .comments-more:hover {
+     background: #b2cddd;
+     color: #005b8e;
+     border-color: #b2cddd;
+     box-shadow: none;
+     outline: none;
+     text-decoration:none!important;
+}
+
+ .myWizdomButtons .btn:before {
+     font-family: 'Glyphicons Halflings';
+     font-size: 14px;
+     vertical-align: middle;
+     margin-right: 5px;
+}
+ .myWizdomButtons .btn > i {
+     margin-right: 5px;
+}
+ .myWizdomButtons .btn.active {
+     -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+     box-shadow: none;
+}
+/* PRIMARY BUTTONS */
+ .myWizdomButtons .btmItem, .myWizdomButtons .btn-primary, .myWizdomButtons .btn-default {
+     background: #e5eef3;
+}
+ .myWizdomButtons .btmItem:hover, .myWizdomButtons .btn-primary:hover, .myWizdomButtons .btn-default:hover {
+     background: #b2cddd;
+     text-decoration: none;
+}
+/* FORM ERRORS */
+ .myWizdomButtons .form-error {
+     color:#de1630;
+     font-weight:bold;
+}
+ .myWizdomButtons input.form-error, .myWizdomButtons input.form-error:hover, .myWizdomButtons input.form-error:focus, .myWizdomButtons input.form-error:active, .myWizdomButtons textarea.form-error, .myWizdomButtons textarea.form-error:hover, .myWizdomButtons textarea.form-error:focus, .myWizdomButtons textarea.form-error:active, .myWizdomButtons .select-wrap.form-error:hover, .myWizdomButtons .select-wrap.form-error:focus, .myWizdomButtons .select-wrap.form-error:active, .myWizdomButtons .select-wrap.form-error, .myWizdomButtons select.form-error, .myWizdomButtons select.form-error:hover, .myWizdomButtons select.form-error:focus, .myWizdomButtons select.form-error:active, .myWizdomButtons .form-error.bootstrap-select>.dropdown-toggle, .myWizdomButtons .form-error.custom-file-upload, .myWizdomButtons .form-error.message {
+     color:#000;
+     border:3px solid #de1630!important;
+     font-weight:500;
+     border-radius:0;
+}
+ .dateTimePicker.ng-invalid .input-group,
+ .dateTimePicker.ng-invalid .input-group:hover,
+ .dateTimePicker.ng-invalid .input-group:focus,
+ .dateTimePicker.ng-invalid .input-group:active {
+     border:3px solid #de1630!important;
+     box-shadow:none!important;
+     border-radius:0!important;
+ }
+ .myWizdomButtons .form-error.message {
+     padding:25px;
+     margin-bottom:25px;
+}
+ .myWizdomButtons .form-error.message ul li a {
+     color:#de1630;
+     font-weight:bold;
+     font-size:16px;
+}
+ .myWizdomButtons .form-error.message h4 {
+     margin-top:0;
+}
+ .myWizdomButtons .btmItem:after, .myWizdomButtons .btn-primary:after, .myWizdomButtons .btn-default:after {
+     content: "";
+     width: 17px;
+     height: 17px;
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/nav-btn-arrow.png) no-repeat;
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+     vertical-align: middle;
+     margin-left: 10px;
+}
+ .btmItem {
+     display: block;
+}
+ .myWizdomButtons .btn-default:after {
+     background: none;
+}
+/* SECONDARY BUTTONS */
+ .myWizdomButtons .btn-secondary, #statechangedialog_cancelbutton {
+     background: #0093d8;
+     color: #fff!important;
+     border-color: #0093d8;
+}
+ .myWizdomButtons .btn-secondary:hover, .myWizdomButtons .btn-secondary:focus, .myWizdomButtons .btn-secondary:active, #statechangedialog_cancelbutton:hover, #statechangedialog_cancelbutton:focus, #statechangedialog_cancelbutton:active {
+     border-color: #006899;
+     background: #006899;
+     color: #fff;
+}
+  .myWizdomButtons .btn-secondary a {
+      color:#fff;
+  }
+ .myWizdomButtons .btn-secondary:hover a {
+     color:#006899;
+}
+ .myWizdomButtons .btn-inlineblock {
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+}
+/* LARGE BUTTONS & EDIT COMMENT BUTTONS */
+.myWizdomButtons .btn-lg,
+.edit-comment-controls .btn  {
+     padding: 15px 20px!important;
+     font-size: 16px!important;
+}
+.edit-comment-controls .btn {
+    z-index:1234;
+}
+/* SMALL BUTTONS */
+ .myWizdomButtons .btn-small, .myWizdomButtons .btn-tiny {
+     padding: 7px 10px;
+     font-size: 14px;
+     display: -moz-inline-stack;
+     display: inline-block;
+     zoom: 100%;
+     *display: inline;
+     vertical-align: top;
+     height:34px;
+
+}
+  .myWizdomButtons .btn-tiny {
+      height:auto;
+      padding:4px 10px;
+  }
+ .myWizdomButtons .btn-tiny > i, .myWizdomButtons .btn-tiny:before {
+     margin-right: 1px!important;
+}
+/* ADMIN TOOLS BUTTONS */
+ .myWizdomButtons .btn-arrowup, .myWizdomButtons .btn-arrowdown, .myWizdomButtons .btn-arrowright, .myWizdomButtons .btn-arrowleft {
+     background: #e5eef3;
+}
+ .myWizdomButtons .btn-arrowup:after, .myWizdomButtons .btn-arrowdown:after, .myWizdomButtons .btn-arrowright:after, .myWizdomButtons .btn-arrowleft:after {
+     font-family: 'Glyphicons Halflings';
+     font-size: 11px;
+     margin-left: 7px;
+}
+ .myWizdomButtons .btn-arrowup:after:hover, .myWizdomButtons .btn-arrowdown:after:hover, .myWizdomButtons .btn-arrowright:after:hover, .myWizdomButtons .btn-arrowleft:after:hover {
+     background: #b2cddd;
+}
+ .myWizdomButtons .btn-arrowup:after {
+     content: "\e253";
+}
+ .myWizdomButtons .btn-arrowdown:after,
+ .comments-more:after {
+     font-family: 'Glyphicons Halflings';
+     content: "\e252";
+     font-size:11px;
+}
+ .myWizdomButtons .btn-arrowright:after {
+     content: "\e250";
+}
+ .myWizdomButtons .btn-arrowleft:after {
+     content: "\e251";
+}
+/* CTA */
+ .myWizdomButtons .btn-width {
+     max-width: 500px;
+}
+ .myWizdomButtons .btn-download:before {
+     content: "";
+     display: inline-block;
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/download-icon.png) no-repeat;
+     width: 17px;
+     height: 17px;
+}
+ .myWizdomButtons .btn-trans {
+     background: transparent;
+     border-color: #cccccc;
+     color: black;
+}
+ .myWizdomButtons .btn-trans > i {
+     color: #cccccc;
+     margin-right: 10px;
+}
+.phonebook-search .myWizdomButtons .btn-trans > i {
+    color:#fff;
+}
+ .myWizdomButtons .btn-trans:hover {
+     background: #cccccc;
+     border-color: #cccccc;
+     color: black;
+}
+ .myWizdomButtons .btn-trans:hover > i {
+     color: #006899;
+}
+ .myWizdomButtons .btn-trans:focus {
+     background: transparent;
+}
+ .myWizdomButtons .btn-trans:focus > i {
+     color: #006899;
+}
+ .myWizdomButtons .btn-search {
+     border-color: #fff;
+     border-width: 1px;
+     color:#fff!important;
+}
+.myWizdomButtons .btn-search > i {
+    color:#fff;
+}
+ .myWizdomButtons .btn-search:hover {
+     background: #fff;
+     color: #005b8e!important;
+     border-color: #fff;
+}
+ .myWizdomButtons .btn-search:hover a {
+     color: #005b8e!important;
+ }
+ .myWizdomButtons .btn-search:hover > i {
+     color: #005b8e;
+ }
+
+ .myWizdomButtons .btn-search:focus, .myWizdomButtons.btn-search:active,
+ .myWizdomButtons .btn-search:focus:hover, .myWizdomButtons.btn-search:active:hover  {
+     background: #006899;
+     color: #fff!important;
+     border-color: #006899;
+}
+  .myWizdomButtons .btn-search:focus > i, .myWizdomButtons.btn-search:active > i,
+  .myWizdomButtons .btn-search:focus:hover > i, .myWizdomButtons.btn-search:active:hover > i  {
+       color: #fff!important;
+  }
+ .myWizdomButtons .btn-social:focus, .myWizdomButtons .btn-social:active, .myWizdomButtons .btn-social.active {
+     background: transparent;
+     color: black;
+     border-color: #0093d8;
+}
+ .myWizdomButtons .btn-social:focus > i, .myWizdomButtons .btn-social:active > i, .myWizdomButtons .btn-social.active > i {
+     color: #0093d8;
+}
+ .myWizdomButtons .btn-slide {
+     background: #fff;
+     color: black;
+}
+ .myWizdomButtons .btn-slide:focus, .myWizdomButtons .btn-slide:active, .myWizdomButtons .btn-slide.active {
+     background: #fff;
+}
+ .myWizdomButtons .btn.btn-fullwidth {
+     width: 100%;
+}
+ @media all and (max-width: 991px) {
+     .myWizdomButtons .btn {
+         font-size: 14px;
+    }
+     .myWizdomButtons .btmItem, .myWizdomButtons .btmItem:hover {
+         color: #fff;
+         background: #005b8e;
+         border: none;
+         transition: none;
+    }
+     .myWizdomButtons .btn-lg {
+         padding: 8px!important;
+    }
+}
+ .inlineWrap {
+     position: relative;
+     padding: 0 130px 0 0;
+}
+ .inlineWrap input[type="text"] {
+     width: 100%;
+}
+ .inlineWrap input[type="button"], .inlineWrap input[type="submit"], .inlineWrap button {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100px;
+}
+ .myWizdomButtons input[type="file"] {
+     display: none;
+}
+ .myWizdomButtons .custom-file-upload {
+     border: 1px solid #cccccc;
+     background: #fff;
+     display: block;
+     padding: 15px;
+     cursor: pointer;
+     position: relative;
+}
+ .myWizdomButtons .custom-file-upload i {
+     font-size: 32px;
+     color: #cccccc;
+     position: absolute;
+     right: 15px;
+     top: 10px;
+}
+ .commentForm {
+     margin: 15px 0 30px 0;
+}
+ /* ALERTS */
+ .bootstrap-wrapper .alert,
+ .ms-status-yellow {
+     padding: 8px;
+     margin-bottom: 20px;
+     border: 1px solid transparent;
+     border-radius: 0;
+     font-size: 14px!important;
+     font-weight: bold!important;
+}
+ .bootstrap-wrapper .alert i {
+     margin-right: 10px;
+     font-size: 24px;
+     vertical-align: text-bottom;
+}
+  .bootstrap-wrapper .alert-danger {
+     color: black!important;
+     background: #ffcccc!important;
+}
+ .bootstrap-wrapper .alert-danger:before {
+     font-family:'Glyphicons Halflings';
+     color: #cc0000!important;
+     content:'\e101'!important;
+      float:left;
+    padding-right:10px;
+    font-size:20px;
+}
+
+.bootstrap-wrapper .alert-warning,
+.ms-status-yellow {
+    border-color:#ffd6bf!important;
+    background:#fcf8e3!important;
+    color:#8a6d3b!important;
+}
+.ms-status-yellow:before {
+    font-family:'Glyphicons Halflings';
+    color:#8a6d3b!important;
+    content:'\e085'!important;
+    float:left;
+    padding-right:10px;
+    font-size:20px;
+}
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+#active_plc > div,
+#auditdate_plc > div {
+    margin:0 0 15px 0;
+}
+.wtsite-revisiondate-line1.ng-binding {
+    color: black!important;
+    font-size: 14px!important;
+    font-weight: bold;
+}
+ @media all and (max-width: 767px) {
+     .myWizdomButtons input, .myWizdomButtons select, .myWizdomButtons textarea, .myWizdomButtons .custom-file-upload, .myWizdomButtons input[type=text], .myWizdomButtons input[type=password], .myWizdomButtons input[type=number], .myWizdomButtons input[type=email], .myWizdomButtons input[type=tel], .myWizdomButtons .custom-file-upload i, .myWizdomButtons .selectlarge button.btn.dropdown-toggle.btn-default {
+         font-size: 14px!important;
+         padding: 7px;
+    }
+     .myWizdomButtons .custom-file-upload i {
+         padding: 0;
+    }
+     .myWizdomButtons label {
+         margin-bottom: 20px!important;
+         font-size: 14px!important;
+    }
+     form.search > button, div.search > button {
+         height:36px;
+     }
+}
+/* PANEL & BACKEND BUTTONS*/
+ .editWebpartButton, .bootstrap-wrapper button.editWebpartButton,
+ .ms-core-form-bottomButtonBox input[type="button"] {
+     background: #0093d8!important;
+     border-color: #0093d8!important;
+     -moz-transition: all 0.6s;
+     -o-transition: all 0.6s;
+     -webkit-transition: all 0.6s;
+     transition: all 0.6s;
+     font-weight:500!important;
+     font-size: 14px!important;
+}
+ .editWebpartButton:hover, .editWebpartButton:focus, .editWebpartButton:active, .bootstrap-wrapper button.editWebpartButton:hover, .bootstrap-wrapper button.editWebpartButton:focus, .bootstrap-wrapper button.editWebpartButton:active,
+ .ms-core-form-bottomButtonBox input[type="button"]:hover,.ms-core-form-bottomButtonBox input[type="button"]:active, .ms-core-form-bottomButtonBox input[type="button"]:focus {
+     border-color: #006899!important;
+     background: #006899!important;
+     color:#fff;
+}
+ .editWebpartButton .ng-binding, .bootstrap-wrapper button.editWebpartButton .ng-binding {
+     color:#fff;
+}
+
+/* CUSTOM CHECKBOXES */
+.myWizdomButtons .radio label, 
+.myWizdomButtons .checkbox label {
+    font-weight:500!important; 
+    margin-top:0;
+    margin-bottom:15px;
+}
+.myWizdomButtons .checkbox label:after, 
+.myWizdomButtons .radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.myWizdomButtons .checkbox .cr,
+.myWizdomButtons .radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: 0;
+    background-color:#fff;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-top: 0;
+    margin-right: .5em;
+}
+
+.myWizdomButtons .radio .cr {
+    border-radius: 50%;
+}
+.myWizdomButtons .checkbox,
+.myWizdomButtons .radio {
+    margin-top:0!important;
+    margin-bottom:0!important;
+}
+.myWizdomButtons .checkbox .cr .cr-icon,
+.myWizdomButtons .radio .cr .cr-icon {
+    position: absolute;
+    font-size: .7em;
+    line-height: 0;
+    top: 50%;
+    left: 24%;
+}
+.myWizdomButtons i.cr-icon.fa.fa-circle {
+    color: #666;
+}
+.myWizdomButtons .radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+ 
+
+.myWizdomButtons .checkbox label input[type="checkbox"],
+.myWizdomButtons .radio label input[type="radio"] {
+    display: none;
+}
+.myWizdomButtons .customCheckboxes .checkbox label input[type="checkbox"],
+.myWizdomButtons .customCheckboxes .radio label input[type="radio"] {
+    display: inline-block;
+}
+
+.myWizdomButtons .checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.myWizdomButtons .radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+.myWizdomButtons .checkbox label input[type="checkbox"]:checked + .cr,
+.myWizdomButtons .radio label input[type="radio"]:checked + .cr,
+.myWizdomButtons .checkbox label input[type="checkbox"]:checked + .cr:hover,
+.myWizdomButtons .radio label input[type="radio"]:checked + .cr:hover {
+    border-color:#d87600;
+}
+.myWizdomButtons .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.myWizdomButtons .radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.myWizdomButtons .checkbox label input[type="checkbox"]:disabled + .cr,
+.myWizdomButtons .radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+
+/* SOCIAL COMMENTS BUTTONS */
+.myWizdomButtons .wizdom-link {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b2cddd;
+    color: #005b8e;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+    padding: 4px 10px;
+    font-size: 14px;
+    background: transparent;
+}
+/* SOCIAL COMMENTS BUTTONS */
+.myWizdomButtons .wizdom-link:hover {
+     cursor:default;
+}
+ /* AD HOVER ONLY ON ICONS FOR NOW */
+ .myWizdomButtons .wizdom-link span.wizdom-icon {
+     cursor:pointer;
+ }
+ .myWizdomButtons .wizdom-link span.wizdom-icon {
+     color: #ccc;
+     margin-right: 4px;
+}
+ .myWizdomButtons .wizdom-link span.wizdom-icon:hover {
+      color: #005b8e;
+ }
+ .myWizdomButtons .wizdom-link:hover {
+     background: #cccccc;
+     border-color: #cccccc;
+     color: black;
+}
+ .myWizdomButtons .wizdom-link:hover .wizdom-icon.icon-bubble-2:before {
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/comments-icon-hover.png) no-repeat;
+ }
+  .myWizdomButtons .wizdom-link:hover .wizdom-icon.icon-hand-like-2:before {
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/likes-icon-hover.png) no-repeat!important;
+ }
+.bootstrap-wrapper .socialPanel small>span:first-child .wizdom-link:after {
+    content: "Comments";
+    padding-left: 5px;
+}
+.bootstrap-wrapper .socialPanel small>span:nth-child(2) .wizdom-link:after {
+    content: "Likes";
+    padding-left: 5px;
+}
+.myWizdomButtons .wizdom-link:focus, .myWizdomButtons .wizdom-link:active, .myWizdomButtons .wizdom-link.active,
+.wizdom-icon.icon-hand-like-2.wt-alreadyLikedByMe,
+.myWizdomButtons .wizdom-link.already-liked-btn,
+.myWizdomButtons .wizdom-link.already-liked-btn:hover,
+.myWizdomButtons .wizdom-link.already-liked-btn:focus {
+    background-color: transparent;
+    color: #000 !important;
+    border-color: #0093d8 !important;
+}
+a.wizdom-link.already-liked-btn .wt-alreadyLikedByMe {
+    background:none!important;
+}
+.myWizdomButtons .wizdom-link.already-liked-btn .wizdom-icon.icon-hand-like-2:before,
+.myWizdomButtons .wizdom-link.already-liked-btn:hover .wizdom-icon.icon-hand-like-2:before,
+.myWizdomButtons .wizdom-link.already-liked-btn:hover .wizdom-icon.icon-hand-like-2:before {
+    background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/likes-icon-blue.png) no-repeat!important;
+}
+ 
+ .myWizdomButtons .wizdom-link:focus span.wizdom-icon, .myWizdomButtons .wizdom-link:active span.wizdom-icon, .myWizdomButtons .wizdom-link.active span.wizdom-icon {
+     color: #0093d8;
+}
+
+ /* EDIT LINK BUTTONS */
+  .link-collection-content > a:after {
+     content:'Edit';
+ }
+  /* ICONS PRIMARY COLOUR */
+  .modal-dialog .wizdom-icon, .modal-dialog .glyphicon, .wizdom-bootstrap-wrapper .btn-primary .wizdom-icon, .wizdom-bootstrap-wrapper .btn-primary .glyphicon, .wizdom-bootstrap-wrapper-system .wizdom-icon,
+  .wizdom-bootstrap-wrapper-system .btn-primary .glyphicon, .unreadCommentsLink .glyphicon {
+      color:#005b8e;
+  }
+  .modal-dialog .wizdom-icon, .modal-dialog .glyphicon, .wizdom-bootstrap-wrapper .btn-primary .wizdom-icon, .wizdom-bootstrap-wrapper .btn-primary .glyphicon, .wizdom-bootstrap-wrapper-system .wizdom-icon,
+  .wizdom-bootstrap-wrapper-system .btn-primary .glyphicon, .unreadCommentsLink .glyphicon {
+      color:#005b8e;
+  }
+  /* SETTINGS BUTTON GLYPHICON COGS FOR WEBPARTS  */
+    .editWebpartButton span.glyphicon.glyphicon-cog {
+        color: #fff!important;
+    }
+    
+.bootstrap-wrapper .form-control {
+    border-radius: 0!important;
+    height:auto!important;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+/* CALENDAR */
+
+input.form-control.ng-pristine.ng-untouched.ng-isolate-scope.ng-valid-date.ng-invalid.ng-invalid-required {
+    background: #fff!important;
+    position: relative;
+    border:0!important;
+}
+.input-group {
+    position:relative;
+}
+.bootstrap-wrapper .input-group-btn:last-child>.btn, .bootstrap-wrapper .input-group-btn:last-child>.btn-group {
+    margin-left: -1px;
+    background: none;
+    border: 0;
+}
+.bootstrap-wrapper table .btn {
+    background: none;
+    border-radius: 0;
+    border:none;
+}
+.bootstrap-wrapper table .btn.active {
+    background:#d87600;
+    color:#fff!important;
+}
+.bootstrap-wrapper table .btn:hover {
+    background: #0093d8;
+    color: #fff!important;
+    border-color: #0093d8;
+}
+.bootstrap-wrapper table td {
+    border:1px solid #ccc;
+}
+.bootstrap-wrapper .input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    background: #fff;
+}
+.modal-dialog .form-control.btn {
+    background-color: #fff;
+    color: black!important;
+    margin: 15px 0 0 0;
+}
+
+/* USE THIS SPECIAL CLASS TO HIDE THE RADIO AND CHECKBOXES IF SPECIAL STYLES ARE ADDED */
+.myWizdomForms input[type="checkbox"],
+.myWizdomForms input[type="radio"],
+.myWizdomForms .checkbox label input[type="checkbox"],
+.myWizdomForms .radio label input[type="radio"] {
+    display: none;
+}
+.checkbox.wt-markAsReadCheckboxDiv {
+    margin: 0 30px;
+}
+ /* SELECT DROP DOWN ADDITIONAL STYLES */
+ .bootstrap-select.btn-group .dropdown-menu li a span.text {
+    display: inline-block;
+    font-weight: 500;
+    border: 0;
+    height: auto;
+    padding: 2px;
+    width: 100%;
+    color: inherit;
+    font-family: "Montserrat", sans-serif;
+}
+ 
+ .bootstrap-select.selectlarge.btn-group .dropdown-menu li a span.text {
+    padding: 14px 10px;
+}
+ button.btn.dropdown-toggle.btn-default {
+    margin-bottom: 0;
+ }
+/* DROPDOWN SEARCH RESULTS */
+.ms-srch-result #ResultHeader {
+    display: block;
+    margin: 0;
+}
+.ms-srch-result #Actions li {
+    margin-right: 0;
+    padding: 0;
+    font-weight: 500;
+}
+.ms-srch-result #Actions li:first-child {
+    margin-left: 0px;
+    font-weight: 600;
+}
+/* BUBBLES & LIKES */
+ .wizdom-icon.icon-bubble-2:before {
+     content: '';
+     color: #e6e6e6;
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/comments-icon.png) no-repeat;
+     margin-right: 1px;
+     width: 12px;
+     height: 12px;
+     display: inline-block;
+     font-size: 10px;
+     vertical-align: middle;
+     content:''!important;
+}
+ .wizdom-icon.icon-hand-like-2:before {
+     content: '';
+     color: #e6e6e6;
+     background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/likes-icon.png) no-repeat;
+     font-size: 1em;
+     margin-right: 1px;
+     width: 12px;
+     height: 12px;
+     display: inline-block;
+     vertical-align: middle;
+     content:''!important;
+}
+.wizdom-icon.icon-hand-like-2.wt-alreadyLikedByMe:before,
+.wizdom-icon.icon-hand-like-2.wt-alreadyLikedByMe:hover {
+     background: none;
+}
+ .wizdom-icon.icon-bubble-2:hover:before {
+    background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/comments-icon-hover.png) no-repeat;
+}
+ .wizdom-icon.icon-hand-like-2:hover:before {
+    background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/likes-icon-hover.png) no-repeat;
+}
+ .wizdom-icon.icon-bubble-2:focus:before, .wizdom-icon.icon-bubble-2:active:before {
+    background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/comments-icon-blue.png) no-repeat;
+}
+ .wizdom-icon.icon-hand-like-2:focus:before, .wizdom-icon.icon-hand-like-2:active:before, .wt-alreadyLikedByMe {
+    background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/likes-icon-blue.png) no-repeat;
+    background-position:center;
+}
+ .ng-binding {
+     font-weight: 500;
+     font-size: 14px;
+}
+ .socialPanel small {
+     border-top:0!important;
+}
+
+ .ng-binding {
+     font-weight: 500;
+     font-size: 14px;
+}
+ .socialPanel small {
+     border-top:0!important;
+}
+/* STYLE THE LAST BUTTON ON FILE UPLOAD */
+.bootstrap-wrapper .input-group-addon:last-child {
+    background: #fff;
+    border-radius: 0;
+}
+.rightSidebar .wt-markAsReadCheckboxDiv {
+    margin: 30px;
+    padding: 30px 0;
+}
+/* SHOW THE INPUTS ON THE RIGHT */
+.myWizdomForms .ms-formfieldvaluecontainer input {
+    display:block!important;
+}
+.myWizdomForms .radio-group .form-control {
+    border:0!important;
+    padding:0!important;
+    background:transparent!important;
+}
+/* NOTICEBOARD BUTTONS */
+@media all and (max-width:1280px) {
+    .wizdom-noticeBoard .btn {
+        font-size: 0pt;
+    }
+    .wizdom-noticeBoard  .myWizdomButtons .btn:before {
+        margin-right:0!important;
+    }
+    /* REMOVE WORS FROM BUTTONS */
+    .bootstrap-wrapper .socialPanel small>span:nth-child(2) .wizdom-link:after {
+        content:'';
+    }
+    .bootstrap-wrapper .socialPanel small>span:first-child .wizdom-link:after {
+        content:'';
+    }.dateTimePicker.ng-invalid .input-group
+    .wd-noticeboard .topIconBarRightSection .glyphicon-cog span, .noticeboard-archive .topIconBarRightSection .glyphicon-cog span {
+        font-size:0pt;
+    }
+}
+
+/* DISABLE PROPERTIES REWTITES */
+input[type=password][disabled], input[type=text][disabled], input[type=file][disabled], input:not([type])[disabled], textarea[disabled], select[disabled], .sp-peoplepicker-topLevelDisabled, .ms-inputBoxDisabled {
+    /* border-color: #e1e1e1; */
+    background-color: #fff!important;
+    border: 0!IMPORTANT;
+}
+.fieldContainer {
+    padding:0!important;
+}
+
+
+@media all and (max-width:767px) {
+    input[type="text"],input[type="tel"],input[type="date"],
+    input[type="number"],input[type="password"] {
+        height:40px;
+    }
+}               
+
+/* custom toggle switch */
+.customToggle input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.customToggle label {
+  border: 1px solid #ccc;
+  background: #ccc;
+  border-radius: 25px;
+  position: relative;
+  width: 80px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  transition: background 0.3s linear;
+  cursor: pointer;
+}
+
+.customToggle label:before {
+  content: '';
+  background: #fff;
+  height: 28px;
+  width: 33px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 25px;
+  transform: translateX(0);
+  transition: transform 0.2s cubic-bezier(0.1, 0.8, 0.32, 1.2), background 0.2s linear;
+}
+
+.customToggle label span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.customToggle label .yes {
+  display: none;
+}
+
+.customToggle label .no {
+  left: auto;
+  right: 10px;
+  display: inline-block;
+}
+
+.customToggle input[type="checkbox"]:checked + label {
+  background: #1cbe9d;
+}
+
+.customToggle input[type="checkbox"]:checked + label:before {
+  transform: translateX(38px);
+}
+
+.customToggle input[type="checkbox"]:checked + label .yes {
+  display: inline-block;
+}
+
+.customToggle input[type="checkbox"]:checked + label .no {
+  display: none;
+} 

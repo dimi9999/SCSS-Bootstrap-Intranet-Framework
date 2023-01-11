@@ -1,0 +1,148 @@
+/************************ RECOMMENDED COURSES ***********************/
+
+.wizdom-recomCourses {
+	padding: 0 30px;
+}
+
+.wizdom-recomCourses>.row {
+	background: white;
+	border: 1px solid white;
+	margin: 0 0 28px 0;
+}
+
+.wizdom-recomCourses p {
+	margin: 7px 0 0;
+}
+
+.wizdom-recomCourses p:first-child {
+	margin-top: 0;
+}
+
+.wizdom-recomCoursesImage {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.wizdom-recomCoursesImage img.small {
+	max-width: 140px;
+}
+
+.wizdom-recomCoursesContent {
+	position: relative;
+	display: table-cell;
+	vertical-align: top;
+	padding: 20px 20px 7px;
+}
+
+.wizdom-recomCoursesContent p.text {
+	HEIGHT: 42PX;
+	WORD-WRAP: BREAK-WORD;
+	OVERFLOW: HIDDEN;
+}
+
+.wizdom-recomCoursesContent .btn:hover {
+	background: none!important;
+}
+
+.wizdom-recomCoursesContent .myWizdomButtons {
+	/*position:absolute;
+         bottom:15px;
+         */
+}
+
+.wizdom-recomCoursesContent .date {
+	font-weight: 500;
+}
+
+.wizdom-recomCoursesContent .info {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	background: #999;
+	display: inline-block;
+	font-weight: 900;
+	font-size: 14px;
+	padding: 0 5px;
+	margin: 0 0 7px 0;
+}
+
+.wizdom-recomCoursesContent .text {
+	color: #005b8e;
+	font-size: 18px;
+	line-height: 20px!important;
+	font-weight: 500;
+	width: auto;
+	height: auto;
+	border: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+}
+
+.wizdom-recomCoursesContent .favourites {
+	margin-top: 10px;
+}
+
+.wizdom-recomCoursesContent .favourite {
+	transition: 0.3s ease-in all;
+	font-size: 14px;
+	background: url(https://cfcloud.sharepoint.com/:i:/r/sites/WizdomDemo/Style%20Library/images/icons/fav-inactive.png) no-repeat;
+	color: #000;
+	padding-left: 20px;
+	margin-right: 10px;
+}
+
+.wizdom-recomCoursesContent .favourite:hover,
+.wizdom-recomCoursesContent .favourite.active {
+	background: url(https://cfcloud.sharepoint.com/:i:/r/sites/WizdomDemo/Style%20Library/images/icons/fav-active.png) no-repeat;
+	text-decoration: none
+}
+
+.wizdom-recomCoursesContent .invite {
+	transition: 0.3s ease-in all;
+	font-size: 14px;
+	background: url(https://cfcloud.sharepoint.com/:i:/r/sites/WizdomDemo/Style%20Library/images/icons/invite.png) no-repeat;
+	color: #000;
+	padding-left: 20px;
+	background-position: left 34%;
+}
+
+.wizdom-recomCoursesContent .invite:hover,
+.wizdom-recomCoursesContent .invite.active {
+	background: url(https://cfcloud.sharepoint.com/:i:/r/sites/WizdomDemo/Style%20Library/images/icons/invite-active.png) no-repeat;
+	text-decoration: none;
+    background-position: left 34%;
+}
+
+.wizdom-recomCoursesContent .text a {
+	color: #1f3c69;
+	font-size: 18px;
+}
+
+.wizdom-recomCoursesContent .comments a {
+	margin-right: 15px;
+}
+
+@media all and (max-width:767px) {
+	.wizdom-recomCoursesImage img.small,
+	.wizdom-recomCoursesImage img {
+		max-width: 130px!important;
+	}
+}
+
+@media all and (max-width:1199px) {
+	.wizdom-recomCourses {
+		/* background: #fff; */
+		padding: 15px;
+	}
+	.wizdom-recomCourses>.row {
+		margin-bottom: 25px;
+		background: transparent;
+		border: 0;
+		background: #fff;
+		padding: 15px;
+	}
+	.wizdom-recomCoursesContent {
+		padding: 0 20px;
+	}
+}

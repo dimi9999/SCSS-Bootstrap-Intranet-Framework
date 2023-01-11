@@ -1,0 +1,327 @@
+﻿/* --------------------------------------------- 5 ---------------------------------------- */
+/*** CORPORATE NEWS BLOCKS 4 COL TYPE WITH TRANSPARENCY ****/
+/********** CAN USE ANY IMAGE SIZES BUT ALL SHOULD BE EXACTLY THE SAME DIMENSIONS  ****************************************/
+.row-eq-height-mobileonly {
+    display: flex;
+}
+.wizdom-sliderCont {
+    background: #d8e5ec;
+}
+#NewsBlocksType4 {} /* ADD YOUR EMBEDDED STYLES HERE */
+#NewsBlocksType4 h2 a {
+    color:#fff;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans {
+    margin:0 auto;
+    width:100%;
+    padding: 0 30px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans > div {
+    margin: 0 0 30px 0;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Img {
+    position:relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height:150px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background: rgba(0,0,0, 0.3);
+    height: 100%;
+}
+.NewsBlock10 {
+    margin-top:30px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol1 > div {position: relative;vertical-align: bottom;}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 {
+    padding-right:0;
+    position: relative;
+}
+ 
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content .CorporateNewsBlocks4ColTypeTrans-date {
+    font-size:15px;
+    margin-bottom:15px;
+    color: #fff;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Img  img {
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+    /* max-height: 100%; */
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content {
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    height: 100%;
+    background:  transparent;
+    height: 188px;
+    vertical-align: bottom;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content h2 {
+    font-weight:bold;
+    color: #fff;
+    font-size:18px;
+    margin:0 0 15px 0;
+    height: 60px;
+}
+ 
+ 
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div  {
+    margin-right:15px;
+    margin-bottom:30px;
+    height: 228px;
+    padding: 0;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div > div.contentBlockRight {
+    margin-left:15px;
+    margin-bottom:30px;
+    margin-right: 0;
+    height: 228px;
+    padding: 0;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div  {
+    margin-right:15px;
+    margin-top: 30px;
+    height: 230px;
+    padding: 0;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div > div.contentBlockRight {
+    margin-left:15px;
+    margin-top: 30px;
+    padding: 0;
+}
+ 
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:hover,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:focus,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:active,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans.active,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans:hover,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans:focus,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans:active,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans.active {
+    color:#fff;
+    font-size:13px;
+}
+ 
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:hover > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:active > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:focus > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans.active > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans:hover > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans:active > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans:focus > i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans.active > i {
+    color:#005b8e;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock1 {
+    background: #fff;
+    padding: 0;
+    /* overflow: hidden; */
+    /* margin-right: 0; */
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock2 {}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock3 {}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock4 {
+    background: #fff;
+    height: 230px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 {background: #fff;margin: 0;padding: 0;border: 0;height: 228px;}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 + div,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 + div + div {padding: 0 0 0 0}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock6 {}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock7 > div {
+    display:table;
+    width:100%;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock7 > div > div {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    height: 224px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock7 > div > div .btn-primary,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock7 > div > div .btn-primary:hover {
+    border:none;
+    background:transparent;
+    color:#fff;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock7 > div > div .btn-primary:after  {
+    background:url(https://cfcloud.sharepoint.com/:i:/r/sites/WizdomDemo/Style%20Library/images/icons/nav-btn-arrow-white.png) no-repeat!important;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock8 {
+    margin-top:30px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:hover,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:focus{
+        padding: 5px 7px;
+        font-size: 12px;
+        color: #fff;
+        background:transparent;
+        height:auto;
+}
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:hover i,
+#NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans:focus i {
+        color:#fff;
+}
+@media all and (max-width:1199px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans {
+        padding: 0 15px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans > div {
+        margin: 0;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content h2 {
+        height:100px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content {
+        height:228px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol1, #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol2 {
+        margin:0;
+        /* background: #fff; */
+        padding: 7.5px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1199px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 + div,
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 + div + div {padding: 0 0 0 15px}
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 + div {
+        padding: 0 0 0 15px;
+    }
+     
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol2 > div:first-child {
+        background:#00354e;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol2 {
+        padding-left: 0;
+        border-left: 15px solid #00354e;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div > div.contentBlockRight   {
+        margin-top:0;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div > div.contentBlockRight {
+        margin-bottom:15PX;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 {
+        margin-top: 15px;
+    }
+}
+@media all and (max-width:991px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content h2 {
+        font-size:14px;height:40px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content .CorporateNewsBlocks4ColTypeTrans-date {
+        font-size:12px;
+    }
+   #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Content {
+       height:auto;
+   }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div > div.contentBlockRight {
+        height: 228px;
+    }
+     
+}
+@media all and (max-width:1400px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans  .btn-trans > i,
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans div.contentBlockRight .btn-trans > i {
+        font-size: 11px!important;
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+    }  
+}
+@media all and (min-width:991px) and (max-width:1199px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div > div.contentBlockRight   {
+        height:228px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Img {
+        height:228px;
+    }
+}
+@media all and (max-width:767px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock1,
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock4,
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock5 {
+        background:transparent;
+        min-height: auto;
+        height: auto;
+    }  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .NewsBlock7 > div > div {
+        height:170px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div > div.contentBlockRight  
+    {
+        margin: 0 0 15px 0;
+        padding-left:0;
+        padding-right:0;
+        height: 170px;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans > div > div {
+        /* margin: 0; */
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans > div {
+        margin: 0;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol2 > div,  
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTransCol3 > div  {
+         border-right: 15px solid #01354d;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol2 {
+        margin: 0;
+     }
+
+}
+@media all and (min-width:1200px) {
+    .wizdom-sliderCont {
+        /* ADD BACKGROUND FOR LARGER SIZES HERE */
+        /*   background:url(../images/sea.png); */
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Img {
+        height: 303px;
+        overflow: hidden;
+    }
+}
+@media all and (max-width:479px) {
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol1, #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTransCol2 {
+        width:100%;
+    }
+    #NewsBlocksType4 .CorporateNewsBlocks4ColTypeTrans .CorporateNewsBlocks4ColTypeTrans-Img {
+        height:200px;
+    }
+}

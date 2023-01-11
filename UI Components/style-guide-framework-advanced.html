@@ -1,0 +1,1480 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sharepoint Demo Version 1.1</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../css/material-icons.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../wizdomStyles/forms.css" rel="stylesheet">
+    <!-- FONT AWESOME AND MATERIAL ICONS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+    <script src="../js/jquery-ui-min.js"></script>
+	<style>
+	
+	@media print {
+		.palettes, .circle, .bg-color1 {
+			display:block!important;
+			background-color:#000!important;
+			
+		}
+		.circle {
+			border:1px solid black!important;
+		}
+		.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+			float: left;
+		}
+		.col-md-12 {
+			width: 100%;
+		}
+		.col-md-11 {
+			width: 91.66666666666666%;
+		}
+		.col-md-10 {
+			width: 83.33333333333334%;
+		}
+		.col-md-9 {
+			width: 75%;
+		}
+		.col-md-8 {
+			width: 66.66666666666666%;
+		}
+		.col-md-7 {
+			width: 58.333333333333336%;
+		}
+		.col-md-6 {
+			width: 50%;
+		}
+		.col-md-5 {
+			width: 41.66666666666667%;
+		}
+		.col-md-4 {
+			width: 33.33333333333333%;
+		 }
+		 .col-md-3 {
+			width: 25%;
+		 }
+		 .col-md-2 {
+			width: 16.666666666666664%;
+		 }
+		 .col-md-1 {
+			width: 8.333333333333332%;
+		 }
+	}
+	</style>
+    <!-- Font awesome -->
+    <!--[if lt IE 9]>
+    <script language="javascript" type="text/javascript">
+       document.createElement('header');
+       document.createElement('nav');
+       document.createElement('figure');
+       document.createElement('section');
+       document.createElement('article');
+       document.createElement('aside');
+       document.createElement('content');
+       document.createElement('footer');
+    </script>
+    <link href="css/bootstrap-ie8.css" rel="stylesheet">
+    <link href="css/ie78.css" rel="stylesheet">
+    <link href="css/ie.css" rel="stylesheet">
+    <![endif]-->
+    <!-- CUSTOM JAVASCRIPT-->
+    <script src="../js/matchMedia.js"></script>
+    <!--[if (lte IE 8) &amp;amp; (!IEMobile)]><script src="/js/eliteNonresponsive.js"></script><![endif]-->
+    <script src="../js/eliteResponsive.js"></script>
+    <script src="../js/custom.js"></script>
+    <style>
+        #contentRow {
+            margin: 0 auto;
+        }
+		
+		.palettes > div {
+			display: -moz-inline-stack;
+			display: inline-block;
+			zoom: 100%;
+			vertical-align: bottom;
+			text-align: center;
+			margin: 0 10px;
+		}
+
+        .container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #wrapper {
+            background: #fff;
+        }
+
+        .large {
+            width: 120px!important;
+            height: 120px!important;
+        }
+		.circle {
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			border-radius: 50%;
+			-o-border-radius: 50%;
+			width: 90px;
+			height: 90px;
+			display: block;
+			margin: 10px auto;
+		}
+        #contentRow input,
+        #contentRow button,
+        #contentRow .btn,
+        #contentRow .select-wrap {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="contentRow" class="myWizdomButtons" style="margin:0 auto; max-width:1200px">
+            <div class="container">
+                <h1>StyleGuide Framework</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2 class="wizdom-contentHeader">Primary Colours</h2>
+                        </div>
+                        <div class="palettes">
+                            <div>
+                                <h5 class="f-bold">Dark Blue</h5>
+                                <span class="circle large bg-color2"></span>
+                                <h5 class="f-bold">#005b8e</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Light Blue</h5>
+                                <span class="circle large bg-color3"></span>
+                                <h5 class="f-bold">#0093d8</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Darkest Blue</h5>
+                                <span class="circle large bg-color4"></span>
+                                <h5 class="f-bold">#00354e</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Blue</h5>
+                                <span class="circle large bg-color5"></span>
+                                <h5 class="f-bold">#006899</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2 class="wizdom-contentHeader">Grades (as lightened shades)</h2>
+                        </div>
+                        <div class="palettes">
+                            <div>
+                                <h5 class="f-bold">100%</h5>
+                                <span class="circle bg-color2"></span>
+                                <h5 class="f-bold">#005b8e</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">90%</h5>
+                                <span class="circle bg-color2a"></span>
+                                <h5 class="f-bold">#006ba8</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">80%</h5>
+                                <span class="circle bg-color2b"></span>
+                                <h5 class="f-bold">#007cc1</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">70%</h5>
+                                <span class="circle bg-color2c"></span>
+                                <h5 class="f-bold">#009cf4</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">60%</h5>
+                                <span class="circle bg-color2d"></span>
+                                <h5 class="f-bold">#28b2ff</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">70%</h5>
+                                <span class="circle bg-color2e"></span>
+                                <h5 class="f-bold">#5bc4ff</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">60%</h5>
+                                <span class="circle bg-color2f"></span>
+                                <h5 class="f-bold">#8ed6ff</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">50%</h5>
+                                <span class="circle bg-color2g"></span>
+                                <h5 class="f-bold">#a8e0ff</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">40%</h5>
+                                <span class="circle bg-color2h"></span>
+                                <h5 class="f-bold">#c1e9ff</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">30%</h5>
+                                <span class="circle bg-color2i"></span>
+                                <h5 class="f-bold">#005b8e</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">20%</h5>
+                                <span class="circle bg-color2j"></span>
+                                <h5 class="f-bold">#005b8e</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2 class="wizdom-contentHeader">Grades (as coloured codes)</h2>
+                        </div>
+
+                        <div class="palettes">
+                            <div>
+                                <h5 class="f-bold">100%</h5>
+                                <span class="circle bg-color2"></span>
+                                <h5 class="f-bold">#005b8e</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">90%</h5>
+                                <span class="circle bg-color6"></span>
+                                <h5 class="f-bold">#196b99</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">80%</h5>
+                                <span class="circle bg-color7"></span>
+                                <h5 class="f-bold">#337ca5</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">70%</h5>
+                                <span class="circle bg-color8"></span>
+                                <h5 class="f-bold">#4c8cb0</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">60%</h5>
+                                <span class="circle bg-color9"></span>
+                                <h5 class="f-bold">#669bdd</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">50%</h5>
+                                <span class="circle bg-color10"></span>
+                                <h5 class="f-bold">#7fadc6</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">40%</h5>
+                                <span class="circle bg-color11"></span>
+                                <h5 class="f-bold">#99bdd2</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">30%</h5>
+                                <span class="circle bg-color12"></span>
+                                <h5 class="f-bold">#b2cddd</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">20%</h5>
+                                <span class="circle bg-color13"></span>
+                                <h5 class="f-bold">#ccdee8</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">10%</h5>
+                                <span class="circle bg-color14"></span>
+                                <h5 class="f-bold">#e5eef3</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">5%</h5>
+                                <span class="circle bg-color15"></span>
+                                <h5 class="f-bold">#f2f7f9</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2 class="wizdom-contentHeader">Additional Colours</h2>
+                        </div>
+                        <div class="palettes">
+                            <div>
+                                <h5 class="f-bold">Form error</h5>
+                                <span class="circle bg-color24"></span>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Form focus</h5>
+                                <span class="circle bg-color23"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2 class="wizdom-contentHeader">Standard Colours</h2>
+                        </div>
+                        <div class="palettes">
+                            <div>
+                                <h5 class="f-bold">White</h5>
+                                <span class="circle large bg-color0"></span>
+                                <h5 class="f-bold">#ffffff</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Black</h5>
+                                <span class="circle large bg-color1"></span>
+                                <h5 class="f-bold">#00000</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Dark Grey</h5>
+                                <span class="circle large bg-color1a"></span>
+                                <h5 class="f-bold">#333333</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Grey</h5>
+                                <span class="circle large bg-color1b"></span>
+                                <h5 class="f-bold">#666666</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Grey 2</h5>
+                                <span class="circle large bg-color1c"></span>
+                                <h5 class="f-bold">#999999</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Light Grey</h5>
+                                <span class="circle large bg-color1d"></span>
+                                <h5 class="f-bold">#bbbbbb</h5>
+                            </div>
+                            <div>
+                                <h5 class="f-bold">Lighter Grey</h5>
+                                <span class="circle large bg-color1e"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							
+							
+							
+							<div>
+                                <h5 class="f-bold">Green</h5>
+                                <span class="circle large bg-color25"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">20%</h5>
+                                <span class="circle bg-color26"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">Yellow</h5>
+                                <span class="circle large bg-color27"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">20%</h5>
+                                <span class="circle bg-color28"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">Orange</h5>
+                                <span class="circle large bg-color29"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">20%</h5>
+                                <span class="circle bg-color30"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">Red</h5>
+                                <span class="circle large bg-color31"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							<div>
+                                <h5 class="f-bold">20%</h5>
+                                <span class="circle bg-color32"></span>
+                                <h5 class="f-bold">#cccccc</h5>
+                            </div>
+							
+							
+							
+							
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <h2 class="wizdom-contentHeader">Alerts</h2>
+                    </div>
+                    <div class="alert alert-success">
+                        <i class="glyphicon glyphicon-ok-sign"></i><strong>Success!</strong> Indicates a successful or positive action.
+                    </div>
+                    <div class="alert alert-info">
+                        <i class="glyphicon glyphicon-info-sign"></i><strong>Info!</strong> Indicates a neutral informative change or action.
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <i class="glyphicon glyphicon-question-sign"></i><strong>Warning!</strong> Indicates a warning that might need attention.
+                    </div>
+
+                    <div class="alert alert-danger">
+                        <i class="glyphicon glyphicon-exclamation-sign"></i><strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <h2 class="wizdom-contentHeader">Typography</h2>
+                        </div>
+                        <div>
+                            <h1>48px SemiBold page title</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Default</h5>
+                        </div>
+                        <div>
+                            <h2>30px SemiBold page title</h2>
+                            <h3>24px SemiBold page title</h3>
+                            <h4>18px SemiBold page title</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Hover state</h5>
+                        </div>
+                        <div>
+                            <h2 class="hover">30px SemiBold page title</h2>
+                            <h3 class="hover">24px SemiBold page title</h3>
+                            <h4 class="hover">18px SemiBold page title</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Body text</h5>
+                        </div>
+                        <p>
+                            18px Regular body copy - Donec ornare lobortis mauris id tempus. Ut placerat nisi at arcu pellentesque, ac tempor eros viverra. <a href="#">Aliquam nisl turpis</a>, cursus sed cursus porta, sagittis nec sem. Vestibulum et felis elit.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Body text</h5>
+                        </div>
+                        <p>
+                            18px Regular body copy - Donec ornare lobortis mauris id tempus. Ut placerat nisi at arcu pellentesque, ac tempor eros viverra. <a href="#">Aliquam nisl turpis</a>, cursus sed cursus porta, sagittis nec sem. Vestibulum et felis elit.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Body text small</h5>
+                        </div>
+                        <p class="medium">
+                            18px Regular body copy - Donec ornare lobortis mauris id tempus. Ut placerat nisi at arcu pellentesque, ac tempor eros viverra. <a href="#">Aliquam nisl turpis</a>, cursus sed cursus porta, sagittis nec sem. Vestibulum et felis elit.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <h5>Body text small</h5>
+                        </div>
+                        <p class="medium">
+                            18px Regular body copy - Donec ornare lobortis mauris id tempus. Ut placerat nisi at arcu pellentesque, ac tempor eros viverra. <a href="#">Aliquam nisl turpis</a>, cursus sed cursus porta, sagittis nec sem. Vestibulum et felis elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wizdom-contentHeader">Bullet lists</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li class="f-medium"><a href="#">18px/16px</a> bullet list</li>
+                            <li class="f-medium"><a href="#">18px/16px</a> bullet list</li>
+                            <li class="f-medium"><a href="#">18px/16px</a> bullet list</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li class="f-medium"><a href="#">18px/16px</a> bullet list</li>
+                            <li class="f-medium"><a href="#">18px/16px</a> bullet list</li>
+                            <li class="f-medium"><a href="#">18px/16px</a> bullet list</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ol>
+                            <li><a href="#">18px/16px</a> bullet list</li>
+                            <li><a href="#">18px/16px</a> bullet list</li>
+                            <li><a href="#">18px/16px</a> bullet list</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6">
+                        <ol>
+                            <li><a href="#">18px/16px</a> bullet list</li>
+                            <li><a href="#">18px/16px</a> bullet list</li>
+                            <li><a href="#">18px/16px</a> bullet list</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="wizdom-contentHeader">16px lists</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="arrowlist">
+                            <li><a href="#">16px link list</a></li>
+                            <li><a href="#">16px link list</a></li>
+                            <li><a href="#">16px link list</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="arrowlist">
+                            <li><a href="#">16px link list</a></li>
+                            <li><a href="#">16px link list</a></li>
+                            <li><a href="#">16px link list</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-color15 wizdom-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="wizdom-contentHeader">Buttons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                <h6>Default</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div>
+                                <h6>Hover</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-block" href="#">Button</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-block" href="#">Button</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Link to page</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-primary btn-lg btn-block" href="#">Primary Large</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-default btn-lg btn-block" href="#">Default Large</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-primary btn-block" href="#">Primary</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-default btn-block" href="#">Default</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-secondary btn-block" href="#">Secondary (Default)</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-secondary btn-block" href="#">Secondary (Default)</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btmItem" href="#">Navigation Button</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btmItem" href="#">Navigation Button</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Load more content</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-arrowdown btn-block" href="#">See more</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-arrowup btn-block" href="#">See less</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Admin tools</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn btn-small glyphicon glyphicon-pencil" href="#">edit </a>
+                            <a href="#" class="btn btn-small glyphicon glyphicon-plus">Create</a>
+                            <a href="#" class="btn btn-small glyphicon glyphicon-cog">Settings</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn btn-tiny glyphicon glyphicon-pencil" href="#"></a>
+                            <a href="#" class="btn btn-tiny glyphicon glyphicon-plus"></a>
+                            <a href="#" class="btn btn-tiny glyphicon glyphicon-cog"></a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn btn-small glyphicon glyphicon-pencil" href="#">edit </a>
+                            <a href="#" class="btn btn-small glyphicon glyphicon-plus">Create</a>
+                            <a href="#" class="btn btn-small glyphicon glyphicon-cog">Settings</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="btn btn-tiny glyphicon glyphicon-pencil" href="#"></a>
+                            <a href="#" class="btn btn-tiny glyphicon glyphicon-plus"></a>
+                            <a href="#" class="btn btn-tiny glyphicon glyphicon-cog"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="wizdom-contentHeader">CTA</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div><a class="btn btn-secondary btn-inlineblock glyphicon glyphicon-play">Play this video</a></div>
+                            <div>
+                                <a class="btn btn-secondary btn-small btn-download">Download</a> <a class="btn btn-secondary btn-tiny btn-download"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div><a class="btn btn-secondary btn-inlineblock glyphicon glyphicon-play">Play this video</a></div>
+                            <div>
+                                <a class="btn btn-secondary btn-small"><i class="material-icons">file_download</i>Download</a> <a class="btn btn-secondary btn-tiny">
+                                    <i class="material-icons">file_download</i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-trans btn-small"><i class="fa fa-comment"></i>20 comments</a>
+                            <a href="#" class="btn btn-trans btn-small"><i class="material-icons">thumb_up</i>10 likes</a>
+                            <a href="#" class="btn btn-trans btn-tiny"><i class="fa fa-comment"></i>20</a>
+                            <a href="#" class="btn btn-trans btn-tiny"><i class="material-icons">thumb_up</i>10</a>
+                            <div>
+                                <a href="#" class="btn btn-trans btn-small"><i class="fa fa-envelope-o"></i>jscott@contentformula.com</a>
+                                <a href="#" class="btn btn-trans btn-small"><i class="fa fa-envelope-o"></i>Send an email</a>
+                            </div>
+                            <div class="bg-color3 align-center valign-middle-children">
+                                <a href="#" class="btn btn-secondary btn-small btn-search"><i class="glyphicon glyphicon-filter"></i>Advanced Search</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-trans btn-small"><i class="fa fa-comment"></i>20 comments</a>
+                            <a href="#" class="btn btn-trans btn-small"><i class="material-icons">thumb_up</i>10 likes</a>
+                            <a href="#" class="btn btn-trans btn-tiny btn-social"><i class="fa fa-comment"></i>20</a>
+                            <a href="#" class="btn btn-trans btn-tiny btn-social"><i class="material-icons">thumb_up</i>10</a>
+                            <div>
+                                <a href="#" class="btn btn-trans btn-small btn-social"><i class="fa fa-envelope-o"></i>jscott@contentformula.com</a>
+                                <a href="#" class="btn btn-trans btn-small btn-social"><i class="fa fa-envelope-o"></i>Send an email</a>
+                            </div>
+                            <div class="bg-color3 align-center valign-middle-children">
+                                <a href="#" class="btn btn-secondary btn-small btn-search"><i class="glyphicon glyphicon-filter"></i>Advanced Search</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="wizdom-contentHeader">Forms</h2>
+                        </div>
+                        <form class="myWizdomButtons">
+                            <div class="col-md-6">
+                                <div><input type="submit" class="btn-lg" value="Submit"></div>
+                                <div><input type="button" class="btn-lg btn-sub" value="Button"></div>
+                                <div><input type="submit" value="Submit (as input submit)" class="btn-lg"></div>
+                                <div><input type="submit" value="Submit (as input submit secondary)" class="btn-lg btn-sub"></div>
+
+                                <div>
+                                    <button class="btn btn-lg"> Button </button>
+                                    <button class="btn btn-lg btn-secondary"> Button secondary </button>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="myWizdomButtons">
+                            <div class="col-md-6">
+                                <div><input type="submit" value="Submit"></div>
+                                <div><input type="button" value="Button" class="btn-sub"></div>
+                                <div><input type="submit" value="Submit (as input submit)"></div>
+                                <div><input type="submit" value="Submit (as input submit secondary)" class="btn-sub">  </div>
+                                <div>
+                                    <button class="btn"> Button </button>
+                                    <button class="btn btn-secondary"> Button secondary </button>
+                                </div>
+                            </div>
+                    </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="wizdom-contentHeader">Pagination</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wizdom-noticeBoardContent-pager">
+                                <a href="#" class="prev"></a>
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#" class="next"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="wizdom-noticeBoardContent-pager">
+                                <a href="#" class="prev active"></a>
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#" class="current">5</a>
+                                <a href="#" class="next active"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h2 class="wizdom-contentHeader">Filters</h2>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-trans btn-thin active">
+                                    <input type="checkbox" checked> Active
+                                </label>
+                                <label class="btn btn-thin">
+                                    <input type="checkbox"> Check
+                                </label>
+                                <label class="btn btn-secondary btn-thin">
+                                    <input type="checkbox"> Check
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <h2 class="wizdom-contentHeader">Tabs</h2>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div id="exTab2">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#1" data-toggle="tab"><i class="glyphicon glyphicon-list"></i>List View</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2" data-toggle="tab"><i class="glyphicon glyphicon-calendar"></i>Calendar View</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content ">
+                                    <div class="tab-pane active" id="1">
+                                        <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+                                        <div>This is the content</div>
+                                    </div>
+                                    <div class="tab-pane" id="2">
+                                        <h3>Notice the gap between the content and tab after applying a background color</h3>
+                                        <div>This is the content</div>
+                                    </div>
+                                    <div class="tab-pane" id="3">
+                                        <h3>add clearfix to tab-content (see the css)</h3>
+                                        <div>This is the content</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="wizdom-container">
+                <div class="container">
+                    <div>
+                        <h2 class="wizdom-contentHeader">Form Elements</h2>
+                        <form class="myWizdomButtons">
+                            <div>
+                                <label>30px SemiBold label: *</label>
+                                <input id="name" name="name" placeholder="Product Name" type="text" tabindex="1" required>
+                            </div>
+                            <div>
+                                <label>30px SemiBold label: *</label>
+                                <textarea name="keywords" id="keywords" placeholder="Product keywords"></textarea>
+                            </div>
+                            <div>
+                                <label>30px SemiBold label: *</label>
+                                <div class="select-wrap input">
+                                    <select name="select">
+                                        <option value="selected">Select Category</option>
+                                        <option value="selected">Category 1</option>
+                                        <option value="selected">Category 2</option>
+                                        <option value="selected">Category 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label>30px SemiBold label: *</label>
+                                <div class="select-wrap input">
+                                    <select name="select" class="custom-select">
+                                        <option value="selected">Select Category</option>
+                                        <option value="selected">Category 1</option>
+                                        <option value="selected">Category 2</option>
+                                        <option value="selected">Category 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label>Facet dropdown: *</label>
+                                <select class="selectpicker">
+                                    <option value="selected">All titles</option>
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Facet dropdown large: *</label>
+                                <select class="selectpicker selectlarge">
+                                    <option value="selected">All titles</option>
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Label here</label>
+                                <input id="name5" name="name" placeholder="Product Name" type="text" tabindex="1" required>
+                            </div>
+
+                            <div class="myWizdomButtons">
+                                <h4 class="wizdom-contentHeader"> Checkboxes &amp; Radios</h4>
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="check" checked> <span class="label-text">Option 01</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="check"> <span class="label-text">Option 02</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio" checked> <span class="label-text">Option 01</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="radio" name="radio"> <span class="label-text">Option 02</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>CheckboxRadio (no JS)</h4>
+                                <hr />
+                                <h3>Default example</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                                <h3>Default example (other icon)</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-arrow-right"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-arrow-right"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-arrow-right"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <h3>Font awesome example</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                                <h3>Font awesome example (other icon)<br /><small>Works best with square icons =)</small></h3>
+
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-rocket"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-rocket"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label>
+                                            <input type="checkbox" value="" disabled>
+                                            <span class="cr"><i class="cr-icon fa fa-rocket"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                                <h3>Any size you want depending on label font-size</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <label style="font-size: 2.5em">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Huge
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label style="font-size: 2em">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Big
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label style="font-size: 1.5em">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Bigger
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label style="font-size: 1em">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Default
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label style="font-size: .8em">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Smaller
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label style="font-size: .5em">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                            Small
+                                        </label>
+                                    </div>
+                                </div>
+                                <h2>Radio</h2>
+                                <hr />
+                                <h3>Default example</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o1" value="">
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok-sign"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o1" value="" checked>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok-sign"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="o1" value="" disabled>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok-sign"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                                <h3>Default example (other icon)</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o2" value="">
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-arrow-right"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o2" value="" checked>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-arrow-right"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="o2" value="" disabled>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-arrow-right"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <h3>Font awesome example</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o3" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o3" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="o3" value="" disabled>
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                                <h3>Font awesome example (other icon)<br /><small>Works best with square icons =)</small></h3>
+
+                                <div class="col-sm-12">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o4" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-star"></i></span>
+                                            Option one is this and that — be sure to include why it's great
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o4" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-star"></i></span>
+                                            Option two is checked by default
+                                        </label>
+                                    </div>
+                                    <div class="radio disabled">
+                                        <label>
+                                            <input type="radio" name="o4" value="" disabled>
+                                            <span class="cr"><i class="cr-icon fa fa-star"></i></span>
+                                            Option three is disabled
+                                        </label>
+                                    </div>
+                                </div>
+                                <h3>Any size you want depending on label font-size</h3>
+
+                                <div class="col-sm-12">
+                                    <div class="radio">
+                                        <label style="font-size: 2.5em">
+                                            <input type="radio" name="o5" value="" checked>
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Huge
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label style="font-size: 2em">
+                                            <input type="radio" name="o5" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Big
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label style="font-size: 1.5em">
+                                            <input type="radio" name="o5" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Bigger
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label style="font-size: 1em">
+                                            <input type="radio" name="o5" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Default
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label style="font-size: .8em">
+                                            <input type="radio" name="o5" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Smaller
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label style="font-size: .5em">
+                                            <input type="radio" name="o5" value="">
+                                            <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                            Small
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
+
+
+                            <div class="col-md-12">
+                                <h2 class="wizdom-contentHeader">Toggle switchers</h2>
+                            </div>
+                            <form action="#" class="customToggle">
+                                <div class="row">
+                                    <p>Do you want to proceed?</p>
+                                </div>
+                                <div class="row">
+                                    <input type="checkbox" id="toggle">
+                                    <label for="toggle">
+                                        <span class="yes">Yes</span>
+                                        <span class="no">No</span>
+                                    </label>
+                                </div>
+                            </form>
+
+                      
+                        <form class="myWizdomButtons">
+                            <div class="col-md-12">
+                                <h2 class="wizdom-contentHeader">Example of form</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Password</label>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Address</label>
+                                <input type="text" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-md-12">
+                                <label>Address 2</label>
+                                <input type="text" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                                <label>City</label>
+                                <input type="text">
+                            </div>
+                            <div class="col-md-4">
+                                <label>State</label>
+                                <div class="select-wrap">
+                                    <select>
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Zip</label>
+                                <input type="text">
+                            </div>
+                            <div class="col-md-12">
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="check" checked> <span class="label-text">Check out</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Sign in</button>
+                                <button type="submit" class="btn btn-secondary btn-fullwidth">Sign in</button>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                        <div>
+                            <h2 class="wizdom-contentHeader">Search form</h2>
+                        </div>
+                        <div>
+                            <form method="post" class="search myWizdomButtons">
+                                <input class="search_input" type="text" value="" placeholder="Search">
+                                <button class="search_button fa fa-search"></button>
+                            </form>
+                            <div>
+                                <h2 class="wizdom-contentHeader">Inline elements</h2>
+                            </div>
+                            <form class="myWizdomButtons">
+                                <div>
+                                    <label class="block">30px SemiBold label: *</label>
+                                    <div class="inlineWrap">
+                                        <input class="fullwidth" id="name4" name="name4" placeholder="Write a comment..." type="text" tabindex="1" required>
+                                        <input class="btn-sub btn-lg" type="submit" value="submit" style="margin:0 10px">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block">30px SemiBold label: *</label>
+                                    <div class="inlineWrap">
+                                        <input class="fullwidth" id="name2" name="name2" placeholder="Write a comment..." type="text" tabindex="1" required>
+                                        <input class="btn-lg" type="submit" value="submit" style="margin:0 10px">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block">Upload a file please</label>
+                                    <div>
+                                        <label for="file-upload" class="custom-file-upload">
+                                            Browse <i class="fa fa-upload"></i>
+                                        </label>
+                                        <input id="file-upload" type="file" />
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="wizdom-contentHeader">Form Errors</h2>
+                    <form class="myWizdomButtons">
+                        <div class="col-md-6">
+                            <div class="form-error message">
+                                <h4>Title</h4>
+                                <p>This is the main description</p>
+                                <ul>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <input class="form-error" id="name" name="name" placeholder="Product Name" type="text" tabindex="1" required>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <textarea class="form-error" name="keywords" id="keywords" placeholder="Product keywords"></textarea>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <div class="select-wrap input form-error">
+                                    <select name="select">
+                                        <option value="selected">Select Category</option>
+                                        <option value="selected">Category 1</option>
+                                        <option value="selected">Category 2</option>
+                                        <option value="selected">Category 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <div class="select-wrap input form-error">
+                                    <select name="select" class="custom-select">
+                                        <option value="selected">Select Category</option>
+                                        <option value="selected">Category 1</option>
+                                        <option value="selected">Category 2</option>
+                                        <option value="selected">Category 3</option>
+                                    </select>
+                                </div>
+                                <hr />
+                                <div class="form-error">Error goes here</div>
+                                <label>Number: *</label>
+                                <input type="number" class="form-error" />
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>Facet dropdown: *</label>
+                                <select class="selectpicker form-error">
+                                    <option value="selected">All titles</option>
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>Facet dropdown large: *</label>
+                                <select class="selectpicker selectlarge form-error">
+                                    <option value="selected">All titles</option>
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                            </div>
+                            <hr />
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-error message">
+                                <h4>Title</h4>
+                                <p>This is the main description</p>
+                                <ul>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                    <li><a href="#"> Link to question with error bullet lists</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <input class="form-error" id="name" name="name" placeholder="Product Name" type="text" tabindex="1" required>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <textarea class="form-error" name="keywords" id="keywords" placeholder="Product keywords"></textarea>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <div class="select-wrap input form-error">
+                                    <select name="select">
+                                        <option value="selected">Select Category</option>
+                                        <option value="selected">Category 1</option>
+                                        <option value="selected">Category 2</option>
+                                        <option value="selected">Category 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>30px SemiBold label: *</label>
+                                <div class="select-wrap input form-error">
+                                    <select name="select" class="custom-select">
+                                        <option value="selected">Select Category</option>
+                                        <option value="selected">Category 1</option>
+                                        <option value="selected">Category 2</option>
+                                        <option value="selected">Category 3</option>
+                                    </select>
+                                </div>
+                                <hr />
+                                <div class="form-error">Error goes here</div>
+                                <label>Number: *</label>
+                                <input type="number" class="form-error" />
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>Facet dropdown: *</label>
+                                <select class="selectpicker form-error">
+                                    <option value="selected">All titles</option>
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                            </div>
+                            <hr />
+                            <div>
+                                <div class="form-error">Error goes here</div>
+                                <label>Facet dropdown large: *</label>
+                                <select class="selectpicker selectlarge form-error">
+                                    <option value="selected">All titles</option>
+                                    <option>Mustard</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                            </div>
+                            <hr />
+                        </div>
+                    </form>
+                    <div>
+                        <h2 class="wizdom-contentHeader">Inline elements (with errors)</h2>
+                    </div>
+                    <form class="myWizdomButtons">
+                        <div>
+                            <label class="block">30px SemiBold label: *</label>
+                            <div class="inlineWrap">
+                                <input class="fullwidth form-error" id="name4" name="name4" placeholder="Write a comment..." type="text" tabindex="1" required>
+                                <input class="btn-sub btn-lg" type="submit" value="submit" style="margin:0 10px">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block">30px SemiBold label: *</label>
+                            <div class="inlineWrap">
+                                <input class="fullwidth form-error" id="name2" name="name2" placeholder="Write a comment..." type="text" tabindex="1" required>
+                                <input class="btn-lg" type="submit" value="submit" style="margin:0 10px">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block">Upload a file please</label>
+                            <div>
+                                <label for="file-upload" class="custom-file-upload form-error">
+                                    Browse <i class="fa fa-upload"></i>
+                                </label>
+                                <input id="file-upload" type="file" />
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

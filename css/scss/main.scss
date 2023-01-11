@@ -1,0 +1,122 @@
+﻿
+// (1) DEFINE BREAKPOINTS
+$breakpointH1:48em;
+$breakpointH2:62em;
+$breakpointH3:625em;
+$breakpointH4:62.5em;
+$breakpointH4:75em;
+$breakpointH6:103.250em;
+$breakpointV1:20em;
+$breakpointV2:40em;
+
+// (2) FONTS
+
+$font1:"Open Sans", Arial, Helvetica, sans-serif;
+$font2:"Arial", sans-serif;
+$font3:'Montserrat', sans-serif;
+$standardfontsize:16px;
+$old-ie:false !default;
+
+// (3) COLOURS PALLETES
+
+// BASIC STANDARD COLOURS
+$color0:#fff;  // WHITE
+$color1:#000;  // BLACK 
+$color1a:lighten($color1,20%); // DARK GRAY #333333
+$color1b:lighten($color1,40%); // GRAY #666666
+$color1c:lighten($color1,60%); // LIGHT GRAY #999999
+$color1d:#bbb; // LIGHTER GRAY #bbb
+$color1e:lighten($color1,80%); // EXTRA LIGHTER GRAY #cccccc
+$color1f:#eee; // #EEE
+// BRAND COLOURS 
+$color2:#005b8e; // DARK BLUE  		(MAIN BRAND COLOUR WHERE ALL GRADIENTS ARE BASED) 
+$color2a: #00608c; // DARK BLUE (2) (HEADER BAND BLUE COLOR )
+$color3:#0093d8; // LIGHT BLUE 		(SECONDARY COLOUR (COLOUR FOR SECONDARY BUTTON))
+$color4:#00354e; // DARKEST BLUE
+$color5:#006899; // NORMAL BLUE 	(OVER COLOUR FOR SECONDARY BUTTON)
+
+// COLOUR SHADES OF PRIMARY COLOUR
+$color2a:lighten($color2,5%);
+$color2b:lighten($color2,10%);
+$color2c:lighten($color2,20%);
+$color2d:lighten($color2,30%);
+$color2e:lighten($color2,40%);
+$color2f:lighten($color2,50%);
+$color2g:lighten($color2,55%);
+$color2h:lighten($color2,60%);
+$color2i:lighten($color2,65%);
+$color2j:lighten($color2,70%);
+
+// COLOUR SHADES ACTUAL HEX CODES
+$color6:#196b99; 
+$color7:#337ca5;  
+$color8:#4c8cb0;  
+$color9:#669dbb;
+$color10:#7fadc6;
+$color11:#99bdd2;
+$color12:#b2cddd; // (HOVER COLOUR FOR PRIMARY BUTTON)
+$color13:#ccdee8;
+$color14:#e5eef3; // (COLOUR FOR PRIMARY BUTTON)
+$color15:#f2f7f9;
+$color16:#339933; // GREEN (SUCCESS)
+$color17:#cc0000; // RED   (ERROR)
+$color18:#089b80; // MIDDLE GREEN 
+$color19:#c14313; // RED 
+$color20:#d4b10d; // YELLOW
+$color21:#ff1c0d; // FORM ERROR
+$color22:#0f6595;
+$color23:#d87600; // ORANGE
+$color24:#de1630; // FORM ERROR (RED)
+$color25:#089b80; // GREEN
+$color26:#ceebe6; // ICE GREEN
+$color27:#d4b10d; // MUSTARD YELLOW
+$color28:#f6efcf; // LIGHT YELLOW
+$color29:#d87600; // ORANGE (FOCUS FORM)
+$color30:#f7e4cc; // TARAMOSALATI
+$color31:#d72129; // RED X
+$color32:#f7d3d4; // F7D3D4
+
+// (7) VARIOUS
+
+$buttonwidth:500px;
+$forminputwidth:500px;
+$pagewidth:1920px;
+$sliderwidth:1530px;
+$gutter:1.25%;
+$unit:15px;
+$gap:8px;
+$padding:15px;
+$standardfontsize:18px;
+
+// (4) COMPASS MODULES
+@import "compass/css3";
+@import "compass/css3/user-interface";
+
+// (5) MIXINS & DISPLAY
+@import "mixins/basic";
+@import "mixins/mixins";
+@import "mixins/display";
+
+// (6) ELEMENTS
+@import "elements/fonts";
+@import "elements/header";
+@import "elements/megamenu"; 
+@import "elements/nav";
+@import "elements/nav2"; 
+@import "elements/slides";  
+@import "elements/sidebar";
+@import "elements/components";
+@import "elements/forms"; 
+@import "elements/footer";
+@import "elements/elements";
+@import "elements/tables";
+@import "elements/popups";
+@import "elements/events";
+
+// (7) WIZDOM
+@import "elements/pagelayouts";
+@import "elements/modules";
+@import "elements/displaytemplates; 
+
+
+ 

@@ -1,0 +1,157 @@
+@mixin respond-min-width($width) {
+    @if $old-ie {@content;}
+    @else {@media screen and (min-width: $width) {@content;}}
+}
+
+@mixin respond-min-height($height) {
+    @if $old-ie {@content;}
+    @else {@media screen and (min-height: $height) {@content;}}
+}
+
+@mixin old-ie {
+    @if $old-ie {@content;}
+}
+
+
+// INLINE BLOCK
+@mixin inline-block($valign:top,$important:false) {
+	@if $important {
+		display:inline-block!important;
+		@if $old-ie {display:-moz-inline-stack!important;display:inline-block!important;zoom:100%!important;*display:inline!important;}
+	} @else {
+		display:-moz-inline-stack;display:inline-block;zoom:100%;*display:inline;
+		@if $old-ie {zoom:1;*display:inline;}
+	}
+	vertical-align:$valign;
+}
+
+@mixin flexbox {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:row;
+	-ms-flex-direction:row;
+	flex-direction:row;
+}
+@mixin appearance($value) { 
+    -webkit-appearance: $value;
+    -moz-appearance: $value;
+    appearance: $value;
+}
+
+// BORDER RADIUS
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+          -o-border-radius:$radius;
+}
+// BOX SIZING
+@mixin boxsizing {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+// BOX SHADOWS
+@mixin box-shadow($top, $left, $bottom, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $bottom $blur $color;
+    -moz-box-shadow:inset $top $left $bottom $blur $color;
+    box-shadow:inset $top $left $bottom $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+@mixin no-shadow {
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+ 
+
+// TRANSITIONS 
+@mixin no-transition {
+    -moz-transition:    none!important;
+    -o-transition:      none!important;
+    -webkit-transition: none!important;
+    transition:         none!important;
+}
+
+
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing) {
+    -moz-transition-timing-function:    $timing;
+    -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay) {
+    -moz-transition-delay:    $delay;
+    -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+
+@mixin bg-trans($bgcolor:$color1,$amount:0.4,$color:$color0){		
+	@if $old-ie{
+		background:transparent;
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#{ie_hex_str(transparentize($bgcolor,$amount))},endColorstr=#{ie_hex_str(transparentize($bgcolor,$amount))})";/*IE8*/
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{ie_hex_str(transparentize($bgcolor,$amount))},endColorstr=#{ie_hex_str(transparentize($bgcolor,$amount))});/*IE7*/
+		zoom:1;
+	}
+	@else {background-color:transparentize($bgcolor,$amount);}
+	color:$color;
+}
+
+@mixin transfade {
+	-webkit-transition: all 0.9s ease;
+	-moz-transition: all 0.9s ease;
+	-o-transition: all 0.9s ease;
+	transition: all 0.9s ease;
+}
+	
+@mixin bg-gradient($startcolor:$color10,$endcolor:$color0){
+	background:transparent;
+	background:-moz-linear-gradient(($startcolor 0%, $endcolor 100%));
+	background:-webkit-linear-gradient(($startcolor 0%, $endcolor 100%));
+	background:-o-linear-gradient(($startcolor 0%, $endcolor 100%));
+	background:-ms-linear-gradient(($startcolor 0%, $endcolor 100%));
+	background:linear-gradient(($startcolor 0%, $endcolor 100%));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#{ie_hex_str($startcolor)},endColorstr=#{ie_hex_str($endcolor)}); 
+	@if $old-ie{
+		-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#{ie_hex_str($startcolor)},endColorstr=#{ie_hex_str($endcolor)})";
+		zoom:1;
+	}
+}

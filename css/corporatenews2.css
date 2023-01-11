@@ -1,0 +1,336 @@
+﻿
+/* -----------------------------------   (3) ----------------------------------- */
+/*** CORPORATE NEWS BLOCKS 3 COL TYPE ****/
+/********** CAN USE ANY IMAGE SIZES. NO LIMITATIONS  ****************************************/
+.row-eq-height-mobileonly {
+    display: flex;
+}
+#NewsBlocksType2 {} /* ADD YOUR EMBEDDED STYLES HERE */
+.wizdom-sliderCont {
+    background:#00354e;
+}
+ #NewsBlocksType2 .CorporateNewsBlocks2ColTypetopContainer {
+    max-width:1820px;
+    MARGIN: 0 AUTO;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType {
+    margin:0 auto;
+    width:100%;
+    max-width:1820px;
+    padding: 0 30px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .topStory {
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    color:#fff;
+    font-weight:bold;
+    padding:3px;
+    background: #333;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    padding: 5px 8px;
+    font-size: 12px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .btn,#NewsBlocksType2 .CorporateNewsBlocks2ColType .btn:hover {
+    border:0;
+    padding: 0;
+    background: transparent!important;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType > div {} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Img {
+    /* position:relative; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* min-height: 228px; */
+    float: left;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol1 {
+    padding-left:0;
+    padding-right: 0;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 {
+    padding-right:0;
+    position: relative;
+} 
+ 
+ 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Content .CorporateNewsBlocks2ColType-date {
+    font-size:15px;
+    margin:0 0 15px 0;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Img  img {
+    max-width: 100%;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock1 .CorporateNewsBlocks2ColType-Content,#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock4 .CorporateNewsBlocks2ColType-Content,#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 .CorporateNewsBlocks2ColType-Content {
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock4 .CorporateNewsBlocks2ColType-Content,#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 .CorporateNewsBlocks2ColType-Content {
+    max-width: 230px;
+    /* top: 50%; */
+    top: 30px;
+    left: auto;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Content h2 {
+    font-weight:bold;
+    color:#005b8e;
+    font-size:18px;
+    margin:0 0 15px 0;
+} 
+ 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Content h4 {
+    font-size:16px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #005b8e;
+    line-height: 1.4em;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockLeft {
+    margin-right:15px;
+    margin-bottom:30px;
+    height: 228px;
+    padding: 15px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockRight {
+    margin-left:15px;
+    margin-bottom:30px;
+    margin-right: 0;
+    height: 228px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockLeft {
+    margin-right:15px;
+    margin-top: 30px;
+    height: 230px;
+    /* padding: 0; */
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockRight {
+    margin-left:15px;
+    margin-top: 30px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans {color: #000; height:auto;} 
+ 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans:hover,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans:focus,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans:active,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans.active,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans:hover,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans:focus,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans:active,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans.active {
+    background:#fff;
+    color:#005b8e;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans > i {} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans:hover > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans:active > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans:focus > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans.active > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans:hover > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans:active > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans:focus > i,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans.active > i {
+    color:#005b8e;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock1 {
+    /* background: #fff; */
+    /* padding: 0; */
+    /* min-height: 458px; */
+    /* overflow: hidden; */
+    /* margin-right: 0; */
+    /* position: relative; */
+    max-height: 490px;
+    /* overflow: hidden; */
+    min-height: 473px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock2 {} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock3 {} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock4 {
+    background: #fff;
+    height: 230px;
+    position: relative;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 {/* background: #fff; */margin: 0;padding: 0;border: 0;height: 228px;position: relative;} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 + div,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 + div + div {padding: 0 0 0 0} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock6 {} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock7 > div {
+    display:table;
+    width:100%;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock7 > div > div {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    height: 224px;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock7 > div > div .btn-primary,
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock7 > div > div .btn-primary:hover {
+    border:none;
+    background:transparent;
+    color: #005b8e;
+} 
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock7 > div > div .btn-primary:after  {
+}
+#NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock8 {
+    margin-top:30px;
+}
+#NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media all and (max-width:1199px) {
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType {
+        padding: 0 15px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1199px) {
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 + div,
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 + div + div {padding: 0 0 0 15px}
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 + div {
+        padding: 0 0 0 15px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColTypeCol1, #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColTypeCol2 {
+        margin:0;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColTypeCol2 > div:first-child {
+        background:#00354e;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColTypeCol2 {
+        padding-left: 0;
+        border-left: 15px solid #00354e;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockRight   {
+        margin-top:0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockRight {
+        margin-bottom:15PX;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 {
+        margin-top: 15px;
+    }
+}
+@media all and (max-width:991px) {
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock1 .CorporateNewsBlocks2ColType-Content,
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock4 .CorporateNewsBlocks2ColType-Content, #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 .CorporateNewsBlocks2ColType-Content {
+        left:30px;
+        max-width:100%;
+    }
+
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Content h4 {
+        font-size:13px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Content .CorporateNewsBlocks2ColType-date {
+        font-size:12px;
+    }
+   
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockRight {
+        height: 228px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock1 .CorporateNewsBlocks2ColType-Content {
+        left:30px;
+    }
+}
+@media all and (max-width:1400px) {
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans,
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans {
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockLeft .btn-trans > i,
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType div.contentBlockRight .btn-trans > i {
+        font-size: 11px!important;
+        vertical-align: middle;
+        margin: 0 5px 0 0;
+    }  
+}
+@media all and (min-width:991px) and (max-width:1199px) {
+     #NewsBlocksType2 {
+        padding:0 15px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockRight   {
+        height:228px;
+    }
+}
+@media all and (max-width:767px) {
+    #NewsBlocksType2 {
+        padding:0;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColType-Img {
+        margin-bottom: 0;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock1,
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock4,
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock5 {
+        position:relative;
+        background:transparent;
+        min-height: auto;
+        height: auto;
+        margin: 0 0 15px 0;
+        max-height: 630px;
+        background: none!important;
+    }  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .NewsBlock7 > div > div {
+        height:170px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType {
+        padding:15px;
+        float: left;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockRight,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockRight  
+    {
+        margin: 0 0 15px 0;
+        height: 170px;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType > div > div {
+        margin: 0;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType > div {
+        padding: 0;
+        float: left;
+        margin: 0 0 15px 0;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol2 > div > div.contentBlockLeft,  
+    #NewsBlocksType2 .CorporateNewsBlocks2ColTypeCol3 > div > div.contentBlockLeft {
+         border-right: 15px solid #01354d;
+    }
+    #NewsBlocksType2 .CorporateNewsBlocks2ColType .CorporateNewsBlocks2ColTypeCol2 {
+        margin: 0;
+     }
+
+}
+@media all and (min-width:1200px) {
+    .wizdom-sliderCont {
+        /* ADD BACKGROUND FOR LARGER SIZES HERE */
+        /*   background:url(../images/sea.png); */
+    }
+}

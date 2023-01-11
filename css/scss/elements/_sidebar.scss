@@ -1,0 +1,64 @@
+// LEFT COL (SIDEBAR)
+
+.sidebar, .leftCol {
+  /* margin-top: -15px;
+  margin-bottom: -15px;
+      */
+  padding: 30px;
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      list-style: none;
+      padding-left: 0;
+      a {
+        font-size: 14px;
+        color: $color1;
+        @include transition(all 0.2s);
+        &:hover {
+          text-decoration: none;
+          font-weight: bold;
+          &:after {
+            margin-right: 20px;
+          }
+        }
+
+        >i {
+          padding-right: 20px;
+          color: $color22;
+        }
+      }
+    }
+  }
+}
+.leftCol { /* HOMEPAGE CLASS ONLY */
+    padding:0 15px;
+    /*
+    margin-top:-30px;
+    margin-bottom:-30px;
+        */
+}
+
+// RIGHT COL 
+.rightSidebar,
+.rightCol {
+    background: $color14;
+    /*
+    margin-top: -15px;
+    margin-bottom: -15px;
+        */
+    padding:0;
+    & > div {
+        padding:30px;
+    }
+}
+
+@media all and (max-width:991px) {
+    .rightSidebar > div, .rightCol > div, .sidebar {
+        padding:15px;
+    }
+    .leftCol {
+        padding-left:0;
+        padding-right:0;
+    }
+}

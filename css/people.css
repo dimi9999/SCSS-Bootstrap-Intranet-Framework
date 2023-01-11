@@ -1,0 +1,43 @@
+﻿html,body {
+    line-height:auto;
+}
+/* HEADER GLOBAL NAV AND SEARCH BOX */
+.ms-cui-tt-span {
+    /* display: block; */
+    padding: 8px 10px 8px;
+    border-top: 1px solid transparent;
+    text-align: center;
+    font-size: 14px;
+}
+/* NAVIGATION */
+#s4-titlerow #DeltaTopNavigation {
+    font-family: "Montserrat", sans-serif;
+    min-width: 100%;
+}
+.ms-core-listMenu-horizontalBox {
+    display:block;
+}
+#ribbonContainer {
+    height: 35px;
+    background: #fff;
+    position: absolute;
+    top: -5px;
+    right: 600px;
+    border-top: 0;
+}
+}
+#DeltaSPRibbon {
+    padding:0 15px;
+    background:#fff;
+}
+#DeltaSPRibbon > .ms-header {
+    padding:0;
+}
+
+/* BUTTONS */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    border-radius:0;
+    font-family: "Montserrat", sans-serif;
+}
+
+

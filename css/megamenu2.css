@@ -1,0 +1,887 @@
+﻿/* MOBILE MENU LEVEL 1 */
+
+.navdropcontainer,
+.navdropcontainer img {
+	display: none;
+}
+
+
+/* NAVIGATION */
+
+
+/* MOBILE CLOSE MENU BUTTON */
+
+#mobilemenu .closebtn,
+#mobilemenu .closebtn:hover {
+	color: #005b8e;
+	display: block;
+	font-size: 36px;
+	right: 0;
+	text-align: right;
+	margin: 0 20px;
+	padding: 0;
+	border: 0;
+	background: #005b8e;
+	color: #fff;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+	line-height: 52px;
+	font-weight: bold;
+	margin: 0;
+	position: relative;
+	z-index: 99;
+}
+
+#mobilemenu p {
+	font-size: 14px!important;
+	color: black;
+}
+
+#nav {
+	background: #b2cddd;
+	width: 100%;
+	float: left;
+	*height: 50px;
+	font-weight: 500;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+}
+
+#topnav {
+	width: 100%;
+}
+
+#mobilemenu {
+	/* left: 0;
+             TOGGLE MENU TO THE LEFT */
+	right: 0;
+	/* TOGGLE MENU TO THE RIGHT */
+	overflow-x: hidden;
+	position: fixed;
+	top: 0;
+	width: 0;
+	background: #b2cedc;
+	height: 100%;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s;
+	overflow-y: auto;
+	z-index: 100;
+}
+
+#mobilemenu .ng-hide,
+.navdropcontainer .ng-hide {}
+
+#mobilemenu>* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+}
+
+#mobilemenu .navdropcontainer {
+	padding: 20px 30px;
+	background: #e5eef3;
+}
+
+#mobilemenu .megamenu-column {
+	float: left;
+	width: 100%;
+	/* border-bottom: 1px solid #b2cedc;
+             padding: 20px 0;
+             */
+	padding: 5px;
+}
+
+#mobilemenu div>div>div {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#mobilemenu .megamenu-column:first-child {
+	padding-top: 0;
+}
+
+#mobilemenu .megamenu-column .boxes {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+}
+
+#mobilemenu .megamenu-column .boxes>div {
+	border: 0;
+}
+
+#mobilemenu .navarea ul,
+#mobilemenu .navarea li,
+#mobilemenu .navarea ul li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#mobilemenu .navarea>ul>li>a,
+#mobilemenu .navarea>ul>li>div>a {
+	display: block;
+	cursor: pointer;
+	font-size: 16px;
+	border-bottom: 0;
+	font-weight: 500;
+	padding: 10px 17px;
+	color: #333!important;
+	background: #b2cedc;
+	border: 0;
+	border-bottom: 1px solid #85a8b9;
+}
+
+#mobilemenu .navdropcontainer div ul li.header {
+	font-size: 14px;
+	color: #005b8e;
+	text-align: left;
+	border-bottom: 1px dotted #cccccc;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-bottom: 7px;
+	margin: 7px 0;
+}
+
+#mobilemenu .navdropcontainer div ul>li.header a:before {
+	content: '';
+	margin: 0;
+}
+
+#mobilemenu .navdropcontainer div ul>li>a:before,
+#mobilemenu h1 a:before,
+#mobilemenu h2 a:before,
+#mobilemenu h3 a:before,
+#mobilemenu h4 a:before,
+#mobilemenu h5 a:before {
+	/* WE NEED TO REMOE THIS CODE NOW AS ON WRAP IT FALLS AFTER THE GLYPHICON. USE BACKGROUND INSTEAD :) font-family: "Glyphicons Halflings" !important;
+             content: '\e258';
+             font-size: 12px;
+             font-weight: bold;
+             margin-right: 10px;
+             color: #0d6494;
+             font-size: 12px;
+             */
+	content: '';
+	width: 0;
+	margin: 0;
+}
+
+#mobilemenu .navdropcontainer div ul>li>a,
+#mobilemenu h1 a,
+#mobilemenu h2 a,
+#mobilemenu h3 a,
+#mobilemenu h4 a,
+#mobilemenu h5 a,
+#mobilemenu .megamenu-column .boxes h1,
+#mobilemenu .megamenu-column .boxes h2,
+#mobilemenu .megamenu-column .boxes h3,
+#mobilemenu .megamenu-column .boxes h4,
+#mobilemenu .megamenu-column .boxes h5 {
+	padding-left: 20px!important;
+	background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/menu-right-arrow.jpg) no-repeat left center;
+	display: block;
+}
+
+
+/* TO AVOID DOUBLE ARROWS */
+
+#mobilemenu h1 a,
+#mobilemenu h2 a,
+#mobilemenu h3 a,
+#mobilemenu h4 a,
+#mobilemenu h5 a {
+	padding-left: 0!important;
+	background: none;
+}
+
+#mobilemenu .navdropcontainer div ul>li>a.btmItem {
+	padding-left: 0!important;
+	background: none;
+}
+
+#mobilemenu .navdropcontainer div ul>li>a.btmItem:before {
+	content: '';
+	margin-right: 0;
+}
+
+
+/* MOBILE MENU LEVEL 2 */
+
+#togglemenu {
+	position: absolute;
+	background: #005b8e;
+	color: white;
+	border: 0;
+	right: 0;
+	top: 0;
+	display: block;
+	border-radius: 0;
+	font-size: 21px;
+	width: 47px;
+	height: 47px;
+	border-radius: 0;
+	z-index: 99999;
+}
+
+.hideBreadCrumb #togglemenu {
+	top: 0;
+}
+
+#mobilemenu .navarea>* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#mobilemenu>* {
+	background-color: transparent;
+}
+
+#mobilemenu .navarea>ul>li ul h6 {
+	margin: 0;
+	padding: 8px 20px;
+	font-size: 14px;
+}
+
+#mobilemenu .navarea>ul>li ul>li>a {
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	color: #000;
+	padding: 3px 10px;
+	font-weight: 500;
+}
+
+#mobilemenu .navarea>ul>li ul>li>a:hover {
+	text-decoration: underline;
+}
+
+#mobilemenu .navarea>ul>li ul>li.header>a {
+	padding-left: 0;
+}
+
+#mobilemenu .navarea>ul>li ul>li>a.btmItem,
+#mobilemenu img {
+	/* display: none;
+             */
+}
+
+#mobilemenu div>div>div {
+	background: #e5eef3;
+	/* 993PX */
+	width: 100%;
+}
+
+#mobilemenu h1,
+#mobilemenu h2,
+#mobilemenu h3,
+#mobilemenu h4,
+#mobilemenu h5 {
+	text-align: left;
+	font-weight: 500!important;
+	font-size: 14px;
+	margin-top: 12px!important;
+	line-height: 1.4em;
+	margin: 5px 0;
+}
+
+#mobilemenu .navdropcontainer .megamenu-column h1:first-child,
+#mobilemenu .navdropcontainer .megamenu-column h2:first-child,
+#mobilemenu .navdropcontainer .megamenu-column h3:first-child,
+#mobilemenu .navdropcontainer .megamenu-column h4:first-child,
+#mobilemenu .navdropcontainer .megamenu-column h5:first-child {
+	margin-top: 0;
+}
+
+#mobilemenu h1 a,
+#mobilemenu h2 a,
+#mobilemenu h3 a,
+#mobilemenu h4 a,
+#mobilemenu h5 a {
+	/* color:#fff!important;
+             */
+}
+
+#mobilemenu .navdropcontainer div ul>li.header>a,
+#mobilemenu .navdropcontainer div ul>li span.header,
+#mobilemenu .navdropcontainer div ul>li>a.TopItem {
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	display: block;
+	margin: 14px 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #005b8e;
+}
+
+#mobilemenu .navdropcontainer div ul>li>a.TopItem {
+	background-image: none!important;
+	padding-left: 0!important;
+}
+
+#mobilemenu .navdropcontainer div ul>li.header:first-child>a,
+#mobilemenu .navdropcontainer div ul>li:first-child span.header,
+#mobilemenu .navdropcontainer div ul>li:first-child>a.TopItem {
+	/* margin-top:0;
+             */
+	background-image: none;
+	border: 0;
+	padding-left: 0!important;
+}
+
+#mobilemenu .navdropcontainer div ul>li.header:before,
+#mobilemenu .navdropcontainer div ul>li.header>a:before,
+#mobilemenu .navdropcontainer div ul>li span.header:before,
+#mobilemenu .navdropcontainer div ul>li>a.TopItem:before {
+	margin: 0;
+	content: '';
+}
+
+#mobilemenu .hidden-mobile {
+	display: none;
+}
+
+
+/**** MEGAMENU BUTTONS *****/
+
+.navdropcontainer .btn>i {
+	margin-right: 5px;
+}
+
+.navdropcontainer .btmItem {
+	background: #e5eef3;
+	font-weight: 500;
+	text-align: left;
+	display: block;
+	color: #005b8e;
+	transition: none;
+	margin-top: 15px;
+	padding-left: 40px;
+}
+
+.navdropcontainer .btmItem:hover {
+	text-decoration: none;
+	background: none;
+}
+
+.navdropcontainer .btmItem:before {
+	content: '';
+	margin-right: 0;
+}
+
+.navdropcontainer .btmItem:focus {
+	background: none;
+	box-shadow: none;
+}
+
+.navdropcontainer .btmItem:after {
+	content: "";
+	width: 17px;
+	height: 17px;
+	background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/nav-btn-arrow.png) no-repeat;
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 100%;
+	*display: inline;
+	vertical-align: top;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+
+/* LIST CONTENT BLOCKS*/
+
+.navdropcontainer .megamenu-column ul ul.list-content-block {
+	padding: 35px 15px 0 15px;
+	display: block;
+}
+
+.navdropcontainer .megamenu-column ul ul.list-content-block.first-child {
+	padding-top: 0;
+}
+
+.navdropcontainer .megamenu-column ul ul.list-content-block * {
+	margin: 0;
+	padding: 0;
+}
+
+.navdropcontainer .megamenu-column ul li.list-img,
+.navdropcontainer .megamenu-column ul li.list-content {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 20px!important;
+}
+
+.navdropcontainer .megamenu-column ul li.list-img img {
+	margin-top: 0!important;
+}
+
+.navdropcontainer .megamenu-column ul li.list-content ul>li {
+	display: block;
+}
+
+.navdropcontainer .megamenu-column ul li.list-content .header {
+	display: block;
+	font-weight: bold;
+	color: #000;
+	text-transform: none;
+	margin: 2px 0 10px 0!important;
+	padding: 0;
+}
+
+.navdropcontainer .megamenu-column ul li.list-content a {
+	padding-left: 0;
+	padding-right: 0;
+	line-height: 1.4em;
+}
+
+.navdropcontainer .megamenu-column ul li.list-content a:before,
+.navdropcontainer .megamenu-column ul li.list-content a:hover,
+.navdropcontainer .megamenu-column ul li.list-content a:hover:before {
+	content: '';
+	margin: 0;
+	transition: none;
+}
+
+.navdropcontainer .megamenu-column ul li.list-img {
+	padding-right: 20px;
+	vertical-align: top;
+	padding-top: 0;
+}
+
+#mobilemenu .navdropcontainer .megamenu-column ul li.list-img img {
+	margin: 0!important;
+	vertical-align: middle!important;
+	display: block!important;
+}
+
+#mobilemenu .navdropcontainer .list-content span.header {
+	color: #333;
+	font-weight: bold;
+	text-transform: unset;
+}
+
+#mobilemenu li.list-content {
+	padding-left: 15px!important;
+	padding-bottom: 25px!important;
+}
+
+#mobilemenu .navdropcontainer li.list-content a {
+	padding-left: 0!important;
+	background-image: none!important;
+	padding: 0!important;
+}
+
+
+/* SHAREPOINT MEDIA QUERIES 993px OVERWRITES */
+
+#mobilemenu .navdropcontainer .row {
+	display: block;
+}
+
+
+/* SHAREPOINT MEDIA QUERIES 993px OVERWRITES */
+
+@media screen and (min-width: 993px) {
+	/* CHANGE FROM 992 TO 993 TO OVERWRITE SHAREPOINT MEDIA QUERIES */
+	#togglemenu,
+	#overlay-mobilemenu,
+	#mobilemenu,
+	#topnav .closebtn {
+		display: none!important;
+	}
+	#topnav {
+		background: transparent;
+	}
+	.navarea {
+		height: 50px;
+		overflow: hidden;
+	}
+	#topnav .navarea {
+		display: block !important;
+		width: 100%;
+	}
+	.navarea ul,
+	.navarea li,
+	.navarea ul>li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	/* FLEX ADD THESE PROPERTIES TO WRAP THE NEXT COLUMN AT THE BOTTOM OF OUR MENU */
+	.navdropcontainer .inner {
+		/* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox;
+		/* TWEENER - IE 10 */
+		display: -webkit-flex;
+		/* NEW, Spec - Opera 12.1, Firefox 20+ */
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		/* Safari 6.1+ */
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		-webkit-justify-content: space-between;
+		/* Safari 6.1+ */
+		justify-content: space-between;
+		list-style: none;
+	}
+	.navdropcontainer .inner .megamenu-column {
+		/* min-width:20%;
+                /* 16.6% for 6 cols 20% for 5 columns etc */
+		float: left;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		flex-basis: 20%;
+	}
+	/* MAIN MENU FIRST LEVEL */
+	.navarea>ul>li {
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		position: static;
+	}
+	/* WIZDOM ONLY .navarea > ul > li:hover .navdropcontainer {
+                 display:block;
+            }
+             */
+	.navarea>ul>li>a,
+	.navarea>ul>li>div>a {
+		cursor: pointer;
+		display: block;
+		padding: 14px 18px;
+		color: #000;
+		font-size: 14px;
+		border-left: 1px solid #99bdd2;
+		text-decoration: none;
+		font-weight: 500;
+		transition: 0.5s all ease-in;
+	}
+	.navarea>ul>li>a i,
+	.navarea>ul>li>div>a i {
+		font-size: 9px !important;
+		padding: 0 0 0 10px;
+		color: #000!important;
+	}
+	.navarea>ul>li.header>a:hover {
+		background: none;
+	}
+	.navarea>ul>li:hover,
+	.navarea>ul>li.active {
+		background: #e5eef3;
+	}
+	/* MAIN MENU SECOND LEVEL (NAVDROPCONTAINER) */
+	.navdropcontainer {
+		/* background-color: #e5eef3;
+                 */
+		background-color: #fff;
+		display: none;
+		position: absolute;
+		z-index: 100;
+		left: 0;
+		-webkit-box-shadow: -2px 6px 12px -2px #a3a0a3;
+		-moz-box-shadow: -2px 6px 12px -2px #a3a0a3;
+		box-shadow: -2px 6px 12px -2px #a3a0a3;
+		margin-top: -2px;
+	}
+	.navdropcontainer.fullwidth,
+	.navdropcontainer.fullWidth {
+		width: 100%;
+	}
+	.navdropcontainer>div>ul,
+	.navdropcontainer>div li,
+	.navdropcontainer>div>ul>li {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.navdropcontainer div>ul>li {
+		display: block;
+		border: none;
+		float: none;
+	}
+	.navdropcontainer div ul>li {
+		font-size: 14px;
+	}
+	.navdropcontainer div ul>li p {
+		font-size: 18px;
+		line-height: 1.4em;
+	}
+	/* DELCARE THE COLOURS AND HOVER STATES FOR ALL LINKS */
+	.navdropcontainer div ul li a {
+		color: black;
+	}
+	.navdropcontainer div ul li a:hover {
+		color: #006ba8;
+	}
+	.navdropcontainer div ul>li>a {
+		font-size: 14px;
+		display: block;
+		margin: 0;
+		padding: 6px 0 6px 55px;
+		/* UST ALWAYS BE THE SAME FOR ALL LINKS APART FROM HEADINGS THAT NEED A BIT LESS PADDING */
+		text-decoration: none;
+		font-weight: 500;
+		text-transform: none;
+		position: relative;
+		-webkit-transition: all 0.3s ease-in;
+		-moz-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
+		transition: all 0.3s ease-in;
+	}
+	.navdropcontainer div ul>li>a:before {
+		transition: all 0.3s ease-in;
+		font-family: 'Glyphicons Halflings';
+		content: '\e258';
+		color: #0d6494;
+		font-size: 12px;
+		font-weight: bold;
+		display: inline-block;
+		position: absolute;
+		left: 35px;
+		top: 7px;
+	}
+	.navdropcontainer div ul>li.header,
+	.navdropcontainer div ul>li.header>a,
+	.navdropcontainer div ul>li span.header,
+	.navdropcontainer div ul>li>a.TopItem {
+		display: block;
+		margin-top: 15px!important;
+		margin-bottom: 15px!important;
+		font-size: 16px;
+		font-weight: 600;
+		padding: 6px 35px;
+		/* FOR HEADINGS OR TOP ITEMS ONLY */
+		text-align: left;
+		text-transform: uppercase;
+		color: #006ba8;
+	}
+	.navdropcontainer div ul>li:first-child>a,
+	.navdropcontainer div ul>li:first-child>span {
+		margin-top: 0!important;
+	}
+	.navdropcontainer div ul>li>a.TopItem i {
+		display: none;
+	}
+	#mobilemenu .navdropcontainer div ul>li>a.TopItem {
+		background-image: none;
+		padding-left: 0!important;
+	}
+	.navdropcontainer div ul>li.header>a:before,
+	.navdropcontainer div ul>li>a.TopItem:before {
+		content: '';
+		margin: 0;
+		transition: none;
+	}
+	.navdropcontainer div ul>li>a.google-link:before {
+		content: '';
+		padding-right: 10px;
+	}
+	.navdropcontainer div ul>li>a.google-link {
+		background: url(https://cfcloud.sharepoint.com/sites/WizdomDemo/Style%20Library/images/icons/google-maps-icon.jpg) left center no-repeat;
+		font-size: 14px;
+		padding-left: 30px;
+	}
+	.navdropcontainer div ul>li>a.Item:hover {
+		color: #0d6494;
+		-webkit-transition: all 0.3s ease-in;
+		-moz-transition: all 0.3s ease-in;
+		-o-transition: all 0.3s ease-in;
+		transition: all 0.3s ease-in;
+	}
+	/* LINK ANIMATIONS */
+	/* (1) ARROW ANIMATION ONLY .navdropcontainer div ul > li > a:hover:before {
+                 margin-left: 5px;
+            }
+             */
+	/* (2) LINK AND ARROW ANIMATION */
+	.navdropcontainer div ul>li>a.Item:hover {
+		margin-left: 10px;
+	}
+	.navdropcontainer div ul>li>a:before {
+		color: #0d6494;
+	}
+	.navdropcontainer img {
+		margin: 15px 0!important;
+		padding: 5px;
+		display: inline-block;
+	}
+	.navdropcontainer div ul>li.header>a:hover,
+	.navdropcontainer div ul>li>a.TopItem:hover,
+	.navdropcontainer div ul>li.header>a:hover:before,
+	.navdropcontainer div ul>li>a.TopItem:hover:before {
+		margin-right: 0;
+	}
+	/* MEGAMENU COLUMNS AND BOXES */
+	.navdropcontainer .megamenu-column {
+		background-color: #e5eef3;
+		display: -moz-inline-stack;
+		display: inline-block;
+		zoom: 100%;
+		*display: inline;
+		float: left;
+		min-width: 20%;
+		width: auto;
+		max-width: 100%;
+		vertical-align: top;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.navdropcontainer .megamenu-column.fullwidth {
+		width: 100%;
+	}
+	.navdropcontainer .megamenu-column>ul {
+		display: block;
+		position: relative;
+		/* trick here to absolute position block of html content */
+		height: 100%;
+		padding: 35px 15px!important;
+		/* CHANGE PADDINGS HERE ACCORIDNG TO DESIGN */
+		box-sizing: border-box;
+	}
+	.navdropcontainer .megamenu-column:first-child>ul {}
+	.navdropcontainer .megamenu-column:last-child>ul {}
+	/* Here we need to hack our column due to html restrictions on wizdom */
+	.megamenu-column .fullheight {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.megamenu-column p {
+		font-size: 18px;
+	}
+	/* LOCATIONS */
+	.navdropcontainer ul.location {
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0!important;
+		padding: 2px 15px!important;
+		margin: 0 auto!important;
+		display: block;
+	}
+	.navdropcontainer ul.location.first-col {
+		padding-right: 0;
+		padding-left: 25px;
+	}
+	.navdropcontainer ul.location.second-col,
+	.navdropcontainer ul.location.third-col,
+	.navdropcontainer ul.location.fourth-col {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.navdropcontainer .megamenu-column:last-child>ul.location.last-col,
+	.navdropcontainer ul.location.last-col {
+		padding-left: 0;
+		padding-right: 25px;
+	}
+	.navdropcontainer .megamenu-column .location p {
+		font-size: 14px;
+	}
+	.navdropcontainer .megamenu-column .location img {
+		padding: 0;
+		margin-bottom: 15px!important;
+		margin-top: 0!important;
+		width: auto!important;
+		max-width: 100%;
+	}
+	/* BOXES */
+	.navdropcontainer .megamenu-column .boxes {
+		display: block;
+		padding: 0 35px;
+	}
+	.navdropcontainer .megamenu-column .boxes.boxes-small {
+		max-width: 700px;
+	}
+	.navdropcontainer .megamenu-column .boxes>.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div {
+		min-height: 140px;
+		border-bottom: 1px solid #99bdd2;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div.box-small,
+	.navdropcontainer .megamenu-column .boxes>div>div.box-medium {
+		width: 20%;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div.box-small {
+		min-height: 120px;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div .megamenu-column .boxes>div>div img {
+		max-height: 60px;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div {
+		border-bottom: 1px solid #99bdd2;
+		border-right: 1px solid #99bdd2;
+		font-size: 14px;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div h5 {
+		font-size: 16px;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div:nth-child(8n+8),
+	.navdropcontainer .megamenu-column .boxes.boxes-small>div>div:nth-child(3n+3) {
+		border-right: 0;
+	}
+}
+
+@media all and (min-width: 1281px) {
+	.navarea>ul>li>a,
+	.navarea>ul>li>div>a {
+		font-size: 15px;
+		padding: 14px 12px;
+		transition: 0.5s all ease-in;
+	}
+	.navdropcontainer .megamenu-column .boxes>div>div.box-small,
+	.navdropcontainer .megamenu-column .boxes>div>div.box-medium {
+		width: 12.5%;
+	}
+}
+
+@media all and (min-width:1200px) {
+	.navdropcontainer .inner .megamenu-column {
+		-webkit-flex-grow: 5;
+		flex-grow: 5;
+		flex-basis: 20%;
+		width: 20%;
+		float: left;
+	}
+}
+
+li#tab10 .navdropcontainer .inner .megamenu-column:nth-child(2n) {
+	max-width: 200px;
+}
+
+@media all and (min-width: 1500px) {
+	.navarea>ul>li>a,
+	.navarea>ul>li>div>a {
+		font-size: 16px;
+		padding: 14px 18px;
+	}
+}
+
+
+/* CHILDREN CLASSES */
+
+.navarea>ul>li.topElement.has_children>a:after,
+.navarea>ul>li.topElement.has_children>div>a.TopItem:after {
+	content: '';
+	color: #000!important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: #000000 transparent transparent transparent;
+	margin: 10px 0 0 10px;
+	display: inline-block;
+	float: right;
+}
+

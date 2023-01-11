@@ -1,0 +1,892 @@
+/* BREADCRUMBS */
+ #breadcrumbs {
+     background: rgba(15, 101, 149, 0.6);
+     font-size:14px;
+     width:100%;
+     color:$color0;
+     clear: both;
+     position: relative;
+     z-index: 9;
+}
+ #breadcrumbs .inner {
+    padding:7px 15px;
+}
+ #breadcrumbs .inner a {
+    color:$color0;
+     margin:0 10px;
+}
+/* FILTERS */
+ .HorizfiltersCont > * {
+     width:100%;
+     margin:10px 0 10px 15px;
+}
+ .HorizfiltersCont > label {
+     width:30%;
+}
+ /* CMMUNITIES & POLICIES */
+ .communitiesCont,
+ .policiesCont {
+    font-size:16px;
+}
+ .communitiesCont .communities > div,
+ .policiesCont .policies > div {
+     margin:30px 0;
+     &.wizdomUpdateBy {
+     	margin:45px 0;
+     }
+}
+ .communitiesHeader,
+ .policiesHeader {
+    background:$color13;
+    margin-bottom: 0!important;
+}
+.policiesAlphabetical {
+    background:$color11;
+    margin-bottom: 0!important;
+    margin-top: 0!important;
+}
+ .communitiesHeader > div, .communitiesContent > div,
+ .policiesHeader > div, .policiesContent > div,
+ .policiesAlphabetical > div  {
+    margin:0;
+    padding: 15px 0;
+}
+ .communitiesHeader > div > div > h6,
+ .policiesHeader > div > div > h6 {
+    width:auto;
+    font-weight:bold;
+    background: url(../images/icons/select-double-arrow.png) no-repeat right;
+    display: inline-block;
+    padding-right: 15px;
+    margin: 0;
+    font-size: 16px;
+}
+ .communitiesContent > div,
+ .policiesContent > div {
+    background:$color0;
+}
+ .communitiesContent,
+ .policiesContent {
+    margin-top:0!important;
+ }
+.policiesContent {
+    margin-bottom:0!important;
+}
+ .communitiesContent > div:nth-child(2n+2),
+ .policiesContent > div:nth-child(2n+2)  {
+    background:#f2f7f9;
+}
+ .communitiesContent > div,
+ .policiesContent > div {
+    vertical-align: top;
+}
+ div.communitiesTitleCol {
+    width:28%;
+}
+ div.communitiesDescCol {
+    width:40%;
+}
+ div.communitiesTypeCol{
+    width:15%;
+}
+ div.communitiesOwnerCol {
+    width:15%;
+}
+ div.communitiesTitleCol .star {
+    display:inline-block;
+     margin-right:10px;
+     vertical-align: text-bottom
+}
+ /*
+.policiesTitleCol {width:59%;}
+.policiesOwnerCol {width:29%;}
+.policiesCountryCol {width:29%;}
+*/
+
+
+.communitiesList li,
+.policiesList li {
+    background: url(../images/icons/star-active.png) left center no-repeat;
+    padding-left: 40px;
+    list-style: none;
+    margin: 25px 0 0 0;
+}
+
+/* WIZDOM CARDS */
+.wizdomCards {
+    margin: 40px 0!important;
+}
+.wizdomCards .card {
+  background:$color0;
+  border: 1px solid #ccc;
+  padding:10px;
+  margin: 0 0 10px 0;
+  min-height: 94px;
+}
+.wizdomCards h5 {
+  font-weight: 500;
+}
+.wizdomCards h5 span {
+  background: #666;
+  color:$color0;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-size: 12px;
+  margin: 0 6px;
+}
+.wizdomCards .card img {
+    max-width: 35px!important;
+    max-height: 35px!important;
+}
+.wizdomCards .card > div:nth-child(2) {
+  margin:15px 0 0 0;
+}
+.wizdomCards .card .glyphicon {
+  margin-right:5px;
+    color:#666;
+}
+
+
+
+// WIZDOM DEPARTMENTS
+.wizdomMainContainer {
+  padding: 60px 80px;
+  & h1 {
+  	margin-top:0;
+  	margin-bottom:50px;
+  }
+  & h2 {
+  	margin-top:40px;
+  	margin-bottom:40px;
+  }
+}
+#mainbanner {position: relative;margin-top: -34px; min-height:220px;}
+#mainbanner img {width: 100%;}
+#mainbanner h1 {
+	color:$color0;
+	position: absolute;
+	top: 45%;
+	width:100%;
+	text-align: center;
+	margin: 0;
+}
+.tab {
+	padding: 0 20px 20px 20px;
+}
+.tab.closed {
+	display:none;
+}
+.tab.open {
+	display: block;
+}
+.accordionlink > a {
+	display:block;
+	border-bottom: 1px solid #ccc;
+	padding:20px;
+	position: relative;
+}
+.accordionlink > a:first-child {
+	border-top:1px solid #ccc;
+	border-bottom: none;
+}
+ 
+.accordionlink a:after {
+	font-family: Fontawesome;
+	content:'\f067';
+	position: absolute;
+	right:0;
+}
+.accordionlink.minus a:after {
+	font-family: Fontawesome;
+	content:'\f068'!important;
+}
+@media all and (min-width:992px) {
+	#mainbanner {min-height:212px;}
+}
+@media all and (max-width:991px) {
+	#mainbanner h1 {
+		font-size:20px;
+		margin: 0 5%;
+    	width: 90%;
+	}
+}
+@media all and (max-width:1350px) {
+	.wizdomMainContainer {
+		padding:15px;
+	}
+}
+
+ 
+// WIZDOM COMPONENTS
+.wizdom-container {
+	float:left;
+	width:100%;
+}
+.wizdom-contentHeader {
+    font-size:18px;
+    font-weight:bold;
+    text-transform: uppercase;
+    @include inline-block;
+    padding-bottom:30px;
+    margin-bottom:30px;
+		&:after {
+		    content: "";
+		    width: 146px;
+		    height: 3px;
+		    background-color: #666;
+		    left: 0;
+		    position: relative;
+		    display: block;
+		    top: 25px;
+		}
+} 
+
+.circle {
+	@include border-radius(50%);
+	width:70px;
+	height:70px; 
+	display:block;
+	margin:10px auto;
+}
+.palettes 	{
+	margin:2px 0;
+	& > div {
+		@include inline-block;
+		text-align:center;
+		margin:0 10px;
+	}
+}
+
+// PAGINATION
+.wizdom-noticeBoardContent-pager,
+.wizdom-EventsContent-pager,
+.wizdom-NewsContent-pager,
+.wizdom-Content-pager {
+	    margin-top:15px;
+	    & a{
+		    @include inline-block;
+		    @include transition(all 0.6s); 
+		    font-weight: 900;
+		    width: 40px;
+		    height: 40px;
+		    line-height: 40px;
+		    text-align: center;
+		    text-decoration: none;
+		    font-size:13px;
+			&:hover  {
+				text-decoration:underline;
+		 	}
+			&:focus, &:active, &.current {
+		    	color:$color0;
+		    	background: $color3;
+		    	@include border-radius(4px);
+		    	text-decoration:none;
+		   	}
+		   	&.next 	{ 
+			   		background: url(../images/icons/nav-btn-arrow-right-inactive.png) center no-repeat; 
+			   				&.active {background: url(../images/icons/nav-btn-arrow-right.png) center no-repeat;
+			   				&:hover {
+			   					background: url(../images/icons/nav-btn-arrow-right-hover.png) center no-repeat;
+			   				}
+			   			}
+			   		}
+		  
+		    &.prev 	{ 
+		    	background: url(../images/icons/nav-btn-arrow-left-inactive.png) center no-repeat; 
+		   				&.active {background: url(../images/icons/nav-btn-arrow-left.png) center no-repeat;
+		   				&:hover {
+		   					background: url(../images/icons/nav-btn-arrow-left-hover.png) center no-repeat;
+		   				}
+		   			}
+		   		}
+	   		}
+	   }
+      .wizdom-Content-pager,
+	  .wizdom-EventsContent-pager,
+	  .wizdom-NewsContent-pager {
+	  	  margin-top: 35px;
+	    & a{
+	    	color:$color1;
+			&:focus, &:active, &.current {
+		    	color:$color2;
+		    	background: none!important;
+		    	text-decoration:none;
+		   	}
+		   	&.next 	{ 
+			   			background: $color0!important; 
+			   			border:1px solid $color1e!important;	
+			   			color:$color1c!important;	 
+			   		}
+		  
+		    &.prev 	{ 
+		    			background: $color0!important; 
+			   			border:1px solid $color1e!important;	
+			   			color:$color1c!important;	
+		   			}
+		   		}
+		    
+	   		}
+ 
+
+// TABS
+.nav-tabs {
+	border-bottom:2px solid $color1e;
+}
+.nav-tabs > li,
+.nav-tabs > li.active {
+		margin-bottom:-2px;
+		padding-left:0;
+	 	 > a {
+	    	color: $color1;
+	    	text-transform: uppercase;
+	    	font-size: 16px;
+	    	font-weight: 600;
+	    	border-radius:0;
+	    	border-color:transparent;
+	    	background-color:transparent;
+    	}
+    }
+    .nav-tabs > li.active > a {
+	    	border-bottom: 2px solid $color3;
+	        background-color:transparent;
+	        color:$color3;
+    }
+
+.nav-tabs > li > a,
+.nav-tabs > li.active > a {
+	 @include transition(all 0.6s);
+		&:hover,&:focus{
+			 cursor: pointer;
+			 background-color:$color15;
+			 border-color:transparent;
+			 border-bottom: 2px solid $color3;
+			 color:$color3;
+	 	}
+	 	& > i {
+	 		 margin-right:5px;
+	 	}
+}
+.tab-content > .tab-pane {
+	& h3 {
+		font-size:16px;
+	}
+	& > div {
+		color:$color1;
+		font-size:16px;
+		margin-top:30px;
+	}
+}
+
+// FILTERS 
+.filters div > a,
+.leftnavlinks div > a, {
+	color:$color1;
+	margin:15px 0;
+	display:block;
+	&:hover {
+		color:$color5;
+		text-decoration:none;
+	}
+	&.blue 		{padding-left:10px;border-left:9px solid; border-color:$color3;}
+	&.red 		{padding-left:10px;border-left:9px solid; border-color:$color19;}
+	&.green 	{padding-left:10px;border-left:9px solid; border-color:$color18;}
+	&.yellow 	{padding-left:10px;border-left:9px solid; border-color:$color20;}
+}
+.filters h3,
+.leftnavlinks h3 {
+	margin:30px 0;
+	font-size:16px;
+}
+.filters > div:first-child h3 {
+	 margin-top:0;
+}
+.calendar-blue 	  {background-color:$color3;}
+.calendar-red 	  {background-color:$color19;}
+.calendar-green   {background-color:$color18;}
+.calendar-yellow  {background-color:$color20;}
+
+ 
+/***** WIZDOM EVENTS & NEWS *****/
+.wizdom-Events .wizdom-user, 
+.wizdom-Events .wizdom-time,
+.wizdom-Events .wizdom-text,
+.wizdom-News .wizdom-user, 
+.wizdom-News .wizdom-time,
+.wizdom-News .wizdom-text,
+.wizdom-Results .wizdom-time,
+.wizdom-Results .wizdom-text  {font-size:16px;}
+
+.wizdom-EventsContent,
+.wizdom-NewsContent,
+.wizdom-ResultsContent {
+    display:table;
+    font-weight: 500;
+    padding: 30px;
+    border-bottom: 2px solid $color1e;
+    width: 100%;
+}
+.wizdom-ResultsContent .wizdom-link {
+    font-size:14px;
+}
+.wizdom-ResultsContentRight {
+        & a img  {
+            margin-right:5px;
+            vertical-align:baseline;
+        }
+}
+.wizdom-NewsContent,
+.wizdom-ResultsContent {
+    z-index:1;
+	 @include transition(all 0.6s);
+	 &:hover {
+	 	background:$color12;
+	 }
+}
+
+.wizdom-EventsContentLeft,
+.wizdom-EventsContentRight,
+.wizdom-NewsContentLeft,
+.wizdom-NewsContentRight
+.wizdom-ResultsContentLeft,
+.wizdom-ResultsContentRight,
+.wizdom-ResultsContentImage {
+    display: table-cell;
+    vertical-align: top;
+    z-index:1;
+}
+.wizdom-ResultsContentImage {
+    vertical-align: middle;
+    padding-left:30px;
+}
+.wizdom-EventsContentRight,
+.wizdom-NewsContentRight
+{
+    padding-left:15px;
+}
+.wizdom-NewsContentRight,
+.wizdom-ResultsContentRight {
+	padding-left:30px;
+}
+.wizdom-ResultsContentRight {
+    padding-left:0;
+}
+.wizdom-EventsContentRight p,
+.wizdom-NewsContentRight p,
+.wizdom-ResultsContentRight p {
+	margin:0 0 7px 0;
+}
+.wizdom-EventsContentLeft .date 	{background:$color0; border:1px solid $color1e; text-align:center; max-width:80px;}
+.wizdom-EventsContentLeft .day 		{font-size:26px;font-weight:bold; color:$color1b}
+.wizdom-EventsContentLeft .month 	{color:$color0; font-weight:bold; padding:5px 0;}
+.wizdom-EventsLinks a,
+.wizdom-NewsLinks a,
+.wizdom-ResultsLinks a  			{font-size:14px; margin:20px;@include inline-block;}
+
+@media all and (max-width:991px) {
+    .wizdom-EventsContent,
+    .wizdom-NewsContent,
+    .wizdom-ResultsContent {
+        padding-left:0;
+        padding-right:0;
+    }
+    .wizdom-EventsContentLeft .day,
+    .wizdom-EventsContentLeft .month {
+        padding:7px;
+    }
+}
+@media all and (max-width:1024px) {
+    .accordionlink > a {
+        padding:10px 0;
+    }
+    .tab {
+        padding: 0 0px 15px 0;
+    }
+}
+@media all and (max-width:767px) {
+    .wizdom-EventsLinks a,
+    .wizdom-NewsLinks a,
+    .wizdom-ResultsLinks a {
+        margin:7px;
+    }
+    .wizdom-text {
+        font-size:14px;
+    }
+    .wizdom-noticeBoardContent-pager,
+    .wizdom-EventsContent-pager,
+    .wizdom-NewsContent-pager,
+    .wizdom-Content-pager {
+ 
+	    & a {
+                width:20px;
+             
+        &.prev, &.next {
+            width:40px;
+        }
+        }
+        }
+    .wizdom-EventsContent,
+    .wizdom-NewsContent,
+    .wizdom-ResultsContent {
+        padding:15px 0;
+        display:block;
+        & img {
+            
+        }
+        &:hover {
+            background:none;
+        }
+    }
+    .wizdom-NewsContentRight, .wizdom-ResultsContentRight {
+        padding-left:0;
+    }
+    .wizdom-ResultsContentImage {
+        padding-left:0;
+    }
+}
+/* WIZDOM REQUESTS */
+.wizdomDocuments {
+  font-size:14px;
+}
+.wizdom-DocumentsContainer > div > div,
+.wizdom-DocumentsContainer > div > div > div {
+  margin: 0 0 20px 0;
+}
+.wizdom-DocumentsContainer > div > div > div img {
+  margin-right:5px;
+  vertical-align: middle;
+}
+.wizdom-Documentslist > div,
+.wizdom-Documentsheader > div,
+.wizdom-DocumentsName,
+.wizdom-DocumentsUser,
+.wizdom-DocumentsDate   {
+  display: -moz-inline-stack;
+  display:inline-block;
+  zoom:100%;
+  *display:inline;
+  vertical-align: top;
+}
+.wizdom-DocumentsContainer > div > div > div.header {color:#666666;}
+.wizdom-DocumentsName {width: 40%;padding-right: 2%;}
+.wizdom-DocumentsUser{width: 25%;}
+.wizdom-DocumentsDate {width: 25%;padding-right: 2%;}
+ 
+.wizdom-Documentsheader > div {
+    margin-right: 15px!important;
+}
+.wizdom-Documentsheader > div i {color:#0079c3;margin-right: 7px;} 
+.wizdom-Documentsheader > div:before,
+.wizdom-Documentsheader > div:after {    
+    font-family: 'Glyphicons Halflings';
+    font-weight: 600;
+    font-size: 15px;
+    color: #0079c3;
+    margin-right: 5px;
+    vertical-align: middle;
+  } 
+  .wizdom-Documentsheader > div:after {
+    margin-left:5px;
+    margin-right:0;
+  }
+.wizdom-Documentsheader > div.new:before {content:'\e081';} 
+.wizdom-Documentsheader > div.sync:before {content:'\e031';} 
+.wizdom-Documentsheader > div.share:before {content:'\e066';} 
+.wizdom-Documentsheader > div.more:after {content:'\e259'; }
+ 
+ 
+ @media all and (max-width:991px) {
+     .communitiesHeader > div > div,.communitiesContent > div > div,
+     .policiesHeader > div > div,.policiesContent > div > div {
+         margin:7px 0;
+         width:100%;
+         font-size:14px;
+    }
+}
+
+@media all and (max-width:767px) {
+     .filters div > a, .leftnavlinks div > a {
+        font-size:13px;
+     }
+     .wizdomUpdateBy {
+        text-align:center;
+        float:none;
+        margin:15px 0!important;
+     }
+     .wizdomUpdateBy > * {
+        text-align:center;
+        float:none;
+        margin-top:10px;
+     }
+     .HorizfiltersCont > * {
+         margin-left: 0;
+    }
+     .wizdomMainContainer h1 {
+         margin-bottom:15px;
+     }
+     .wizdomMainContainer h2,
+     .wizdomMainContainer h3,
+     .wizdomMainContainer h4,
+     .wizdomMainContainer h5,
+     .wizdomMainContainer h6{
+         margin-top:15px;
+         margin-bottom:15px;
+     }
+    .communitiesCont .communities > div > div,
+    .policiesCont .policies > div > div {
+      float:none;
+      margin:10px 0;
+    }
+    .wizdom-Documentslist > div,
+    .wizdom-Documentsheader > div,
+    .wizdom-DocumentsName,
+    .wizdom-DocumentsUser,
+    .wizdom-DocumentsDate {
+      font-size: 13px;
+    }
+    .wizdom-NewsContent
+    .wizdom-ResultsContent {
+    	padding:0;
+    }
+    .wizdom-NewsContentLeft,
+    .wizdom-ResultsContentRight {
+    	display:block;
+    	width:100%;
+    	padding:30px 0;
+    }
+    .wizdom-ResultsContentLeft img {
+    	max-width:100%;
+    }
+  }
+@media all and (max-width: 767px) {
+    .wizdom-NewsContentLeft > a img {
+        width:100%;
+    }
+}
+
+/* WIZDOM DOCUMENTS LIST */
+.wizdomDocuments {
+  font-size:14px;
+  & a {
+  	color:$color1;
+  }
+}
+.wizdom-DocumentsContainer > div > div,
+.wizdom-DocumentsContainer > div > div > div {
+  margin: 0 0 20px 0;
+}
+.wizdom-DocumentsContainer > div > div > div img {
+  margin-right:5px;
+  vertical-align: middle;
+}
+.wizdom-Documentslist > div,
+.wizdom-Documentsheader > div,
+.wizdom-DocumentsName,
+.wizdom-DocumentsUser,
+.wizdom-DocumentsDate   {
+  display: -moz-inline-stack;
+  display:inline-block;
+  zoom:100%;
+  *display:inline;
+  vertical-align: top;
+}
+.wizdom-DocumentsContainer > div > div > div.header {color:#666666;}
+.wizdom-DocumentsName {width: 40%;padding-right: 2%;}
+.wizdom-DocumentsUser{width: 25%;}
+.wizdom-DocumentsDate {width: 25%;padding-right: 2%;}
+ 
+.wizdom-Documentsheader > div {
+    margin-right: 15px!important;
+}
+.wizdom-Documentsheader > div i {color:#0079c3;margin-right: 7px;} 
+.wizdom-Documentsheader > div:before,
+.wizdom-Documentsheader > div:after {    
+    font-family: 'Glyphicons Halflings';
+    font-weight: 600;
+    font-size: 15px;
+    color: #0079c3;
+    margin-right: 5px;
+    vertical-align: middle;
+  } 
+  .wizdom-Documentsheader > div:after {
+    margin-left:5px;
+    margin-right:0;
+  }
+.wizdom-Documentsheader > div.new:before {content:'\e081';} 
+.wizdom-Documentsheader > div.sync:before {content:'\e031';} 
+.wizdom-Documentsheader > div.share:before {content:'\e066';} 
+.wizdom-Documentsheader > div.more:after {content:'\e259'; }
+.wizdomUpdateBy {font-size:14px; margin:45px 0;}
+@media all and (max-width:991px) {
+    .wizdomUpdateBy {
+        margin:15px 0;
+    }
+}
+ @media all and (max-width:991px) {
+     .communitiesHeader > div > div,.communitiesContent > div > div,
+     .policiesHeader > div > div,.policiesContent > div > div {
+         margin:7px 0;
+         width:100%;
+    }
+}
+
+@media all and (max-width:767px) {
+     .HorizfiltersCont > * {
+         margin-left: 0;
+    }
+    .communitiesCont .communities > div > div,
+    .policiesCont .policies > div > div {
+      float:none;
+      margin:10px 0;
+    }
+    .wizdom-Documentslist > div,
+    .wizdom-Documentsheader > div,
+    .wizdom-DocumentsName,
+    .wizdom-DocumentsUser,
+    .wizdom-DocumentsDate {
+      font-size: 13px;
+    }
+    
+  }
+  /* WIZDOM REQUESTS */
+.wizdomRequests {
+  font-size:14px;
+}
+.wizdom-RequestsContainer > div > div,
+.wizdom-RequestsContainer > div > div > div {
+  margin: 0 0 20px 0;
+}
+.wizdom-RequestsContainer > div > div > div img {
+  margin-right:5px;
+  vertical-align: middle;
+}
+.wizdom-Requestslist > div,
+.wizdom-Requestsheader > div {
+  display: -moz-inline-stack;
+  display:inline-block;
+  zoom:100%;
+  *display:inline;
+  vertical-align: top;
+  color:$color1;
+  & a {
+  	color:$color1;
+  }
+}
+.wizdom-RequestsContainer > div > div > div.header {color:#666666;}
+.wizdom-RequestsAction {width: 10%;padding-right: 2%;}
+.wizdom-RequestsDescription{width: 55%;}
+.wizdom-RequestsStatus {width: 25%;padding-right: 2%;}
+ 
+
+ @media all and (max-width:991px) {
+     .communitiesHeader > div > div,
+     .policiesHeader > div > div {
+         margin:15px 0;
+         width:100%;
+    }
+}
+
+@media all and (max-width:767px) {
+    .wizdom-Requestslist {
+      font-size: 13px;
+    }
+  }
+// WIZDOM STEPS
+.wizdomSteps  {
+	margin-top:40px;
+	padding-bottom:50px;
+	border-bottom:1px solid $color1e; 
+	& > div > div {
+	position:relative;
+		 & > div {
+			background:$color0;
+			padding:30px;
+			text-align:center;
+		}
+	}
+}
+.wizdomSupportForm {
+	margin-top:40px;
+	padding-bottom:30px;
+	border-bottom:1px solid $color1e; 
+}
+.wizdomSteps > div > div > div.arrow {
+	background:$color2;
+	position:absolute;
+	right:-20px;
+	top:40%;
+	@include border-radius(100%);
+	width:50px;
+	height:50px;
+	padding:0;
+	text-align:center;
+	font-size:30px;
+	z-index:1;
+	& i {
+		display:inline-block!important;
+		vertical-align:middle;
+	}
+}
+.wizdomSteps > div > div > div > * {
+	display:block!important;
+	
+	&.number {
+		font-weight:bold;
+		color:$color2;
+		font-size:30px;
+	}
+	&.title {
+		font-weight:bold;
+		margin:20px 0;
+		font-size:18px;
+	}
+}
+
+@media all and (max-width:991px) {
+    .wizdomSteps {
+        margin-top:10px;
+        padding-bottom:10px;
+    }
+	.wizdomSteps > div > div {
+		margin:30px 0;
+	}
+	.wizdomSteps > div > div > div.arrow  {
+		-ms-transform: rotate(90deg); /* IE 9 */
+	    -webkit-transform: rotate(90deg); /* Safari */
+	    transform: rotate(90deg);
+	    right: 0;
+	    left: 45%;
+	    bottom: -30px;
+	    top: auto;
+	}
+}
+// WIZDOM FEEDS
+.wizdomFeeds {
+& > div 
+	{
+		background:$color0;
+		padding:20px;
+		margin:0 0 30px 0;
+		font-size:14px;
+		& > div:first-child {
+			margin-bottom:20px;
+		}
+		& > div > a {
+			display:block;
+			font-size:16px;
+		}
+	}
+}
+// WIZDOM BOXES
+.wizdomBoxes {
+	& > div > div > div{
+		padding:30px;
+		margin:0 0 30px 0;
+		background:$color0;
+		@include boxsizing;
+		& p {
+			margin-top:30px;
+			margin-bottom:15px;
+		}
+	}
+}
+ 

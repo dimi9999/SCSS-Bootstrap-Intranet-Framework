@@ -1,0 +1,75 @@
+﻿/* CUSTOM LISTS (DEFAULT CAN BE USED FOR ALL */
+.listsCont {
+	font-size: 16px;
+}
+.listsCont .lists>div {
+	margin: 30px 0;
+    ma
+}
+.listsHeader{
+	background: #ccdee8;
+	margin-bottom: 0!important;
+}
+
+.listsAlphabetical {
+	background: #99bdd2;
+	margin-bottom: 0!important;
+	margin-top: 0!important;
+}
+.listsHeader > .row,
+.listsContent > .row {
+    margin: 0;
+}
+.listsHeader>div,
+.listsContent>div,
+.listsAlphabetical>div {
+	margin: 0;
+	padding: 15px 0;
+}
+
+.listsHeader>div>div>h6 {
+	width: auto;
+	font-weight: bold;
+	background: url(../images/icons/select-double-arrow.png) no-repeat right;
+	display: inline-block;
+	padding-right: 15px;
+	margin: 0;
+	font-size: 16px;
+}
+
+.listsContent>div {
+	background: white;
+}
+
+.listsContent {
+	margin-top: 0!important;
+}
+
+.listsContent {
+	margin-bottom: 0!important;
+}
+
+.listsContent>div:nth-child(2n+2) {
+	background: #f2f7f9;
+}
+
+.listsContent>div {
+	vertical-align: top;
+}
+
+div.listsTitleCol {
+	width: 28%;
+}
+
+div.listsDescCol {
+	width: 40%;
+}
+
+div.listsTypeCol {
+	width: 15%;
+}
+
+div.listsOwnerCol {
+	width: 15%;
+}
+

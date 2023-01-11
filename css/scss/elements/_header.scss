@@ -1,0 +1,138 @@
+#DeltaSPRibbon > .ms-header {
+    box-sizing:border-box;
+    padding:10px 15px;
+    background:$color0;
+}
+/* HEADER */
+#mainlogo {
+    float:left;
+    & img {
+        max-width:132px;
+        *width:132px;
+    }
+}
+.mobile-search-button {
+    color: $color2;
+    font-size: 21px;
+    position: absolute;
+    right: 70px;
+	top:10px;
+}
+/* STATISTICS */
+#DeltaSPNavigation {
+    float:right;
+}
+.statistics {
+    @include inline-block;
+    margin: 0 5px;
+}
+.statistics {
+   > * {
+        @include inline-block;
+        vertical-align:middle;
+        margin: 0;
+    }
+    }
+    .arrow-up, .arrow-down {
+          @include inline-block;
+          vertical-align:middle;
+          width: 18px;
+          height: 18px;
+          margin: 0 6px;
+          background:url(../images/icons/statistics-arrow-up.png) no-repeat!important;
+       }
+      .arrow-down {
+           background:url(../images/icons/statistics-arrow-down.png) no-repeat!important;
+      }
+
+ 
+ 
+.statisticsTxt {
+  font-size: 24px;
+  font-weight: 500;
+  .glyphicon-arrow-up {
+    color: $color3;
+    font-size: 17px;
+    margin: 0 7px 0 2px;
+  }
+  .glyphicon-arrow-down {
+    color: $color17;
+    font-size: 17px;
+    margin: 0 7px 0 2px;
+  }
+}
+
+.statisticsStatus {
+  border: 2px solid;
+  border-radius: 3px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 14px;
+  > span {
+    margin: 0 2px;
+  }
+  &.positive {
+    color: $color16;
+  }
+  &.negative {
+    color: $color17
+  }
+}
+
+@media all and (max-width: 991px) {
+  .statisticsCont {
+    display: none;
+  }
+}
+
+/* NAVIGATION */
+/* SEARCH FORM */
+
+#nav {
+  position: relative;
+}
+
+#search {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  min-width: 250px;
+}
+
+#search-mobile {
+  width: 100%;
+  background: #0093d8;
+  display: none;
+  padding: 10px;
+}
+
+.search-mobile-form {
+  position: relative;
+}
+
+#search form input[type="text"], .search-mobile-form input[type="text"] {
+  background-color: $color0;
+  border: 0;
+  color: $color0;
+  height: 38px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+#search form > button, .search-mobile-form button {
+  color: $color2;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 38px;
+  width: 38px;
+  background: transparent;
+  border: 0;
+  font-weight: bold;
+}
+

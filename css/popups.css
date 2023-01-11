@@ -1,0 +1,55 @@
+﻿/*
+-------------------------------
+Popups
+Client ACME
+Used in: Wizdom Next Demo Popup
+List: DemoAlerts
+-------------------------------
+*/
+
+#NextDemoPopup .modal-content {
+   border-radius: 0;
+   padding:15px;
+   position: relative;
+}
+#NextDemoPopup .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+#NextDemoPopup .close span {
+    font-size:40px!important;
+}
+ 
+#NextDemoPopup .modal-header,
+#NextDemoPopup .modal-footer {
+   border:0;
+}
+#NextDemoPopup h5 {
+    margin:0 0 20px 0;
+}
+#NextDemoPopup h5:after {
+    content: "";
+    width: 146px;
+    height: 3px;
+    background-color: #666666;
+    left: 0;
+    position: relative;
+    display: block;
+    top: 25px;
+    margin: 0 0 20px 0;
+}
+#NextDemoPopup p {
+    font-size: 16px;
+}
+#NextDemoPopup .startTime,
+#NextDemoPopup .endTime {
+    color:green;
+    margin: 0 20px 0 5px;
+}
+#NextDemoPopup .save {
+    color: black;
+}
+#NextDemoPopup .stop {
+    color:red;
+}

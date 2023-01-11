@@ -1,0 +1,73 @@
+// FLOATS AND ALIGNMENTS  
+
+.float-left 	{float:left!important;}
+.float-right 	{float:right!important;}
+.align-left 	{text-align:left!important;}
+.align-right 	{text-align:right!important;}
+.align-center 	{text-align:center!important;}
+.marginauto     {margin:0 auto;}
+.valign-top     {vertical-align:top!important;}
+.valign-middle, .valign-middle-children > *  {vertical-align:middle!important;}
+.valign-bottom  {vertical-align:bottom!important;}
+.fullwidth {width:100%!important;}
+.hidden	{display:none;}
+.inline	{display:inline;}
+.block	{display:block;}
+.inline-block {@include inline-block;}
+.clearfix, .clearfix:after, .clear, .clear:after {line-height:0pt;height:0pt;clear:both;}
+.underline {text-decoration:underline;}
+
+@include respond-min-width($breakpointH1) {
+    .hideonnarrow{display:block!important;}
+	.hideonnarrowinline{display:inline!important;}
+	.hideonnarrowinlineblock{@include inline-block($important:true);}
+	td.hideonnarrow,th.hideonnarrow{display:table-cell!important;}
+    .showonnarrow{display:none!important;}
+    .hideontablet{display:none;}  
+	.blocktoinlineblock{@include inline-block;}
+	.blocktoinline{display:inline;}
+}
+
+@include respond-min-width($breakpointH2) {
+	.showonwide{display:block!important;}
+	.showonwideinline{display:inline!important;}
+	.showonwideinlineblock{@include inline-block($important:true);}
+	 td.showonwide,th.showonwide{display:table-cell!important;}
+	.hideonwide{display:none!important;}
+	.hideontablet{display:inline-block;} 
+}
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+
+
+@media(min-width:768px) {
+    .vertical-align-no-xs{
+         @include flexbox;
+    }
+}
+@media(max-width:991px) {
+    .vertical-align-no-md{
+        @include flexbox;
+    }
+}
+@media(min-width:992px) {
+	.vertical-align-no-sm{
+       @include flexbox;
+    }
+	.row-eq-height-no-sm {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+@media(min-width:1200px) {
+	.row-eq-height {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}

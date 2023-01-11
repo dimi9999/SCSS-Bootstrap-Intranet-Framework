@@ -1,0 +1,139 @@
+/*
+-------------------
+Planner Ordering
+-------------------
+Client: Acme
+Used in: Editors Dashboard. My Tasks Planner
+Template: n/a
+Target stylesheets: CF_Planner.css
+ 
+*/
+
+/*
+filter by
+*/
+#PlannerOrdering,
+#PlannerOrdering p {
+    font-size:16px;
+}
+#PlannerOrdering h3 {
+    margin-top:0;
+}
+#PlannerOrdering .PlannerOrderingFilters {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    align-items: center;
+    justify-content: flex-end;
+}
+#PlannerOrdering .PlannerOrderingFilters > div {
+    vertical-align:middle;
+}
+#PlannerOrdering .PlannerOrderingFiltersContainer {
+    margin: 25px 0 30px;
+    padding-top: 35px;
+    border-top:1px solid #ccc;
+    width:100%;
+}
+#PlannerOrdering .PlannerOrderingFiltersContainer > div {
+    float:left;
+    font-size:16px;
+}
+#PlannerOrdering .PlannerOrderingFiltersContainer > div.results {
+    margin-top:5px;
+}
+#PlannerOrdering .PlannerOrderingFiltersContainer > div.clear {
+    float:none;
+}
+#PlannerOrdering .PlannerOrderingFiltersContainer .PlannerOrderingFilters {
+    float:right;
+    width: 40%;
+}
+#PlannerOrdering .PlannerOrderingFiltersContainer .PlannerOrderingFilters  > div select {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:800px) {
+    #PlannerOrdering .PlannerOrderingFiltersContainer > div,
+    #PlannerOrdering .PlannerOrderingFiltersContainer .PlannerOrderingFilters  {
+        float:none;
+        width:100%;
+        justify-content: flex-start;
+        margin: 0 0 20px 0;
+    }
+}
+/*
+  responsive tables
+*/ 
+#PlannerOrdering table {
+     text-align: center;
+     width: 100%;
+}
+#PlannerOrdering tr {
+     background: #fff;
+}
+#PlannerOrdering tr:nth-child(2n) {
+     background: #f2f7f9;
+}
+#PlannerOrdering tr:hover .msg {
+     opacity: 1;
+     top: 0;
+}
+#PlannerOrdering th, 
+#PlannerOrdering td {
+     padding: 15px;
+     vertical-align: middle;
+     text-align: left;
+     color: #005b8e;
+}
+#PlannerOrdering th:nth-child(2),
+#PlannerOrdering td:nth-child(2) {
+     text-align: left;
+}
+#PlannerOrdering td.status {
+    color:inherit;
+}
+#PlannerOrdering td.status.approved {
+    color:green;
+}
+#PlannerOrdering th {
+     background: #ccdee8;
+     color:  black;
+     font-weight: bold;
+     padding: 15px;
+}
+#PlannerOrdering th:first-child {
+      background:#bed5e0;
+      width: 40%;
+} 
+#PlannerOrdering tr td:first-child {
+    background: #f2f7f9;
+}
+#PlannerOrdering tr:nth-child(2n) td:first-child {
+    background: #e9f0f3;
+}
+
+@media only screen and (max-width: 767px) {
+     #PlannerOrdering .price {
+         padding: 0;
+         border: none;
+         background: none;
+    }
+  
+    #PlannerOrdering .responsiveTbl {
+         overflow: auto;
+    }
+    #PlannerOrdering .responsiveTbl table {
+         width: 767px;
+    }
+}
+ @media only screen and (max-width: 640px) {
+    #PlannerOrdering .responsiveTbl table {
+         width: 640px;
+    }
+}

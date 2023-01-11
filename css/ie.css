@@ -1,0 +1,92 @@
+/* NAVBAR */
+
+/* !CPU HIGH, fix for IE6 shake when scroll */
+* html,* html body {
+  _background-image:url(about:blank);
+  _background-attachment:fixed;
+}
+/* !CPU HIGH, fix for IE6 not support fixed position */
+.navbar-fixed-top {
+  _position:absolute;
+  _bottom:auto;
+  _top:expression(eval(document.documentElement.scrollTop));
+}
+/* !CPU HIGH, fix for IE6 not support fixed position */
+.navbar-fixed-bottom {
+  _position:absolute;
+  _bottom:auto;
+  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
+
+/* DROPDOWN */
+.dropup,
+.dropdown {
+  *zoom:1;
+}
+
+/* CLOSE */
+.close {
+  _font-size: 15px;
+}
+
+.modal-header h3 {
+  *display: inline;
+  *zoom:1;
+}
+
+/* MODALS */
+.modal-backdrop {
+  _position: absolute;
+  _top:0;
+  _margin-top:0;
+  _width:expression(eval(document.documentElement.scrollWidth));
+  _height:expression(eval(document.documentElement.scrollHeight));
+}
+.modal {
+  _position:absolute;
+  _top:0;
+  _margin-top:0;
+  _top:expression(eval(document.documentElement.scrollTop));
+}
+.modal.fade.in {
+  _filter:alpha(opacity=100);
+}
+.modal-backdrop {
+  _filter: alpha(opacity=80);
+}
+.modal-body {
+  _height:expression(this.scrollHeight > 400 ? "400px" : "auto");
+}
+.miniContainer > .row,
+.topContainer > .row,
+footer {
+	max-width:100%!important;
+}
+.miniContainer > div > div {
+    display:-moz-inline-stack;
+	display:inline-block;
+	zoom:100%;
+	*display:inline;
+	float:left;
+	width:33.33%;
+	*width:30%;
+}
+.miniContainer div div {
+	_float:left;
+	_width:550px;
+}
+.topContainer .col-lg-4 {
+	*width:29.33%;
+}
+.wizdom-noticeBoardContentLeft,
+.wizdom-noticeBoardContentRight,
+.wizdom-files-container-block > .file,
+.wizdom-files-container-block > .decription,
+.wizdom-corpNewsRightImage,
+.wizdom-corpNewsRightContent
+ {
+	*float:left;
+}
+.wizdom-files-container-block > .status {
+	*float:right;
+}
